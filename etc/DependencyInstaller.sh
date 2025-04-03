@@ -60,9 +60,14 @@ _equivalenceDeps() {
 
 _installCommonDev() {
     lastDir="$(pwd)"
+    arch=$(uname -m)
     # tools versions
     osName="linux"
-    cmakeChecksum="b8d86f8c5ee990ae03c486c3631cee05"
+    if [[ "${arch}" == "aarch64" ]]; then
+        cmakeChecksum="6a6af752af4b1eae175e1dd0459ec850"
+    else
+        cmakeChecksum="b8d86f8c5ee990ae03c486c3631cee05"
+    fi
     cmakeVersionBig=3.24
     cmakeVersionSmall=${cmakeVersionBig}.2
     pcreVersion=10.42
@@ -75,7 +80,6 @@ _installCommonDev() {
     eigenVersion=3.4
     lemonVersion=1.3.1
     spdlogVersion=1.8.1
-
     rm -rf "${baseDir}"
     mkdir -p "${baseDir}"
     if [[ ! -z "${PREFIX}" ]]; then
@@ -87,10 +91,10 @@ _installCommonDev() {
     cmakeBin=${cmakePrefix}/bin/cmake
     if [[ ! -f ${cmakeBin} || -z $(${cmakeBin} --version | grep ${cmakeVersionBig}) ]]; then
         cd "${baseDir}"
-        wget https://cmake.org/files/v${cmakeVersionBig}/cmake-${cmakeVersionSmall}-${osName}-x86_64.sh
-        md5sum -c <(echo "${cmakeChecksum} cmake-${cmakeVersionSmall}-${osName}-x86_64.sh") || exit 1
-        chmod +x cmake-${cmakeVersionSmall}-${osName}-x86_64.sh
-        ./cmake-${cmakeVersionSmall}-${osName}-x86_64.sh --skip-license --prefix=${cmakePrefix}
+        get https://cmake.org/files/v${cmakeVersionBig}/cmake-${cmakeVersionSmall}-${osName}-${arch}.sh
+        md5sum -c <(echo "${cmakeChecksum} cmake-${cmakeVersionSmall}-${osName}-${arch}.sh") || exit 1
+        chmod +x cmake-${cmakeVersionSmall}-${osName}-${arch}.sh
+        ./cmake-${cmakeVersionSmall}-${osName}-${arch}.sh --skip-license --prefix=${cmakePrefix}
     else
         echo "CMake already installed."
     fi
@@ -203,26 +207,54 @@ EOF
 
 _installOrTools() {
     os=$1
-    version=$2
+    osVersion=$2
     arch=$3
-    orToolsVersionBig=9.5
-    orToolsVersionSmall=${orToolsVersionBig}.2237
+    orToolsVersionBig=9.11
+    orToolsVersionSmall=${orToolsVersionBig}.4210
 
     rm -rf "${baseDir}"
     mkdir -p "${baseDir}"
     if [[ ! -z "${PREFIX}" ]]; then mkdir -p "${PREFIX}"; fi
     cd "${baseDir}"
 
-    orToolsFile=or-tools_${arch}_${os}-${version}_cpp_v${orToolsVersionSmall}.tar.gz
-    wget https://github.com/google/or-tools/releases/download/v${orToolsVersionBig}/${orToolsFile}
+    # Disable exit on error for 'find' command, as it might return non zero
+    set +euo pipefail
+    LIST=($(find /local* /opt* /lib* /usr* /bin* -type f -name "libortools.so*" 2>/dev/null))
+    # Bring back exit on error
+    set -euo pipefail
+    # Return if right version of or-tools is installed
+    for lib in ${LIST[@]}; do
+        if [[ "$lib" =~ .*"/libortools.so.${orToolsVersionSmall}" ]]; then
+            echo "OR-Tools is already installed"
+            CMAKE_PACKAGE_ROOT_ARGS+=" -D ortools_ROOT=$(realpath $(dirname $lib)/..) "
+            return
+        fi
+    done
+
     orToolsPath=${PREFIX:-"/opt/or-tools"}
-    if command -v brew &> /dev/null; then
-        orToolsPath="$(brew --prefix or-tools)"
+    if [ "$(uname -m)" == "aarch64" ]; then
+        echo "OR-TOOLS NOT FOUND"
+        echo "Installing  OR-Tools for aarch64..."
+        git clone --depth=1 -b "v${orToolsVersionBig}" https://github.com/google/or-tools.git
+        cd or-tools
+        ${cmakePrefix}/bin/cmake -S. -Bbuild -DBUILD_DEPS:BOOL=ON -DBUILD_EXAMPLES:BOOL=OFF -DBUILD_SAMPLES:BOOL=OFF -DBUILD_TESTING:BOOL=OFF -DCMAKE_INSTALL_PREFIX=${orToolsPath} -DCMAKE_CXX_FLAGS="-w" -DCMAKE_C_FLAGS="-w"
+        ${cmakePrefix}/bin/cmake --build build --config Release --target install -v -j $(nproc)
+    else
+        if [[ $osVersion == rodete ]]; then
+            osVersion=11
+        fi
+        orToolsFile=or-tools_${arch}_${os}-${osVersion}_cpp_v${orToolsVersionSmall}.tar.gz
+        eval wget https://github.com/google/or-tools/releases/download/v${orToolsVersionBig}/${orToolsFile}
+        if command -v brew &> /dev/null; then
+            orToolsPath="$(brew --prefix or-tools)"
+        fi
+        mkdir -p ${orToolsPath}
+        tar --strip 1 --dir ${orToolsPath} -xf ${orToolsFile}
+        rm -rf ${baseDir}
     fi
-    mkdir -p ${orToolsPath}
-    tar --strip 1 --dir ${orToolsPath} -xf ${orToolsFile}
-    rm -rf ${baseDir}
+    CMAKE_PACKAGE_ROOT_ARGS+=" -D ortools_ROOT=$(realpath $orToolsPath) "
 }
+
 
 _installUbuntuCleanUp() {
     apt-get autoclean -y
@@ -287,7 +319,7 @@ _installUbuntuPackages() {
     fi
 
     # need the strip "hack" above to run on docker
-    strip --remove-section=.note.ABI-tag /usr/lib/x86_64-linux-gnu/libQt5Core.so
+#    strip --remove-section=.note.ABI-tag /usr/lib/x86_64-linux-gnu/libQt5Core.so
 }
 
 _installRHELCleanUp() {
