@@ -145,10 +145,13 @@ std::unique_ptr<Element> RamGen::make_byte(
 {
   auto layout = std::make_unique<Layout>(odb::horizontal);
 
+  
   vector<dbNet*> select_b_nets(selects.size());
   for (int i = 0; i < selects.size(); ++i) {
     select_b_nets[i] = makeNet(prefix, fmt::format("select{}_b", i));
   }
+
+  // vector<dbNet*> select_b_nets = decoder_selects(prefix, read_ports);
 
   auto clock_b_net = makeNet(prefix, "clock_b");
   auto gclock_net = makeNet(prefix, "gclock");
@@ -172,6 +175,8 @@ std::unique_ptr<Element> RamGen::make_byte(
            {{"CLK", clock_b_net}, {"GATE", we0_net}, {"GCLK", gclock_net}});
 
   // Make clock and
+  // this AND gate needs to be fed a net created by a decoder
+  // adding any net will automatically connect with any port
   makeInst(layout.get(),
            prefix,
            "gcand",
@@ -194,8 +199,29 @@ std::unique_ptr<Element> RamGen::make_byte(
            inv_cell_,
            {{"A", clock}, {"Y", clock_b_net}});
 
+  
+
   return std::make_unique<Element>(std::move(layout));
 }
+
+std::unique_ptr<Element> RamGen::make_decoder (
+  const int word_count, const int read_ports, const std::vector<odb::dbNet*>& selects) {
+    auto layout = std::make_unique<Layout>(odb::horizontal);
+
+  
+
+  return std::make_unique<Element>(std::move(layout));
+}
+
+std::vector<dbNet*> RamGen::decoder_selects(const std::string& prefix, const int read_ports){
+  
+  std::vector<dbNet*> decoder_select_nets(read_ports);
+  for (int i = 0 ; i < read_ports; ++i) {
+    decoder_select_nets[i] = makeNet(prefix, fmt::format("decoder{}", i));
+  }
+  return decoder_select_nets;
+}
+  
 
 dbMaster* RamGen::findMaster(
     const std::function<bool(sta::LibertyPort*)>& match,
@@ -371,18 +397,44 @@ void RamGen::generate(const int bytes_per_word,
       Do.push_back(d);
     }
 
+    vector<vector<dbNet*>> decoder_select_nets (word_count);
+
     auto column = std::make_unique<Layout>(odb::vertical);
+
+    //auto test_layout = std::make_unique<Layout>(odb::horizontal);
     for (int row = 0; row < word_count; ++row) {
+      
+      
       auto name = fmt::format("storage_{}_{}", row, col);
-      column->addElement(make_byte(name,
+      vector<dbNet*> word_decoder_nets = decoder_selects(name, read_ports);
+      // column->addElement(make_byte(name,
+      //                              read_ports,
+      //                              clock,
+      //                              write_enable[col],
+      //                              select,
+      //                              Di0,
+      //                              Do));
+      decoder_select_nets.push_back(word_decoder_nets);
+      column->addElement(make_byte(       
+                                  name,
                                    read_ports,
                                    clock,
                                    write_enable[col],
-                                   select,
+                                   word_decoder_nets,
                                    Di0,
-                                   Do));
+                                   Do));                             
+      
+      // auto test_net = makeNet("test_prefix", "outNet");
+      // auto test_Bterm = makeNet("test_B_", "outTerm");
+      auto test_layout = std::make_unique<Layout>(odb::horizontal);
+      //makeInst(test_layout.get(), "inv", fmt::format("inv_test{}", row), inv_cell_, {{"A", select[row]}, {"Y", write_enable[row]}});
+      column->addElement(std::make_unique<Element>(std::move(test_layout)));  
     }
-    layout.addElement(std::make_unique<Element>(std::move(column)));
+
+    
+      // column->addElement(make_decoder(word_count, read_ports, select));
+      
+      layout.addElement(std::make_unique<Element>(std::move(column)));
   }
   layout.position(odb::Point(0, 0));
 }

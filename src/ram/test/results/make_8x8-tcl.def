@@ -267,7 +267,7 @@ PINS 28 ;
     - select1 + NET select1 + DIRECTION INPUT + USE SIGNAL ;
     - write_enable[0] + NET write_enable[0] + DIRECTION INPUT + USE SIGNAL ;
 END PINS
-NETS 132 ;
+NETS 148 ;
     - Di0[0] ( PIN Di0[0] ) ( storage_7_0.bit0.bit D ) ( storage_6_0.bit0.bit D ) ( storage_5_0.bit0.bit D ) ( storage_4_0.bit0.bit D ) ( storage_3_0.bit0.bit D ) ( storage_2_0.bit0.bit D )
       ( storage_1_0.bit0.bit D ) ( storage_0_0.bit0.bit D ) + USE SIGNAL ;
     - Di0[1] ( PIN Di0[1] ) ( storage_7_0.bit1.bit D ) ( storage_6_0.bit1.bit D ) ( storage_5_0.bit1.bit D ) ( storage_4_0.bit1.bit D ) ( storage_3_0.bit1.bit D ) ( storage_2_0.bit1.bit D )
@@ -318,11 +318,8 @@ NETS 132 ;
       ( storage_1_0.bit7.obuf1 Z ) ( storage_0_0.bit7.obuf1 Z ) + USE SIGNAL ;
     - clock ( PIN clock ) ( storage_7_0.clock_inv A ) ( storage_6_0.clock_inv A ) ( storage_5_0.clock_inv A ) ( storage_4_0.clock_inv A ) ( storage_3_0.clock_inv A ) ( storage_2_0.clock_inv A )
       ( storage_1_0.clock_inv A ) ( storage_0_0.clock_inv A ) + USE SIGNAL ;
-    - select0 ( PIN select0 ) ( storage_7_0.select_inv_0 A ) ( storage_7_0.gcand A ) ( storage_6_0.select_inv_0 A ) ( storage_6_0.gcand A ) ( storage_5_0.select_inv_0 A ) ( storage_5_0.gcand A )
-      ( storage_4_0.select_inv_0 A ) ( storage_4_0.gcand A ) ( storage_3_0.select_inv_0 A ) ( storage_3_0.gcand A ) ( storage_2_0.select_inv_0 A ) ( storage_2_0.gcand A ) ( storage_1_0.select_inv_0 A ) ( storage_1_0.gcand A )
-      ( storage_0_0.select_inv_0 A ) ( storage_0_0.gcand A ) + USE SIGNAL ;
-    - select1 ( PIN select1 ) ( storage_7_0.select_inv_1 A ) ( storage_6_0.select_inv_1 A ) ( storage_5_0.select_inv_1 A ) ( storage_4_0.select_inv_1 A ) ( storage_3_0.select_inv_1 A ) ( storage_2_0.select_inv_1 A )
-      ( storage_1_0.select_inv_1 A ) ( storage_0_0.select_inv_1 A ) + USE SIGNAL ;
+    - select0 ( PIN select0 ) + USE SIGNAL ;
+    - select1 ( PIN select1 ) + USE SIGNAL ;
     - storage_0_0.bit0.storage ( storage_0_0.bit0.obuf1 A ) ( storage_0_0.bit0.obuf0 A ) ( storage_0_0.bit0.bit Q ) + USE SIGNAL ;
     - storage_0_0.bit1.storage ( storage_0_0.bit1.obuf1 A ) ( storage_0_0.bit1.obuf0 A ) ( storage_0_0.bit1.bit Q ) + USE SIGNAL ;
     - storage_0_0.bit2.storage ( storage_0_0.bit2.obuf1 A ) ( storage_0_0.bit2.obuf0 A ) ( storage_0_0.bit2.bit Q ) + USE SIGNAL ;
@@ -332,6 +329,8 @@ NETS 132 ;
     - storage_0_0.bit6.storage ( storage_0_0.bit6.obuf1 A ) ( storage_0_0.bit6.obuf0 A ) ( storage_0_0.bit6.bit Q ) + USE SIGNAL ;
     - storage_0_0.bit7.storage ( storage_0_0.bit7.obuf1 A ) ( storage_0_0.bit7.obuf0 A ) ( storage_0_0.bit7.bit Q ) + USE SIGNAL ;
     - storage_0_0.clock_b ( storage_0_0.clock_inv Y ) ( storage_0_0.cg CLK ) + USE SIGNAL ;
+    - storage_0_0.decoder0 ( storage_0_0.select_inv_0 A ) ( storage_0_0.gcand A ) + USE SIGNAL ;
+    - storage_0_0.decoder1 ( storage_0_0.select_inv_1 A ) + USE SIGNAL ;
     - storage_0_0.gclock ( storage_0_0.cg GCLK ) ( storage_0_0.bit7.bit GATE ) ( storage_0_0.bit6.bit GATE ) ( storage_0_0.bit5.bit GATE ) ( storage_0_0.bit4.bit GATE ) ( storage_0_0.bit3.bit GATE ) ( storage_0_0.bit2.bit GATE )
       ( storage_0_0.bit1.bit GATE ) ( storage_0_0.bit0.bit GATE ) + USE SIGNAL ;
     - storage_0_0.select0_b ( storage_0_0.select_inv_0 Y ) ( storage_0_0.bit7.obuf0 TE_B ) ( storage_0_0.bit6.obuf0 TE_B ) ( storage_0_0.bit5.obuf0 TE_B ) ( storage_0_0.bit4.obuf0 TE_B ) ( storage_0_0.bit3.obuf0 TE_B ) ( storage_0_0.bit2.obuf0 TE_B )
@@ -348,6 +347,8 @@ NETS 132 ;
     - storage_1_0.bit6.storage ( storage_1_0.bit6.obuf1 A ) ( storage_1_0.bit6.obuf0 A ) ( storage_1_0.bit6.bit Q ) + USE SIGNAL ;
     - storage_1_0.bit7.storage ( storage_1_0.bit7.obuf1 A ) ( storage_1_0.bit7.obuf0 A ) ( storage_1_0.bit7.bit Q ) + USE SIGNAL ;
     - storage_1_0.clock_b ( storage_1_0.clock_inv Y ) ( storage_1_0.cg CLK ) + USE SIGNAL ;
+    - storage_1_0.decoder0 ( storage_1_0.select_inv_0 A ) ( storage_1_0.gcand A ) + USE SIGNAL ;
+    - storage_1_0.decoder1 ( storage_1_0.select_inv_1 A ) + USE SIGNAL ;
     - storage_1_0.gclock ( storage_1_0.cg GCLK ) ( storage_1_0.bit7.bit GATE ) ( storage_1_0.bit6.bit GATE ) ( storage_1_0.bit5.bit GATE ) ( storage_1_0.bit4.bit GATE ) ( storage_1_0.bit3.bit GATE ) ( storage_1_0.bit2.bit GATE )
       ( storage_1_0.bit1.bit GATE ) ( storage_1_0.bit0.bit GATE ) + USE SIGNAL ;
     - storage_1_0.select0_b ( storage_1_0.select_inv_0 Y ) ( storage_1_0.bit7.obuf0 TE_B ) ( storage_1_0.bit6.obuf0 TE_B ) ( storage_1_0.bit5.obuf0 TE_B ) ( storage_1_0.bit4.obuf0 TE_B ) ( storage_1_0.bit3.obuf0 TE_B ) ( storage_1_0.bit2.obuf0 TE_B )
@@ -364,6 +365,8 @@ NETS 132 ;
     - storage_2_0.bit6.storage ( storage_2_0.bit6.obuf1 A ) ( storage_2_0.bit6.obuf0 A ) ( storage_2_0.bit6.bit Q ) + USE SIGNAL ;
     - storage_2_0.bit7.storage ( storage_2_0.bit7.obuf1 A ) ( storage_2_0.bit7.obuf0 A ) ( storage_2_0.bit7.bit Q ) + USE SIGNAL ;
     - storage_2_0.clock_b ( storage_2_0.clock_inv Y ) ( storage_2_0.cg CLK ) + USE SIGNAL ;
+    - storage_2_0.decoder0 ( storage_2_0.select_inv_0 A ) ( storage_2_0.gcand A ) + USE SIGNAL ;
+    - storage_2_0.decoder1 ( storage_2_0.select_inv_1 A ) + USE SIGNAL ;
     - storage_2_0.gclock ( storage_2_0.cg GCLK ) ( storage_2_0.bit7.bit GATE ) ( storage_2_0.bit6.bit GATE ) ( storage_2_0.bit5.bit GATE ) ( storage_2_0.bit4.bit GATE ) ( storage_2_0.bit3.bit GATE ) ( storage_2_0.bit2.bit GATE )
       ( storage_2_0.bit1.bit GATE ) ( storage_2_0.bit0.bit GATE ) + USE SIGNAL ;
     - storage_2_0.select0_b ( storage_2_0.select_inv_0 Y ) ( storage_2_0.bit7.obuf0 TE_B ) ( storage_2_0.bit6.obuf0 TE_B ) ( storage_2_0.bit5.obuf0 TE_B ) ( storage_2_0.bit4.obuf0 TE_B ) ( storage_2_0.bit3.obuf0 TE_B ) ( storage_2_0.bit2.obuf0 TE_B )
@@ -380,6 +383,8 @@ NETS 132 ;
     - storage_3_0.bit6.storage ( storage_3_0.bit6.obuf1 A ) ( storage_3_0.bit6.obuf0 A ) ( storage_3_0.bit6.bit Q ) + USE SIGNAL ;
     - storage_3_0.bit7.storage ( storage_3_0.bit7.obuf1 A ) ( storage_3_0.bit7.obuf0 A ) ( storage_3_0.bit7.bit Q ) + USE SIGNAL ;
     - storage_3_0.clock_b ( storage_3_0.clock_inv Y ) ( storage_3_0.cg CLK ) + USE SIGNAL ;
+    - storage_3_0.decoder0 ( storage_3_0.select_inv_0 A ) ( storage_3_0.gcand A ) + USE SIGNAL ;
+    - storage_3_0.decoder1 ( storage_3_0.select_inv_1 A ) + USE SIGNAL ;
     - storage_3_0.gclock ( storage_3_0.cg GCLK ) ( storage_3_0.bit7.bit GATE ) ( storage_3_0.bit6.bit GATE ) ( storage_3_0.bit5.bit GATE ) ( storage_3_0.bit4.bit GATE ) ( storage_3_0.bit3.bit GATE ) ( storage_3_0.bit2.bit GATE )
       ( storage_3_0.bit1.bit GATE ) ( storage_3_0.bit0.bit GATE ) + USE SIGNAL ;
     - storage_3_0.select0_b ( storage_3_0.select_inv_0 Y ) ( storage_3_0.bit7.obuf0 TE_B ) ( storage_3_0.bit6.obuf0 TE_B ) ( storage_3_0.bit5.obuf0 TE_B ) ( storage_3_0.bit4.obuf0 TE_B ) ( storage_3_0.bit3.obuf0 TE_B ) ( storage_3_0.bit2.obuf0 TE_B )
@@ -396,6 +401,8 @@ NETS 132 ;
     - storage_4_0.bit6.storage ( storage_4_0.bit6.obuf1 A ) ( storage_4_0.bit6.obuf0 A ) ( storage_4_0.bit6.bit Q ) + USE SIGNAL ;
     - storage_4_0.bit7.storage ( storage_4_0.bit7.obuf1 A ) ( storage_4_0.bit7.obuf0 A ) ( storage_4_0.bit7.bit Q ) + USE SIGNAL ;
     - storage_4_0.clock_b ( storage_4_0.clock_inv Y ) ( storage_4_0.cg CLK ) + USE SIGNAL ;
+    - storage_4_0.decoder0 ( storage_4_0.select_inv_0 A ) ( storage_4_0.gcand A ) + USE SIGNAL ;
+    - storage_4_0.decoder1 ( storage_4_0.select_inv_1 A ) + USE SIGNAL ;
     - storage_4_0.gclock ( storage_4_0.cg GCLK ) ( storage_4_0.bit7.bit GATE ) ( storage_4_0.bit6.bit GATE ) ( storage_4_0.bit5.bit GATE ) ( storage_4_0.bit4.bit GATE ) ( storage_4_0.bit3.bit GATE ) ( storage_4_0.bit2.bit GATE )
       ( storage_4_0.bit1.bit GATE ) ( storage_4_0.bit0.bit GATE ) + USE SIGNAL ;
     - storage_4_0.select0_b ( storage_4_0.select_inv_0 Y ) ( storage_4_0.bit7.obuf0 TE_B ) ( storage_4_0.bit6.obuf0 TE_B ) ( storage_4_0.bit5.obuf0 TE_B ) ( storage_4_0.bit4.obuf0 TE_B ) ( storage_4_0.bit3.obuf0 TE_B ) ( storage_4_0.bit2.obuf0 TE_B )
@@ -412,6 +419,8 @@ NETS 132 ;
     - storage_5_0.bit6.storage ( storage_5_0.bit6.obuf1 A ) ( storage_5_0.bit6.obuf0 A ) ( storage_5_0.bit6.bit Q ) + USE SIGNAL ;
     - storage_5_0.bit7.storage ( storage_5_0.bit7.obuf1 A ) ( storage_5_0.bit7.obuf0 A ) ( storage_5_0.bit7.bit Q ) + USE SIGNAL ;
     - storage_5_0.clock_b ( storage_5_0.clock_inv Y ) ( storage_5_0.cg CLK ) + USE SIGNAL ;
+    - storage_5_0.decoder0 ( storage_5_0.select_inv_0 A ) ( storage_5_0.gcand A ) + USE SIGNAL ;
+    - storage_5_0.decoder1 ( storage_5_0.select_inv_1 A ) + USE SIGNAL ;
     - storage_5_0.gclock ( storage_5_0.cg GCLK ) ( storage_5_0.bit7.bit GATE ) ( storage_5_0.bit6.bit GATE ) ( storage_5_0.bit5.bit GATE ) ( storage_5_0.bit4.bit GATE ) ( storage_5_0.bit3.bit GATE ) ( storage_5_0.bit2.bit GATE )
       ( storage_5_0.bit1.bit GATE ) ( storage_5_0.bit0.bit GATE ) + USE SIGNAL ;
     - storage_5_0.select0_b ( storage_5_0.select_inv_0 Y ) ( storage_5_0.bit7.obuf0 TE_B ) ( storage_5_0.bit6.obuf0 TE_B ) ( storage_5_0.bit5.obuf0 TE_B ) ( storage_5_0.bit4.obuf0 TE_B ) ( storage_5_0.bit3.obuf0 TE_B ) ( storage_5_0.bit2.obuf0 TE_B )
@@ -428,6 +437,8 @@ NETS 132 ;
     - storage_6_0.bit6.storage ( storage_6_0.bit6.obuf1 A ) ( storage_6_0.bit6.obuf0 A ) ( storage_6_0.bit6.bit Q ) + USE SIGNAL ;
     - storage_6_0.bit7.storage ( storage_6_0.bit7.obuf1 A ) ( storage_6_0.bit7.obuf0 A ) ( storage_6_0.bit7.bit Q ) + USE SIGNAL ;
     - storage_6_0.clock_b ( storage_6_0.clock_inv Y ) ( storage_6_0.cg CLK ) + USE SIGNAL ;
+    - storage_6_0.decoder0 ( storage_6_0.select_inv_0 A ) ( storage_6_0.gcand A ) + USE SIGNAL ;
+    - storage_6_0.decoder1 ( storage_6_0.select_inv_1 A ) + USE SIGNAL ;
     - storage_6_0.gclock ( storage_6_0.cg GCLK ) ( storage_6_0.bit7.bit GATE ) ( storage_6_0.bit6.bit GATE ) ( storage_6_0.bit5.bit GATE ) ( storage_6_0.bit4.bit GATE ) ( storage_6_0.bit3.bit GATE ) ( storage_6_0.bit2.bit GATE )
       ( storage_6_0.bit1.bit GATE ) ( storage_6_0.bit0.bit GATE ) + USE SIGNAL ;
     - storage_6_0.select0_b ( storage_6_0.select_inv_0 Y ) ( storage_6_0.bit7.obuf0 TE_B ) ( storage_6_0.bit6.obuf0 TE_B ) ( storage_6_0.bit5.obuf0 TE_B ) ( storage_6_0.bit4.obuf0 TE_B ) ( storage_6_0.bit3.obuf0 TE_B ) ( storage_6_0.bit2.obuf0 TE_B )
@@ -444,6 +455,8 @@ NETS 132 ;
     - storage_7_0.bit6.storage ( storage_7_0.bit6.obuf1 A ) ( storage_7_0.bit6.obuf0 A ) ( storage_7_0.bit6.bit Q ) + USE SIGNAL ;
     - storage_7_0.bit7.storage ( storage_7_0.bit7.obuf1 A ) ( storage_7_0.bit7.obuf0 A ) ( storage_7_0.bit7.bit Q ) + USE SIGNAL ;
     - storage_7_0.clock_b ( storage_7_0.clock_inv Y ) ( storage_7_0.cg CLK ) + USE SIGNAL ;
+    - storage_7_0.decoder0 ( storage_7_0.select_inv_0 A ) ( storage_7_0.gcand A ) + USE SIGNAL ;
+    - storage_7_0.decoder1 ( storage_7_0.select_inv_1 A ) + USE SIGNAL ;
     - storage_7_0.gclock ( storage_7_0.cg GCLK ) ( storage_7_0.bit7.bit GATE ) ( storage_7_0.bit6.bit GATE ) ( storage_7_0.bit5.bit GATE ) ( storage_7_0.bit4.bit GATE ) ( storage_7_0.bit3.bit GATE ) ( storage_7_0.bit2.bit GATE )
       ( storage_7_0.bit1.bit GATE ) ( storage_7_0.bit0.bit GATE ) + USE SIGNAL ;
     - storage_7_0.select0_b ( storage_7_0.select_inv_0 Y ) ( storage_7_0.bit7.obuf0 TE_B ) ( storage_7_0.bit6.obuf0 TE_B ) ( storage_7_0.bit5.obuf0 TE_B ) ( storage_7_0.bit4.obuf0 TE_B ) ( storage_7_0.bit3.obuf0 TE_B ) ( storage_7_0.bit2.obuf0 TE_B )
