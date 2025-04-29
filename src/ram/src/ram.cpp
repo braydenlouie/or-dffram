@@ -208,11 +208,30 @@ std::unique_ptr<Element> RamGen::make_decoder (const std::string& prefix,
   const int word_count, const int read_ports, const std::vector<odb::dbNet*>& selects) {
     auto layout = std::make_unique<Layout>(odb::horizontal);
 
-    auto decoder_net = makeNet(prefix, "decoder");
+    //determines number of and gate layers needed + decoders needed
+    int layers = std::log2(word_count) - 1;
+    //places appropriate number of and gates for each word
+    dbNet* old_decoder_net = nullptr;
+    for (int i = 0; i < layers; ++i) {
+      auto decoder_net = makeNet(prefix, fmt::format("layer{}", i));
+      //and nets need fixing
+      if (i == 0) {
+        makeInst(layout.get(), prefix, fmt::format("and_layer{}", i), and2_cell_, {
+          {"A", decoder_net}, {"B", decoder_net}, {"X", selects[0]}});
+          old_decoder_net = decoder_net;
+      } else {
+        makeInst(layout.get(), prefix, fmt::format("and_layer{}", i), and2_cell_, {
+          {"A", decoder_net}, {"B", decoder_net}, {"X", old_decoder_net}});
+          old_decoder_net = decoder_net;
+      }
+
+      
+    }
     //auto decoder_out_net = makeNet(prefix, "decoder_out");
 
-    makeInst(layout.get(), prefix, "decoder", inv_cell_, 
-             {{"A", decoder_net}, {"Y", selects[0]}});
+    //not gate
+    // makeInst(layout.get(), prefix, "decoder", inv_cell_, 
+    //          {{"A", decoder_net}, {"Y", selects[0]}});
   
 
   return std::make_unique<Element>(std::move(layout));
@@ -432,10 +451,9 @@ void RamGen::generate(const int bytes_per_word,
                                    word_decoder_nets,
                                    Di0,
                                    Do));
-      if (row % 2 == 0) {
-        //adds elements to new column
-        invptr->addElement(make_decoder(fmt::format("test{}", row), word_count, read_ports, word_decoder_nets));
-      }                             
+      
+      //adds elements to new column
+      invptr->addElement(make_decoder(fmt::format("test{}", row), word_count, read_ports, word_decoder_nets));                         
        
       
       
