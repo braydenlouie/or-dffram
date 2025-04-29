@@ -204,10 +204,15 @@ std::unique_ptr<Element> RamGen::make_byte(
   return std::make_unique<Element>(std::move(layout));
 }
 
-std::unique_ptr<Element> RamGen::make_decoder (
+std::unique_ptr<Element> RamGen::make_decoder (const std::string& prefix, 
   const int word_count, const int read_ports, const std::vector<odb::dbNet*>& selects) {
     auto layout = std::make_unique<Layout>(odb::horizontal);
 
+    auto decoder_net = makeNet(prefix, "decoder");
+    //auto decoder_out_net = makeNet(prefix, "decoder_out");
+
+    makeInst(layout.get(), prefix, "decoder", inv_cell_, 
+             {{"A", decoder_net}, {"Y", selects[0]}});
   
 
   return std::make_unique<Element>(std::move(layout));
@@ -400,6 +405,7 @@ void RamGen::generate(const int bytes_per_word,
     vector<vector<dbNet*>> decoder_select_nets (word_count);
 
     auto column = std::make_unique<Layout>(odb::vertical);
+    auto invptr = std::make_unique<Layout>(odb::vertical);
 
     //auto test_layout = std::make_unique<Layout>(odb::horizontal);
     for (int row = 0; row < word_count; ++row) {
@@ -415,6 +421,9 @@ void RamGen::generate(const int bytes_per_word,
       //                              Di0,
       //                              Do));
       decoder_select_nets.push_back(word_decoder_nets);
+
+      
+      
       column->addElement(make_byte(       
                                   name,
                                    read_ports,
@@ -422,19 +431,25 @@ void RamGen::generate(const int bytes_per_word,
                                    write_enable[col],
                                    word_decoder_nets,
                                    Di0,
-                                   Do));                             
-      
+                                   Do));
+      if (row % 2 == 0) {
+        invptr->addElement(make_decoder(fmt::format("test{}", row), word_count, read_ports, word_decoder_nets));
+      }                             
+       
       // auto test_net = makeNet("test_prefix", "outNet");
       // auto test_Bterm = makeNet("test_B_", "outTerm");
-      auto test_layout = std::make_unique<Layout>(odb::horizontal);
+      //auto test_layout = std::make_unique<Layout>(odb::horizontal);
       //makeInst(test_layout.get(), "inv", fmt::format("inv_test{}", row), inv_cell_, {{"A", select[row]}, {"Y", write_enable[row]}});
-      column->addElement(std::make_unique<Element>(std::move(test_layout)));  
+      //column->addElement(std::make_unique<Element>(std::move(test_layout)));  
+      
     }
 
     
       // column->addElement(make_decoder(word_count, read_ports, select));
       
-      layout.addElement(std::make_unique<Element>(std::move(column)));
+    layout.addElement(std::make_unique<Element>(std::move(column)));
+    layout.addElement(std::make_unique<Element>(std::move(invptr)));
+     
   }
   layout.position(odb::Point(0, 0));
 }
