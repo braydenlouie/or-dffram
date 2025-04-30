@@ -429,6 +429,7 @@ void RamGen::generate(const int bytes_per_word,
     
   }
 
+  //tester code
   vector<dbNet*> byte_and_inputs(numInputs);
   int word_num = 4;
   for (int i = 0; i < numInputs; ++i) {
