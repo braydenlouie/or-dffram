@@ -102,7 +102,8 @@ class RamGen
       const std::vector<std::array<odb::dbNet*, 8>>& data_output);
   
   std::unique_ptr<Element> make_decoder (const std::string& prefix,
-      const int word_count, const int read_ports, const std::vector<odb::dbNet*>& selects
+      const int word_count, const int read_ports, 
+      const std::vector<odb::dbNet*>& selects, const std::vector<odb::dbNet*>& ram_inputs
   );
 
   std::vector<odb::dbNet*> decoder_selects(const std::string& prefix, const int port_index);
