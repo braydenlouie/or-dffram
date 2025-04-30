@@ -227,7 +227,7 @@ std::unique_ptr<Element> RamGen::make_decoder (const std::string& prefix,
       } 
       else if (i == layers - 1) { //last AND gate layer
         makeInst(layout.get(), prefix, fmt::format("and_layer{}", i), and2_cell_, {
-          {"A", ram_inputs[i]}, {"B", ram_inputs[i + 1]}, {"X", input_net}});
+          {"A", ram_inputs[i]}, {"B", ram_inputs[i + 1]}, {"X", prev_net}});
           prev_net = input_net;
       } 
       else { //middle AND gate layers
@@ -422,18 +422,38 @@ void RamGen::generate(const int bytes_per_word,
   vector<dbNet*> input_nets(numInputs * 2);
   for (int i = 0; i < numInputs; ++i) {
     if (i % 2 == 0) { //places inverter for each input
-      input_nets[i] = makeNet(prefix, fmt::format("input_inv{}", i));
+      input_nets[i] = makeNet("input", fmt::format("inv{}", i));
     } else { //puts original input in invert nets
       input_nets[i] = ram_inputs[i / 2];
     }
     
   }
-  vector<vector<dbNet*>> and_layer_nets(numImputs);
-  for (int word = 0; word < word_count; ++word) {
-    for (int input = 0; input < numImputs; ++ input) {
-      and_layers_nets[word][input];
+
+  vector<dbNet*> byte_and_inputs(numInputs);
+  int word_num = 4;
+  for (int i = 0; i < numInputs; ++i) {
+    if (word_num % 2 == 0) { //places inverter for each input
+      byte_and_inputs[i] = input_nets[0];
+    } else { //puts original input in invert nets
+      byte_and_inputs[i] = input_nets[1];
     }
   }
+
+  // //something is wrong here
+  // vector<vector<dbNet*>> and_layer_nets(numImputs);
+  // for (int word = 0; word < word_count; ++word) {
+  //   for (int input = numImputs - 1; input >= 0; ++ input) { //start at right most bit
+  //     and_layer_nets[word][input] = input_nets[input];
+  //     // int binary = word;
+  //     // int binary_remainder = binary % 2;
+  //     // binary /= 2;
+  //     // if (binary_remainder == 0) { //inverted net
+  //     //   and_layer_nets[word][input] = input_nets[input - 1]; 
+  //     // } else { //original net
+  //     //   and_layer_nets[word][input] = input_nets[input]; 
+  //     // }
+  //   }
+  // }
 
   vector<dbNet*> select(read_ports, nullptr);
   for (int port = 0; port < read_ports; ++port) {
