@@ -232,7 +232,7 @@ std::unique_ptr<Element> RamGen::make_decoder (const std::string& prefix,
       } 
       else { //middle AND gate layers
         makeInst(layout.get(), prefix, fmt::format("and_layer{}", i), and2_cell_, 
-          {{"A", ram_inputs[i]}, {"B", ram_inputs[i + 1]}, {"X", prev_net}});
+          {{"A", ram_inputs[i]}, {"B", input_net}, {"X", prev_net}});
           prev_net = input_net;
       }
 
