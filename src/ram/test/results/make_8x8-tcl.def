@@ -8,6 +8,54 @@ COMPONENTS 372 ;
     - decoder.inv_1 sky130_fd_sc_hd__clkinv_1 + PLACED ( 9200 272 ) N ;
     - decoder.inv_2 sky130_fd_sc_hd__clkinv_1 + PLACED ( 9200 544 ) N ;
     - decoder.inv_3 sky130_fd_sc_hd__clkinv_1 + PLACED ( 9200 816 ) N ;
+    - decoder0.and_layer0 sky130_fd_sc_hd__and2_0 + PLACED ( 8510 0 ) N ;
+    - decoder0.and_layer1 sky130_fd_sc_hd__and2_0 + PLACED ( 8740 0 ) N ;
+    - decoder0.and_layer2 sky130_fd_sc_hd__and2_0 + PLACED ( 8970 0 ) N ;
+    - decoder1.and_layer0 sky130_fd_sc_hd__and2_0 + PLACED ( 8510 272 ) N ;
+    - decoder1.and_layer1 sky130_fd_sc_hd__and2_0 + PLACED ( 8740 272 ) N ;
+    - decoder1.and_layer2 sky130_fd_sc_hd__and2_0 + PLACED ( 8970 272 ) N ;
+    - decoder10.and_layer0 sky130_fd_sc_hd__and2_0 + PLACED ( 8510 2720 ) N ;
+    - decoder10.and_layer1 sky130_fd_sc_hd__and2_0 + PLACED ( 8740 2720 ) N ;
+    - decoder10.and_layer2 sky130_fd_sc_hd__and2_0 + PLACED ( 8970 2720 ) N ;
+    - decoder11.and_layer0 sky130_fd_sc_hd__and2_0 + PLACED ( 8510 2992 ) N ;
+    - decoder11.and_layer1 sky130_fd_sc_hd__and2_0 + PLACED ( 8740 2992 ) N ;
+    - decoder11.and_layer2 sky130_fd_sc_hd__and2_0 + PLACED ( 8970 2992 ) N ;
+    - decoder12.and_layer0 sky130_fd_sc_hd__and2_0 + PLACED ( 8510 3264 ) N ;
+    - decoder12.and_layer1 sky130_fd_sc_hd__and2_0 + PLACED ( 8740 3264 ) N ;
+    - decoder12.and_layer2 sky130_fd_sc_hd__and2_0 + PLACED ( 8970 3264 ) N ;
+    - decoder13.and_layer0 sky130_fd_sc_hd__and2_0 + PLACED ( 8510 3536 ) N ;
+    - decoder13.and_layer1 sky130_fd_sc_hd__and2_0 + PLACED ( 8740 3536 ) N ;
+    - decoder13.and_layer2 sky130_fd_sc_hd__and2_0 + PLACED ( 8970 3536 ) N ;
+    - decoder14.and_layer0 sky130_fd_sc_hd__and2_0 + PLACED ( 8510 3808 ) N ;
+    - decoder14.and_layer1 sky130_fd_sc_hd__and2_0 + PLACED ( 8740 3808 ) N ;
+    - decoder14.and_layer2 sky130_fd_sc_hd__and2_0 + PLACED ( 8970 3808 ) N ;
+    - decoder15.and_layer0 sky130_fd_sc_hd__and2_0 + PLACED ( 8510 4080 ) N ;
+    - decoder15.and_layer1 sky130_fd_sc_hd__and2_0 + PLACED ( 8740 4080 ) N ;
+    - decoder15.and_layer2 sky130_fd_sc_hd__and2_0 + PLACED ( 8970 4080 ) N ;
+    - decoder2.and_layer0 sky130_fd_sc_hd__and2_0 + PLACED ( 8510 544 ) N ;
+    - decoder2.and_layer1 sky130_fd_sc_hd__and2_0 + PLACED ( 8740 544 ) N ;
+    - decoder2.and_layer2 sky130_fd_sc_hd__and2_0 + PLACED ( 8970 544 ) N ;
+    - decoder3.and_layer0 sky130_fd_sc_hd__and2_0 + PLACED ( 8510 816 ) N ;
+    - decoder3.and_layer1 sky130_fd_sc_hd__and2_0 + PLACED ( 8740 816 ) N ;
+    - decoder3.and_layer2 sky130_fd_sc_hd__and2_0 + PLACED ( 8970 816 ) N ;
+    - decoder4.and_layer0 sky130_fd_sc_hd__and2_0 + PLACED ( 8510 1088 ) N ;
+    - decoder4.and_layer1 sky130_fd_sc_hd__and2_0 + PLACED ( 8740 1088 ) N ;
+    - decoder4.and_layer2 sky130_fd_sc_hd__and2_0 + PLACED ( 8970 1088 ) N ;
+    - decoder5.and_layer0 sky130_fd_sc_hd__and2_0 + PLACED ( 8510 1360 ) N ;
+    - decoder5.and_layer1 sky130_fd_sc_hd__and2_0 + PLACED ( 8740 1360 ) N ;
+    - decoder5.and_layer2 sky130_fd_sc_hd__and2_0 + PLACED ( 8970 1360 ) N ;
+    - decoder6.and_layer0 sky130_fd_sc_hd__and2_0 + PLACED ( 8510 1632 ) N ;
+    - decoder6.and_layer1 sky130_fd_sc_hd__and2_0 + PLACED ( 8740 1632 ) N ;
+    - decoder6.and_layer2 sky130_fd_sc_hd__and2_0 + PLACED ( 8970 1632 ) N ;
+    - decoder7.and_layer0 sky130_fd_sc_hd__and2_0 + PLACED ( 8510 1904 ) N ;
+    - decoder7.and_layer1 sky130_fd_sc_hd__and2_0 + PLACED ( 8740 1904 ) N ;
+    - decoder7.and_layer2 sky130_fd_sc_hd__and2_0 + PLACED ( 8970 1904 ) N ;
+    - decoder8.and_layer0 sky130_fd_sc_hd__and2_0 + PLACED ( 8510 2176 ) N ;
+    - decoder8.and_layer1 sky130_fd_sc_hd__and2_0 + PLACED ( 8740 2176 ) N ;
+    - decoder8.and_layer2 sky130_fd_sc_hd__and2_0 + PLACED ( 8970 2176 ) N ;
+    - decoder9.and_layer0 sky130_fd_sc_hd__and2_0 + PLACED ( 8510 2448 ) N ;
+    - decoder9.and_layer1 sky130_fd_sc_hd__and2_0 + PLACED ( 8740 2448 ) N ;
+    - decoder9.and_layer2 sky130_fd_sc_hd__and2_0 + PLACED ( 8970 2448 ) N ;
     - storage_0_0.bit0.bit sky130_fd_sc_hd__dlxtp_1 + PLACED ( 0 0 ) N ;
     - storage_0_0.bit0.obuf0 sky130_fd_sc_hd__ebufn_1 + PLACED ( 552 0 ) N ;
     - storage_0_0.bit1.bit sky130_fd_sc_hd__dlxtp_1 + PLACED ( 920 0 ) N ;
@@ -328,54 +376,6 @@ COMPONENTS 372 ;
     - storage_9_0.clock_inv sky130_fd_sc_hd__clkinv_1 + PLACED ( 8372 2448 ) N ;
     - storage_9_0.gcand sky130_fd_sc_hd__and2_0 + PLACED ( 8004 2448 ) N ;
     - storage_9_0.select_inv_0 sky130_fd_sc_hd__clkinv_1 + PLACED ( 8234 2448 ) N ;
-    - test0.and_layer0 sky130_fd_sc_hd__and2_0 + PLACED ( 8510 0 ) N ;
-    - test0.and_layer1 sky130_fd_sc_hd__and2_0 + PLACED ( 8740 0 ) N ;
-    - test0.and_layer2 sky130_fd_sc_hd__and2_0 + PLACED ( 8970 0 ) N ;
-    - test1.and_layer0 sky130_fd_sc_hd__and2_0 + PLACED ( 8510 272 ) N ;
-    - test1.and_layer1 sky130_fd_sc_hd__and2_0 + PLACED ( 8740 272 ) N ;
-    - test1.and_layer2 sky130_fd_sc_hd__and2_0 + PLACED ( 8970 272 ) N ;
-    - test10.and_layer0 sky130_fd_sc_hd__and2_0 + PLACED ( 8510 2720 ) N ;
-    - test10.and_layer1 sky130_fd_sc_hd__and2_0 + PLACED ( 8740 2720 ) N ;
-    - test10.and_layer2 sky130_fd_sc_hd__and2_0 + PLACED ( 8970 2720 ) N ;
-    - test11.and_layer0 sky130_fd_sc_hd__and2_0 + PLACED ( 8510 2992 ) N ;
-    - test11.and_layer1 sky130_fd_sc_hd__and2_0 + PLACED ( 8740 2992 ) N ;
-    - test11.and_layer2 sky130_fd_sc_hd__and2_0 + PLACED ( 8970 2992 ) N ;
-    - test12.and_layer0 sky130_fd_sc_hd__and2_0 + PLACED ( 8510 3264 ) N ;
-    - test12.and_layer1 sky130_fd_sc_hd__and2_0 + PLACED ( 8740 3264 ) N ;
-    - test12.and_layer2 sky130_fd_sc_hd__and2_0 + PLACED ( 8970 3264 ) N ;
-    - test13.and_layer0 sky130_fd_sc_hd__and2_0 + PLACED ( 8510 3536 ) N ;
-    - test13.and_layer1 sky130_fd_sc_hd__and2_0 + PLACED ( 8740 3536 ) N ;
-    - test13.and_layer2 sky130_fd_sc_hd__and2_0 + PLACED ( 8970 3536 ) N ;
-    - test14.and_layer0 sky130_fd_sc_hd__and2_0 + PLACED ( 8510 3808 ) N ;
-    - test14.and_layer1 sky130_fd_sc_hd__and2_0 + PLACED ( 8740 3808 ) N ;
-    - test14.and_layer2 sky130_fd_sc_hd__and2_0 + PLACED ( 8970 3808 ) N ;
-    - test15.and_layer0 sky130_fd_sc_hd__and2_0 + PLACED ( 8510 4080 ) N ;
-    - test15.and_layer1 sky130_fd_sc_hd__and2_0 + PLACED ( 8740 4080 ) N ;
-    - test15.and_layer2 sky130_fd_sc_hd__and2_0 + PLACED ( 8970 4080 ) N ;
-    - test2.and_layer0 sky130_fd_sc_hd__and2_0 + PLACED ( 8510 544 ) N ;
-    - test2.and_layer1 sky130_fd_sc_hd__and2_0 + PLACED ( 8740 544 ) N ;
-    - test2.and_layer2 sky130_fd_sc_hd__and2_0 + PLACED ( 8970 544 ) N ;
-    - test3.and_layer0 sky130_fd_sc_hd__and2_0 + PLACED ( 8510 816 ) N ;
-    - test3.and_layer1 sky130_fd_sc_hd__and2_0 + PLACED ( 8740 816 ) N ;
-    - test3.and_layer2 sky130_fd_sc_hd__and2_0 + PLACED ( 8970 816 ) N ;
-    - test4.and_layer0 sky130_fd_sc_hd__and2_0 + PLACED ( 8510 1088 ) N ;
-    - test4.and_layer1 sky130_fd_sc_hd__and2_0 + PLACED ( 8740 1088 ) N ;
-    - test4.and_layer2 sky130_fd_sc_hd__and2_0 + PLACED ( 8970 1088 ) N ;
-    - test5.and_layer0 sky130_fd_sc_hd__and2_0 + PLACED ( 8510 1360 ) N ;
-    - test5.and_layer1 sky130_fd_sc_hd__and2_0 + PLACED ( 8740 1360 ) N ;
-    - test5.and_layer2 sky130_fd_sc_hd__and2_0 + PLACED ( 8970 1360 ) N ;
-    - test6.and_layer0 sky130_fd_sc_hd__and2_0 + PLACED ( 8510 1632 ) N ;
-    - test6.and_layer1 sky130_fd_sc_hd__and2_0 + PLACED ( 8740 1632 ) N ;
-    - test6.and_layer2 sky130_fd_sc_hd__and2_0 + PLACED ( 8970 1632 ) N ;
-    - test7.and_layer0 sky130_fd_sc_hd__and2_0 + PLACED ( 8510 1904 ) N ;
-    - test7.and_layer1 sky130_fd_sc_hd__and2_0 + PLACED ( 8740 1904 ) N ;
-    - test7.and_layer2 sky130_fd_sc_hd__and2_0 + PLACED ( 8970 1904 ) N ;
-    - test8.and_layer0 sky130_fd_sc_hd__and2_0 + PLACED ( 8510 2176 ) N ;
-    - test8.and_layer1 sky130_fd_sc_hd__and2_0 + PLACED ( 8740 2176 ) N ;
-    - test8.and_layer2 sky130_fd_sc_hd__and2_0 + PLACED ( 8970 2176 ) N ;
-    - test9.and_layer0 sky130_fd_sc_hd__and2_0 + PLACED ( 8510 2448 ) N ;
-    - test9.and_layer1 sky130_fd_sc_hd__and2_0 + PLACED ( 8740 2448 ) N ;
-    - test9.and_layer2 sky130_fd_sc_hd__and2_0 + PLACED ( 8970 2448 ) N ;
 END COMPONENTS
 PINS 23 ;
     - Di0[0] + NET Di0[0] + DIRECTION INPUT + USE SIGNAL ;
@@ -451,25 +451,73 @@ NETS 283 ;
     - Do0[7] ( PIN Do0[7] ) ( storage_15_0.bit7.obuf0 Z ) ( storage_14_0.bit7.obuf0 Z ) ( storage_13_0.bit7.obuf0 Z ) ( storage_12_0.bit7.obuf0 Z ) ( storage_11_0.bit7.obuf0 Z ) ( storage_10_0.bit7.obuf0 Z )
       ( storage_9_0.bit7.obuf0 Z ) ( storage_8_0.bit7.obuf0 Z ) ( storage_7_0.bit7.obuf0 Z ) ( storage_6_0.bit7.obuf0 Z ) ( storage_5_0.bit7.obuf0 Z ) ( storage_4_0.bit7.obuf0 Z ) ( storage_3_0.bit7.obuf0 Z ) ( storage_2_0.bit7.obuf0 Z )
       ( storage_1_0.bit7.obuf0 Z ) ( storage_0_0.bit7.obuf0 Z ) + USE SIGNAL ;
-    - bit0 ( PIN bit0 ) ( decoder.inv_0 A ) ( test15.and_layer0 A ) ( test14.and_layer0 A ) ( test13.and_layer0 A ) ( test12.and_layer0 A ) ( test11.and_layer0 A )
-      ( test10.and_layer0 A ) ( test9.and_layer0 A ) ( test8.and_layer0 A ) + USE SIGNAL ;
-    - bit1 ( PIN bit1 ) ( decoder.inv_1 A ) ( test15.and_layer1 A ) ( test14.and_layer1 A ) ( test13.and_layer1 A ) ( test12.and_layer1 A ) ( test7.and_layer1 A )
-      ( test6.and_layer1 A ) ( test5.and_layer1 A ) ( test4.and_layer1 A ) + USE SIGNAL ;
-    - bit2 ( PIN bit2 ) ( decoder.inv_2 A ) ( test15.and_layer2 A ) ( test14.and_layer2 A ) ( test11.and_layer2 A ) ( test10.and_layer2 A ) ( test7.and_layer2 A )
-      ( test6.and_layer2 A ) ( test3.and_layer2 A ) ( test2.and_layer2 A ) + USE SIGNAL ;
-    - bit3 ( PIN bit3 ) ( decoder.inv_3 A ) ( test15.and_layer2 B ) ( test13.and_layer2 B ) ( test11.and_layer2 B ) ( test9.and_layer2 B ) ( test7.and_layer2 B )
-      ( test5.and_layer2 B ) ( test3.and_layer2 B ) ( test1.and_layer2 B ) + USE SIGNAL ;
+    - bit0 ( PIN bit0 ) ( decoder.inv_0 A ) ( decoder15.and_layer0 A ) ( decoder14.and_layer0 A ) ( decoder13.and_layer0 A ) ( decoder12.and_layer0 A ) ( decoder11.and_layer0 A )
+      ( decoder10.and_layer0 A ) ( decoder9.and_layer0 A ) ( decoder8.and_layer0 A ) + USE SIGNAL ;
+    - bit1 ( PIN bit1 ) ( decoder.inv_1 A ) ( decoder15.and_layer1 A ) ( decoder14.and_layer1 A ) ( decoder13.and_layer1 A ) ( decoder12.and_layer1 A ) ( decoder7.and_layer1 A )
+      ( decoder6.and_layer1 A ) ( decoder5.and_layer1 A ) ( decoder4.and_layer1 A ) + USE SIGNAL ;
+    - bit2 ( PIN bit2 ) ( decoder.inv_2 A ) ( decoder15.and_layer2 A ) ( decoder14.and_layer2 A ) ( decoder11.and_layer2 A ) ( decoder10.and_layer2 A ) ( decoder7.and_layer2 A )
+      ( decoder6.and_layer2 A ) ( decoder3.and_layer2 A ) ( decoder2.and_layer2 A ) + USE SIGNAL ;
+    - bit3 ( PIN bit3 ) ( decoder.inv_3 A ) ( decoder15.and_layer2 B ) ( decoder13.and_layer2 B ) ( decoder11.and_layer2 B ) ( decoder9.and_layer2 B ) ( decoder7.and_layer2 B )
+      ( decoder5.and_layer2 B ) ( decoder3.and_layer2 B ) ( decoder1.and_layer2 B ) + USE SIGNAL ;
     - clock ( PIN clock ) ( storage_15_0.clock_inv A ) ( storage_14_0.clock_inv A ) ( storage_13_0.clock_inv A ) ( storage_12_0.clock_inv A ) ( storage_11_0.clock_inv A ) ( storage_10_0.clock_inv A )
       ( storage_9_0.clock_inv A ) ( storage_8_0.clock_inv A ) ( storage_7_0.clock_inv A ) ( storage_6_0.clock_inv A ) ( storage_5_0.clock_inv A ) ( storage_4_0.clock_inv A ) ( storage_3_0.clock_inv A ) ( storage_2_0.clock_inv A )
       ( storage_1_0.clock_inv A ) ( storage_0_0.clock_inv A ) + USE SIGNAL ;
-    - inv.bit0 ( decoder.inv_0 Y ) ( test7.and_layer0 A ) ( test6.and_layer0 A ) ( test5.and_layer0 A ) ( test4.and_layer0 A ) ( test3.and_layer0 A ) ( test2.and_layer0 A )
-      ( test1.and_layer0 A ) ( test0.and_layer0 A ) + USE SIGNAL ;
-    - inv.bit1 ( decoder.inv_1 Y ) ( test11.and_layer1 A ) ( test10.and_layer1 A ) ( test9.and_layer1 A ) ( test8.and_layer1 A ) ( test3.and_layer1 A ) ( test2.and_layer1 A )
-      ( test1.and_layer1 A ) ( test0.and_layer1 A ) + USE SIGNAL ;
-    - inv.bit2 ( decoder.inv_2 Y ) ( test13.and_layer2 A ) ( test12.and_layer2 A ) ( test9.and_layer2 A ) ( test8.and_layer2 A ) ( test5.and_layer2 A ) ( test4.and_layer2 A )
-      ( test1.and_layer2 A ) ( test0.and_layer2 A ) + USE SIGNAL ;
-    - inv.bit3 ( decoder.inv_3 Y ) ( test14.and_layer2 B ) ( test12.and_layer2 B ) ( test10.and_layer2 B ) ( test8.and_layer2 B ) ( test6.and_layer2 B ) ( test4.and_layer2 B )
-      ( test2.and_layer2 B ) ( test0.and_layer2 B ) + USE SIGNAL ;
+    - decoder0.layer_in0 ( decoder0.and_layer1 X ) ( decoder0.and_layer0 B ) + USE SIGNAL ;
+    - decoder0.layer_in1 ( decoder0.and_layer2 X ) ( decoder0.and_layer1 B ) + USE SIGNAL ;
+    - decoder0.layer_in2 + USE SIGNAL ;
+    - decoder1.layer_in0 ( decoder1.and_layer1 X ) ( decoder1.and_layer0 B ) + USE SIGNAL ;
+    - decoder1.layer_in1 ( decoder1.and_layer2 X ) ( decoder1.and_layer1 B ) + USE SIGNAL ;
+    - decoder1.layer_in2 + USE SIGNAL ;
+    - decoder10.layer_in0 ( decoder10.and_layer1 X ) ( decoder10.and_layer0 B ) + USE SIGNAL ;
+    - decoder10.layer_in1 ( decoder10.and_layer2 X ) ( decoder10.and_layer1 B ) + USE SIGNAL ;
+    - decoder10.layer_in2 + USE SIGNAL ;
+    - decoder11.layer_in0 ( decoder11.and_layer1 X ) ( decoder11.and_layer0 B ) + USE SIGNAL ;
+    - decoder11.layer_in1 ( decoder11.and_layer2 X ) ( decoder11.and_layer1 B ) + USE SIGNAL ;
+    - decoder11.layer_in2 + USE SIGNAL ;
+    - decoder12.layer_in0 ( decoder12.and_layer1 X ) ( decoder12.and_layer0 B ) + USE SIGNAL ;
+    - decoder12.layer_in1 ( decoder12.and_layer2 X ) ( decoder12.and_layer1 B ) + USE SIGNAL ;
+    - decoder12.layer_in2 + USE SIGNAL ;
+    - decoder13.layer_in0 ( decoder13.and_layer1 X ) ( decoder13.and_layer0 B ) + USE SIGNAL ;
+    - decoder13.layer_in1 ( decoder13.and_layer2 X ) ( decoder13.and_layer1 B ) + USE SIGNAL ;
+    - decoder13.layer_in2 + USE SIGNAL ;
+    - decoder14.layer_in0 ( decoder14.and_layer1 X ) ( decoder14.and_layer0 B ) + USE SIGNAL ;
+    - decoder14.layer_in1 ( decoder14.and_layer2 X ) ( decoder14.and_layer1 B ) + USE SIGNAL ;
+    - decoder14.layer_in2 + USE SIGNAL ;
+    - decoder15.layer_in0 ( decoder15.and_layer1 X ) ( decoder15.and_layer0 B ) + USE SIGNAL ;
+    - decoder15.layer_in1 ( decoder15.and_layer2 X ) ( decoder15.and_layer1 B ) + USE SIGNAL ;
+    - decoder15.layer_in2 + USE SIGNAL ;
+    - decoder2.layer_in0 ( decoder2.and_layer1 X ) ( decoder2.and_layer0 B ) + USE SIGNAL ;
+    - decoder2.layer_in1 ( decoder2.and_layer2 X ) ( decoder2.and_layer1 B ) + USE SIGNAL ;
+    - decoder2.layer_in2 + USE SIGNAL ;
+    - decoder3.layer_in0 ( decoder3.and_layer1 X ) ( decoder3.and_layer0 B ) + USE SIGNAL ;
+    - decoder3.layer_in1 ( decoder3.and_layer2 X ) ( decoder3.and_layer1 B ) + USE SIGNAL ;
+    - decoder3.layer_in2 + USE SIGNAL ;
+    - decoder4.layer_in0 ( decoder4.and_layer1 X ) ( decoder4.and_layer0 B ) + USE SIGNAL ;
+    - decoder4.layer_in1 ( decoder4.and_layer2 X ) ( decoder4.and_layer1 B ) + USE SIGNAL ;
+    - decoder4.layer_in2 + USE SIGNAL ;
+    - decoder5.layer_in0 ( decoder5.and_layer1 X ) ( decoder5.and_layer0 B ) + USE SIGNAL ;
+    - decoder5.layer_in1 ( decoder5.and_layer2 X ) ( decoder5.and_layer1 B ) + USE SIGNAL ;
+    - decoder5.layer_in2 + USE SIGNAL ;
+    - decoder6.layer_in0 ( decoder6.and_layer1 X ) ( decoder6.and_layer0 B ) + USE SIGNAL ;
+    - decoder6.layer_in1 ( decoder6.and_layer2 X ) ( decoder6.and_layer1 B ) + USE SIGNAL ;
+    - decoder6.layer_in2 + USE SIGNAL ;
+    - decoder7.layer_in0 ( decoder7.and_layer1 X ) ( decoder7.and_layer0 B ) + USE SIGNAL ;
+    - decoder7.layer_in1 ( decoder7.and_layer2 X ) ( decoder7.and_layer1 B ) + USE SIGNAL ;
+    - decoder7.layer_in2 + USE SIGNAL ;
+    - decoder8.layer_in0 ( decoder8.and_layer1 X ) ( decoder8.and_layer0 B ) + USE SIGNAL ;
+    - decoder8.layer_in1 ( decoder8.and_layer2 X ) ( decoder8.and_layer1 B ) + USE SIGNAL ;
+    - decoder8.layer_in2 + USE SIGNAL ;
+    - decoder9.layer_in0 ( decoder9.and_layer1 X ) ( decoder9.and_layer0 B ) + USE SIGNAL ;
+    - decoder9.layer_in1 ( decoder9.and_layer2 X ) ( decoder9.and_layer1 B ) + USE SIGNAL ;
+    - decoder9.layer_in2 + USE SIGNAL ;
+    - inv.bit0 ( decoder.inv_0 Y ) ( decoder7.and_layer0 A ) ( decoder6.and_layer0 A ) ( decoder5.and_layer0 A ) ( decoder4.and_layer0 A ) ( decoder3.and_layer0 A ) ( decoder2.and_layer0 A )
+      ( decoder1.and_layer0 A ) ( decoder0.and_layer0 A ) + USE SIGNAL ;
+    - inv.bit1 ( decoder.inv_1 Y ) ( decoder11.and_layer1 A ) ( decoder10.and_layer1 A ) ( decoder9.and_layer1 A ) ( decoder8.and_layer1 A ) ( decoder3.and_layer1 A ) ( decoder2.and_layer1 A )
+      ( decoder1.and_layer1 A ) ( decoder0.and_layer1 A ) + USE SIGNAL ;
+    - inv.bit2 ( decoder.inv_2 Y ) ( decoder13.and_layer2 A ) ( decoder12.and_layer2 A ) ( decoder9.and_layer2 A ) ( decoder8.and_layer2 A ) ( decoder5.and_layer2 A ) ( decoder4.and_layer2 A )
+      ( decoder1.and_layer2 A ) ( decoder0.and_layer2 A ) + USE SIGNAL ;
+    - inv.bit3 ( decoder.inv_3 Y ) ( decoder14.and_layer2 B ) ( decoder12.and_layer2 B ) ( decoder10.and_layer2 B ) ( decoder8.and_layer2 B ) ( decoder6.and_layer2 B ) ( decoder4.and_layer2 B )
+      ( decoder2.and_layer2 B ) ( decoder0.and_layer2 B ) + USE SIGNAL ;
     - select0 ( PIN select0 ) + USE SIGNAL ;
     - storage_0_0.bit0.storage ( storage_0_0.bit0.obuf0 A ) ( storage_0_0.bit0.bit Q ) + USE SIGNAL ;
     - storage_0_0.bit1.storage ( storage_0_0.bit1.obuf0 A ) ( storage_0_0.bit1.bit Q ) + USE SIGNAL ;
@@ -480,7 +528,7 @@ NETS 283 ;
     - storage_0_0.bit6.storage ( storage_0_0.bit6.obuf0 A ) ( storage_0_0.bit6.bit Q ) + USE SIGNAL ;
     - storage_0_0.bit7.storage ( storage_0_0.bit7.obuf0 A ) ( storage_0_0.bit7.bit Q ) + USE SIGNAL ;
     - storage_0_0.clock_b ( storage_0_0.clock_inv Y ) ( storage_0_0.cg CLK ) + USE SIGNAL ;
-    - storage_0_0.decoder0 ( test0.and_layer0 X ) ( storage_0_0.select_inv_0 A ) ( storage_0_0.gcand A ) + USE SIGNAL ;
+    - storage_0_0.decoder0 ( decoder0.and_layer0 X ) ( storage_0_0.select_inv_0 A ) ( storage_0_0.gcand A ) + USE SIGNAL ;
     - storage_0_0.gclock ( storage_0_0.cg GCLK ) ( storage_0_0.bit7.bit GATE ) ( storage_0_0.bit6.bit GATE ) ( storage_0_0.bit5.bit GATE ) ( storage_0_0.bit4.bit GATE ) ( storage_0_0.bit3.bit GATE ) ( storage_0_0.bit2.bit GATE )
       ( storage_0_0.bit1.bit GATE ) ( storage_0_0.bit0.bit GATE ) + USE SIGNAL ;
     - storage_0_0.select0_b ( storage_0_0.select_inv_0 Y ) ( storage_0_0.bit7.obuf0 TE_B ) ( storage_0_0.bit6.obuf0 TE_B ) ( storage_0_0.bit5.obuf0 TE_B ) ( storage_0_0.bit4.obuf0 TE_B ) ( storage_0_0.bit3.obuf0 TE_B ) ( storage_0_0.bit2.obuf0 TE_B )
@@ -495,7 +543,7 @@ NETS 283 ;
     - storage_10_0.bit6.storage ( storage_10_0.bit6.obuf0 A ) ( storage_10_0.bit6.bit Q ) + USE SIGNAL ;
     - storage_10_0.bit7.storage ( storage_10_0.bit7.obuf0 A ) ( storage_10_0.bit7.bit Q ) + USE SIGNAL ;
     - storage_10_0.clock_b ( storage_10_0.clock_inv Y ) ( storage_10_0.cg CLK ) + USE SIGNAL ;
-    - storage_10_0.decoder0 ( test10.and_layer0 X ) ( storage_10_0.select_inv_0 A ) ( storage_10_0.gcand A ) + USE SIGNAL ;
+    - storage_10_0.decoder0 ( decoder10.and_layer0 X ) ( storage_10_0.select_inv_0 A ) ( storage_10_0.gcand A ) + USE SIGNAL ;
     - storage_10_0.gclock ( storage_10_0.cg GCLK ) ( storage_10_0.bit7.bit GATE ) ( storage_10_0.bit6.bit GATE ) ( storage_10_0.bit5.bit GATE ) ( storage_10_0.bit4.bit GATE ) ( storage_10_0.bit3.bit GATE ) ( storage_10_0.bit2.bit GATE )
       ( storage_10_0.bit1.bit GATE ) ( storage_10_0.bit0.bit GATE ) + USE SIGNAL ;
     - storage_10_0.select0_b ( storage_10_0.select_inv_0 Y ) ( storage_10_0.bit7.obuf0 TE_B ) ( storage_10_0.bit6.obuf0 TE_B ) ( storage_10_0.bit5.obuf0 TE_B ) ( storage_10_0.bit4.obuf0 TE_B ) ( storage_10_0.bit3.obuf0 TE_B ) ( storage_10_0.bit2.obuf0 TE_B )
@@ -510,7 +558,7 @@ NETS 283 ;
     - storage_11_0.bit6.storage ( storage_11_0.bit6.obuf0 A ) ( storage_11_0.bit6.bit Q ) + USE SIGNAL ;
     - storage_11_0.bit7.storage ( storage_11_0.bit7.obuf0 A ) ( storage_11_0.bit7.bit Q ) + USE SIGNAL ;
     - storage_11_0.clock_b ( storage_11_0.clock_inv Y ) ( storage_11_0.cg CLK ) + USE SIGNAL ;
-    - storage_11_0.decoder0 ( test11.and_layer0 X ) ( storage_11_0.select_inv_0 A ) ( storage_11_0.gcand A ) + USE SIGNAL ;
+    - storage_11_0.decoder0 ( decoder11.and_layer0 X ) ( storage_11_0.select_inv_0 A ) ( storage_11_0.gcand A ) + USE SIGNAL ;
     - storage_11_0.gclock ( storage_11_0.cg GCLK ) ( storage_11_0.bit7.bit GATE ) ( storage_11_0.bit6.bit GATE ) ( storage_11_0.bit5.bit GATE ) ( storage_11_0.bit4.bit GATE ) ( storage_11_0.bit3.bit GATE ) ( storage_11_0.bit2.bit GATE )
       ( storage_11_0.bit1.bit GATE ) ( storage_11_0.bit0.bit GATE ) + USE SIGNAL ;
     - storage_11_0.select0_b ( storage_11_0.select_inv_0 Y ) ( storage_11_0.bit7.obuf0 TE_B ) ( storage_11_0.bit6.obuf0 TE_B ) ( storage_11_0.bit5.obuf0 TE_B ) ( storage_11_0.bit4.obuf0 TE_B ) ( storage_11_0.bit3.obuf0 TE_B ) ( storage_11_0.bit2.obuf0 TE_B )
@@ -525,7 +573,7 @@ NETS 283 ;
     - storage_12_0.bit6.storage ( storage_12_0.bit6.obuf0 A ) ( storage_12_0.bit6.bit Q ) + USE SIGNAL ;
     - storage_12_0.bit7.storage ( storage_12_0.bit7.obuf0 A ) ( storage_12_0.bit7.bit Q ) + USE SIGNAL ;
     - storage_12_0.clock_b ( storage_12_0.clock_inv Y ) ( storage_12_0.cg CLK ) + USE SIGNAL ;
-    - storage_12_0.decoder0 ( test12.and_layer0 X ) ( storage_12_0.select_inv_0 A ) ( storage_12_0.gcand A ) + USE SIGNAL ;
+    - storage_12_0.decoder0 ( decoder12.and_layer0 X ) ( storage_12_0.select_inv_0 A ) ( storage_12_0.gcand A ) + USE SIGNAL ;
     - storage_12_0.gclock ( storage_12_0.cg GCLK ) ( storage_12_0.bit7.bit GATE ) ( storage_12_0.bit6.bit GATE ) ( storage_12_0.bit5.bit GATE ) ( storage_12_0.bit4.bit GATE ) ( storage_12_0.bit3.bit GATE ) ( storage_12_0.bit2.bit GATE )
       ( storage_12_0.bit1.bit GATE ) ( storage_12_0.bit0.bit GATE ) + USE SIGNAL ;
     - storage_12_0.select0_b ( storage_12_0.select_inv_0 Y ) ( storage_12_0.bit7.obuf0 TE_B ) ( storage_12_0.bit6.obuf0 TE_B ) ( storage_12_0.bit5.obuf0 TE_B ) ( storage_12_0.bit4.obuf0 TE_B ) ( storage_12_0.bit3.obuf0 TE_B ) ( storage_12_0.bit2.obuf0 TE_B )
@@ -540,7 +588,7 @@ NETS 283 ;
     - storage_13_0.bit6.storage ( storage_13_0.bit6.obuf0 A ) ( storage_13_0.bit6.bit Q ) + USE SIGNAL ;
     - storage_13_0.bit7.storage ( storage_13_0.bit7.obuf0 A ) ( storage_13_0.bit7.bit Q ) + USE SIGNAL ;
     - storage_13_0.clock_b ( storage_13_0.clock_inv Y ) ( storage_13_0.cg CLK ) + USE SIGNAL ;
-    - storage_13_0.decoder0 ( test13.and_layer0 X ) ( storage_13_0.select_inv_0 A ) ( storage_13_0.gcand A ) + USE SIGNAL ;
+    - storage_13_0.decoder0 ( decoder13.and_layer0 X ) ( storage_13_0.select_inv_0 A ) ( storage_13_0.gcand A ) + USE SIGNAL ;
     - storage_13_0.gclock ( storage_13_0.cg GCLK ) ( storage_13_0.bit7.bit GATE ) ( storage_13_0.bit6.bit GATE ) ( storage_13_0.bit5.bit GATE ) ( storage_13_0.bit4.bit GATE ) ( storage_13_0.bit3.bit GATE ) ( storage_13_0.bit2.bit GATE )
       ( storage_13_0.bit1.bit GATE ) ( storage_13_0.bit0.bit GATE ) + USE SIGNAL ;
     - storage_13_0.select0_b ( storage_13_0.select_inv_0 Y ) ( storage_13_0.bit7.obuf0 TE_B ) ( storage_13_0.bit6.obuf0 TE_B ) ( storage_13_0.bit5.obuf0 TE_B ) ( storage_13_0.bit4.obuf0 TE_B ) ( storage_13_0.bit3.obuf0 TE_B ) ( storage_13_0.bit2.obuf0 TE_B )
@@ -555,7 +603,7 @@ NETS 283 ;
     - storage_14_0.bit6.storage ( storage_14_0.bit6.obuf0 A ) ( storage_14_0.bit6.bit Q ) + USE SIGNAL ;
     - storage_14_0.bit7.storage ( storage_14_0.bit7.obuf0 A ) ( storage_14_0.bit7.bit Q ) + USE SIGNAL ;
     - storage_14_0.clock_b ( storage_14_0.clock_inv Y ) ( storage_14_0.cg CLK ) + USE SIGNAL ;
-    - storage_14_0.decoder0 ( test14.and_layer0 X ) ( storage_14_0.select_inv_0 A ) ( storage_14_0.gcand A ) + USE SIGNAL ;
+    - storage_14_0.decoder0 ( decoder14.and_layer0 X ) ( storage_14_0.select_inv_0 A ) ( storage_14_0.gcand A ) + USE SIGNAL ;
     - storage_14_0.gclock ( storage_14_0.cg GCLK ) ( storage_14_0.bit7.bit GATE ) ( storage_14_0.bit6.bit GATE ) ( storage_14_0.bit5.bit GATE ) ( storage_14_0.bit4.bit GATE ) ( storage_14_0.bit3.bit GATE ) ( storage_14_0.bit2.bit GATE )
       ( storage_14_0.bit1.bit GATE ) ( storage_14_0.bit0.bit GATE ) + USE SIGNAL ;
     - storage_14_0.select0_b ( storage_14_0.select_inv_0 Y ) ( storage_14_0.bit7.obuf0 TE_B ) ( storage_14_0.bit6.obuf0 TE_B ) ( storage_14_0.bit5.obuf0 TE_B ) ( storage_14_0.bit4.obuf0 TE_B ) ( storage_14_0.bit3.obuf0 TE_B ) ( storage_14_0.bit2.obuf0 TE_B )
@@ -570,7 +618,7 @@ NETS 283 ;
     - storage_15_0.bit6.storage ( storage_15_0.bit6.obuf0 A ) ( storage_15_0.bit6.bit Q ) + USE SIGNAL ;
     - storage_15_0.bit7.storage ( storage_15_0.bit7.obuf0 A ) ( storage_15_0.bit7.bit Q ) + USE SIGNAL ;
     - storage_15_0.clock_b ( storage_15_0.clock_inv Y ) ( storage_15_0.cg CLK ) + USE SIGNAL ;
-    - storage_15_0.decoder0 ( test15.and_layer0 X ) ( storage_15_0.select_inv_0 A ) ( storage_15_0.gcand A ) + USE SIGNAL ;
+    - storage_15_0.decoder0 ( decoder15.and_layer0 X ) ( storage_15_0.select_inv_0 A ) ( storage_15_0.gcand A ) + USE SIGNAL ;
     - storage_15_0.gclock ( storage_15_0.cg GCLK ) ( storage_15_0.bit7.bit GATE ) ( storage_15_0.bit6.bit GATE ) ( storage_15_0.bit5.bit GATE ) ( storage_15_0.bit4.bit GATE ) ( storage_15_0.bit3.bit GATE ) ( storage_15_0.bit2.bit GATE )
       ( storage_15_0.bit1.bit GATE ) ( storage_15_0.bit0.bit GATE ) + USE SIGNAL ;
     - storage_15_0.select0_b ( storage_15_0.select_inv_0 Y ) ( storage_15_0.bit7.obuf0 TE_B ) ( storage_15_0.bit6.obuf0 TE_B ) ( storage_15_0.bit5.obuf0 TE_B ) ( storage_15_0.bit4.obuf0 TE_B ) ( storage_15_0.bit3.obuf0 TE_B ) ( storage_15_0.bit2.obuf0 TE_B )
@@ -585,7 +633,7 @@ NETS 283 ;
     - storage_1_0.bit6.storage ( storage_1_0.bit6.obuf0 A ) ( storage_1_0.bit6.bit Q ) + USE SIGNAL ;
     - storage_1_0.bit7.storage ( storage_1_0.bit7.obuf0 A ) ( storage_1_0.bit7.bit Q ) + USE SIGNAL ;
     - storage_1_0.clock_b ( storage_1_0.clock_inv Y ) ( storage_1_0.cg CLK ) + USE SIGNAL ;
-    - storage_1_0.decoder0 ( test1.and_layer0 X ) ( storage_1_0.select_inv_0 A ) ( storage_1_0.gcand A ) + USE SIGNAL ;
+    - storage_1_0.decoder0 ( decoder1.and_layer0 X ) ( storage_1_0.select_inv_0 A ) ( storage_1_0.gcand A ) + USE SIGNAL ;
     - storage_1_0.gclock ( storage_1_0.cg GCLK ) ( storage_1_0.bit7.bit GATE ) ( storage_1_0.bit6.bit GATE ) ( storage_1_0.bit5.bit GATE ) ( storage_1_0.bit4.bit GATE ) ( storage_1_0.bit3.bit GATE ) ( storage_1_0.bit2.bit GATE )
       ( storage_1_0.bit1.bit GATE ) ( storage_1_0.bit0.bit GATE ) + USE SIGNAL ;
     - storage_1_0.select0_b ( storage_1_0.select_inv_0 Y ) ( storage_1_0.bit7.obuf0 TE_B ) ( storage_1_0.bit6.obuf0 TE_B ) ( storage_1_0.bit5.obuf0 TE_B ) ( storage_1_0.bit4.obuf0 TE_B ) ( storage_1_0.bit3.obuf0 TE_B ) ( storage_1_0.bit2.obuf0 TE_B )
@@ -600,7 +648,7 @@ NETS 283 ;
     - storage_2_0.bit6.storage ( storage_2_0.bit6.obuf0 A ) ( storage_2_0.bit6.bit Q ) + USE SIGNAL ;
     - storage_2_0.bit7.storage ( storage_2_0.bit7.obuf0 A ) ( storage_2_0.bit7.bit Q ) + USE SIGNAL ;
     - storage_2_0.clock_b ( storage_2_0.clock_inv Y ) ( storage_2_0.cg CLK ) + USE SIGNAL ;
-    - storage_2_0.decoder0 ( test2.and_layer0 X ) ( storage_2_0.select_inv_0 A ) ( storage_2_0.gcand A ) + USE SIGNAL ;
+    - storage_2_0.decoder0 ( decoder2.and_layer0 X ) ( storage_2_0.select_inv_0 A ) ( storage_2_0.gcand A ) + USE SIGNAL ;
     - storage_2_0.gclock ( storage_2_0.cg GCLK ) ( storage_2_0.bit7.bit GATE ) ( storage_2_0.bit6.bit GATE ) ( storage_2_0.bit5.bit GATE ) ( storage_2_0.bit4.bit GATE ) ( storage_2_0.bit3.bit GATE ) ( storage_2_0.bit2.bit GATE )
       ( storage_2_0.bit1.bit GATE ) ( storage_2_0.bit0.bit GATE ) + USE SIGNAL ;
     - storage_2_0.select0_b ( storage_2_0.select_inv_0 Y ) ( storage_2_0.bit7.obuf0 TE_B ) ( storage_2_0.bit6.obuf0 TE_B ) ( storage_2_0.bit5.obuf0 TE_B ) ( storage_2_0.bit4.obuf0 TE_B ) ( storage_2_0.bit3.obuf0 TE_B ) ( storage_2_0.bit2.obuf0 TE_B )
@@ -615,7 +663,7 @@ NETS 283 ;
     - storage_3_0.bit6.storage ( storage_3_0.bit6.obuf0 A ) ( storage_3_0.bit6.bit Q ) + USE SIGNAL ;
     - storage_3_0.bit7.storage ( storage_3_0.bit7.obuf0 A ) ( storage_3_0.bit7.bit Q ) + USE SIGNAL ;
     - storage_3_0.clock_b ( storage_3_0.clock_inv Y ) ( storage_3_0.cg CLK ) + USE SIGNAL ;
-    - storage_3_0.decoder0 ( test3.and_layer0 X ) ( storage_3_0.select_inv_0 A ) ( storage_3_0.gcand A ) + USE SIGNAL ;
+    - storage_3_0.decoder0 ( decoder3.and_layer0 X ) ( storage_3_0.select_inv_0 A ) ( storage_3_0.gcand A ) + USE SIGNAL ;
     - storage_3_0.gclock ( storage_3_0.cg GCLK ) ( storage_3_0.bit7.bit GATE ) ( storage_3_0.bit6.bit GATE ) ( storage_3_0.bit5.bit GATE ) ( storage_3_0.bit4.bit GATE ) ( storage_3_0.bit3.bit GATE ) ( storage_3_0.bit2.bit GATE )
       ( storage_3_0.bit1.bit GATE ) ( storage_3_0.bit0.bit GATE ) + USE SIGNAL ;
     - storage_3_0.select0_b ( storage_3_0.select_inv_0 Y ) ( storage_3_0.bit7.obuf0 TE_B ) ( storage_3_0.bit6.obuf0 TE_B ) ( storage_3_0.bit5.obuf0 TE_B ) ( storage_3_0.bit4.obuf0 TE_B ) ( storage_3_0.bit3.obuf0 TE_B ) ( storage_3_0.bit2.obuf0 TE_B )
@@ -630,7 +678,7 @@ NETS 283 ;
     - storage_4_0.bit6.storage ( storage_4_0.bit6.obuf0 A ) ( storage_4_0.bit6.bit Q ) + USE SIGNAL ;
     - storage_4_0.bit7.storage ( storage_4_0.bit7.obuf0 A ) ( storage_4_0.bit7.bit Q ) + USE SIGNAL ;
     - storage_4_0.clock_b ( storage_4_0.clock_inv Y ) ( storage_4_0.cg CLK ) + USE SIGNAL ;
-    - storage_4_0.decoder0 ( test4.and_layer0 X ) ( storage_4_0.select_inv_0 A ) ( storage_4_0.gcand A ) + USE SIGNAL ;
+    - storage_4_0.decoder0 ( decoder4.and_layer0 X ) ( storage_4_0.select_inv_0 A ) ( storage_4_0.gcand A ) + USE SIGNAL ;
     - storage_4_0.gclock ( storage_4_0.cg GCLK ) ( storage_4_0.bit7.bit GATE ) ( storage_4_0.bit6.bit GATE ) ( storage_4_0.bit5.bit GATE ) ( storage_4_0.bit4.bit GATE ) ( storage_4_0.bit3.bit GATE ) ( storage_4_0.bit2.bit GATE )
       ( storage_4_0.bit1.bit GATE ) ( storage_4_0.bit0.bit GATE ) + USE SIGNAL ;
     - storage_4_0.select0_b ( storage_4_0.select_inv_0 Y ) ( storage_4_0.bit7.obuf0 TE_B ) ( storage_4_0.bit6.obuf0 TE_B ) ( storage_4_0.bit5.obuf0 TE_B ) ( storage_4_0.bit4.obuf0 TE_B ) ( storage_4_0.bit3.obuf0 TE_B ) ( storage_4_0.bit2.obuf0 TE_B )
@@ -645,7 +693,7 @@ NETS 283 ;
     - storage_5_0.bit6.storage ( storage_5_0.bit6.obuf0 A ) ( storage_5_0.bit6.bit Q ) + USE SIGNAL ;
     - storage_5_0.bit7.storage ( storage_5_0.bit7.obuf0 A ) ( storage_5_0.bit7.bit Q ) + USE SIGNAL ;
     - storage_5_0.clock_b ( storage_5_0.clock_inv Y ) ( storage_5_0.cg CLK ) + USE SIGNAL ;
-    - storage_5_0.decoder0 ( test5.and_layer0 X ) ( storage_5_0.select_inv_0 A ) ( storage_5_0.gcand A ) + USE SIGNAL ;
+    - storage_5_0.decoder0 ( decoder5.and_layer0 X ) ( storage_5_0.select_inv_0 A ) ( storage_5_0.gcand A ) + USE SIGNAL ;
     - storage_5_0.gclock ( storage_5_0.cg GCLK ) ( storage_5_0.bit7.bit GATE ) ( storage_5_0.bit6.bit GATE ) ( storage_5_0.bit5.bit GATE ) ( storage_5_0.bit4.bit GATE ) ( storage_5_0.bit3.bit GATE ) ( storage_5_0.bit2.bit GATE )
       ( storage_5_0.bit1.bit GATE ) ( storage_5_0.bit0.bit GATE ) + USE SIGNAL ;
     - storage_5_0.select0_b ( storage_5_0.select_inv_0 Y ) ( storage_5_0.bit7.obuf0 TE_B ) ( storage_5_0.bit6.obuf0 TE_B ) ( storage_5_0.bit5.obuf0 TE_B ) ( storage_5_0.bit4.obuf0 TE_B ) ( storage_5_0.bit3.obuf0 TE_B ) ( storage_5_0.bit2.obuf0 TE_B )
@@ -660,7 +708,7 @@ NETS 283 ;
     - storage_6_0.bit6.storage ( storage_6_0.bit6.obuf0 A ) ( storage_6_0.bit6.bit Q ) + USE SIGNAL ;
     - storage_6_0.bit7.storage ( storage_6_0.bit7.obuf0 A ) ( storage_6_0.bit7.bit Q ) + USE SIGNAL ;
     - storage_6_0.clock_b ( storage_6_0.clock_inv Y ) ( storage_6_0.cg CLK ) + USE SIGNAL ;
-    - storage_6_0.decoder0 ( test6.and_layer0 X ) ( storage_6_0.select_inv_0 A ) ( storage_6_0.gcand A ) + USE SIGNAL ;
+    - storage_6_0.decoder0 ( decoder6.and_layer0 X ) ( storage_6_0.select_inv_0 A ) ( storage_6_0.gcand A ) + USE SIGNAL ;
     - storage_6_0.gclock ( storage_6_0.cg GCLK ) ( storage_6_0.bit7.bit GATE ) ( storage_6_0.bit6.bit GATE ) ( storage_6_0.bit5.bit GATE ) ( storage_6_0.bit4.bit GATE ) ( storage_6_0.bit3.bit GATE ) ( storage_6_0.bit2.bit GATE )
       ( storage_6_0.bit1.bit GATE ) ( storage_6_0.bit0.bit GATE ) + USE SIGNAL ;
     - storage_6_0.select0_b ( storage_6_0.select_inv_0 Y ) ( storage_6_0.bit7.obuf0 TE_B ) ( storage_6_0.bit6.obuf0 TE_B ) ( storage_6_0.bit5.obuf0 TE_B ) ( storage_6_0.bit4.obuf0 TE_B ) ( storage_6_0.bit3.obuf0 TE_B ) ( storage_6_0.bit2.obuf0 TE_B )
@@ -675,7 +723,7 @@ NETS 283 ;
     - storage_7_0.bit6.storage ( storage_7_0.bit6.obuf0 A ) ( storage_7_0.bit6.bit Q ) + USE SIGNAL ;
     - storage_7_0.bit7.storage ( storage_7_0.bit7.obuf0 A ) ( storage_7_0.bit7.bit Q ) + USE SIGNAL ;
     - storage_7_0.clock_b ( storage_7_0.clock_inv Y ) ( storage_7_0.cg CLK ) + USE SIGNAL ;
-    - storage_7_0.decoder0 ( test7.and_layer0 X ) ( storage_7_0.select_inv_0 A ) ( storage_7_0.gcand A ) + USE SIGNAL ;
+    - storage_7_0.decoder0 ( decoder7.and_layer0 X ) ( storage_7_0.select_inv_0 A ) ( storage_7_0.gcand A ) + USE SIGNAL ;
     - storage_7_0.gclock ( storage_7_0.cg GCLK ) ( storage_7_0.bit7.bit GATE ) ( storage_7_0.bit6.bit GATE ) ( storage_7_0.bit5.bit GATE ) ( storage_7_0.bit4.bit GATE ) ( storage_7_0.bit3.bit GATE ) ( storage_7_0.bit2.bit GATE )
       ( storage_7_0.bit1.bit GATE ) ( storage_7_0.bit0.bit GATE ) + USE SIGNAL ;
     - storage_7_0.select0_b ( storage_7_0.select_inv_0 Y ) ( storage_7_0.bit7.obuf0 TE_B ) ( storage_7_0.bit6.obuf0 TE_B ) ( storage_7_0.bit5.obuf0 TE_B ) ( storage_7_0.bit4.obuf0 TE_B ) ( storage_7_0.bit3.obuf0 TE_B ) ( storage_7_0.bit2.obuf0 TE_B )
@@ -690,7 +738,7 @@ NETS 283 ;
     - storage_8_0.bit6.storage ( storage_8_0.bit6.obuf0 A ) ( storage_8_0.bit6.bit Q ) + USE SIGNAL ;
     - storage_8_0.bit7.storage ( storage_8_0.bit7.obuf0 A ) ( storage_8_0.bit7.bit Q ) + USE SIGNAL ;
     - storage_8_0.clock_b ( storage_8_0.clock_inv Y ) ( storage_8_0.cg CLK ) + USE SIGNAL ;
-    - storage_8_0.decoder0 ( test8.and_layer0 X ) ( storage_8_0.select_inv_0 A ) ( storage_8_0.gcand A ) + USE SIGNAL ;
+    - storage_8_0.decoder0 ( decoder8.and_layer0 X ) ( storage_8_0.select_inv_0 A ) ( storage_8_0.gcand A ) + USE SIGNAL ;
     - storage_8_0.gclock ( storage_8_0.cg GCLK ) ( storage_8_0.bit7.bit GATE ) ( storage_8_0.bit6.bit GATE ) ( storage_8_0.bit5.bit GATE ) ( storage_8_0.bit4.bit GATE ) ( storage_8_0.bit3.bit GATE ) ( storage_8_0.bit2.bit GATE )
       ( storage_8_0.bit1.bit GATE ) ( storage_8_0.bit0.bit GATE ) + USE SIGNAL ;
     - storage_8_0.select0_b ( storage_8_0.select_inv_0 Y ) ( storage_8_0.bit7.obuf0 TE_B ) ( storage_8_0.bit6.obuf0 TE_B ) ( storage_8_0.bit5.obuf0 TE_B ) ( storage_8_0.bit4.obuf0 TE_B ) ( storage_8_0.bit3.obuf0 TE_B ) ( storage_8_0.bit2.obuf0 TE_B )
@@ -705,60 +753,12 @@ NETS 283 ;
     - storage_9_0.bit6.storage ( storage_9_0.bit6.obuf0 A ) ( storage_9_0.bit6.bit Q ) + USE SIGNAL ;
     - storage_9_0.bit7.storage ( storage_9_0.bit7.obuf0 A ) ( storage_9_0.bit7.bit Q ) + USE SIGNAL ;
     - storage_9_0.clock_b ( storage_9_0.clock_inv Y ) ( storage_9_0.cg CLK ) + USE SIGNAL ;
-    - storage_9_0.decoder0 ( test9.and_layer0 X ) ( storage_9_0.select_inv_0 A ) ( storage_9_0.gcand A ) + USE SIGNAL ;
+    - storage_9_0.decoder0 ( decoder9.and_layer0 X ) ( storage_9_0.select_inv_0 A ) ( storage_9_0.gcand A ) + USE SIGNAL ;
     - storage_9_0.gclock ( storage_9_0.cg GCLK ) ( storage_9_0.bit7.bit GATE ) ( storage_9_0.bit6.bit GATE ) ( storage_9_0.bit5.bit GATE ) ( storage_9_0.bit4.bit GATE ) ( storage_9_0.bit3.bit GATE ) ( storage_9_0.bit2.bit GATE )
       ( storage_9_0.bit1.bit GATE ) ( storage_9_0.bit0.bit GATE ) + USE SIGNAL ;
     - storage_9_0.select0_b ( storage_9_0.select_inv_0 Y ) ( storage_9_0.bit7.obuf0 TE_B ) ( storage_9_0.bit6.obuf0 TE_B ) ( storage_9_0.bit5.obuf0 TE_B ) ( storage_9_0.bit4.obuf0 TE_B ) ( storage_9_0.bit3.obuf0 TE_B ) ( storage_9_0.bit2.obuf0 TE_B )
       ( storage_9_0.bit1.obuf0 TE_B ) ( storage_9_0.bit0.obuf0 TE_B ) + USE SIGNAL ;
     - storage_9_0.we0 ( storage_9_0.gcand X ) ( storage_9_0.cg GATE ) + USE SIGNAL ;
-    - test0.layer_in0 ( test0.and_layer1 X ) ( test0.and_layer0 B ) + USE SIGNAL ;
-    - test0.layer_in1 ( test0.and_layer2 X ) ( test0.and_layer1 B ) + USE SIGNAL ;
-    - test0.layer_in2 + USE SIGNAL ;
-    - test1.layer_in0 ( test1.and_layer1 X ) ( test1.and_layer0 B ) + USE SIGNAL ;
-    - test1.layer_in1 ( test1.and_layer2 X ) ( test1.and_layer1 B ) + USE SIGNAL ;
-    - test1.layer_in2 + USE SIGNAL ;
-    - test10.layer_in0 ( test10.and_layer1 X ) ( test10.and_layer0 B ) + USE SIGNAL ;
-    - test10.layer_in1 ( test10.and_layer2 X ) ( test10.and_layer1 B ) + USE SIGNAL ;
-    - test10.layer_in2 + USE SIGNAL ;
-    - test11.layer_in0 ( test11.and_layer1 X ) ( test11.and_layer0 B ) + USE SIGNAL ;
-    - test11.layer_in1 ( test11.and_layer2 X ) ( test11.and_layer1 B ) + USE SIGNAL ;
-    - test11.layer_in2 + USE SIGNAL ;
-    - test12.layer_in0 ( test12.and_layer1 X ) ( test12.and_layer0 B ) + USE SIGNAL ;
-    - test12.layer_in1 ( test12.and_layer2 X ) ( test12.and_layer1 B ) + USE SIGNAL ;
-    - test12.layer_in2 + USE SIGNAL ;
-    - test13.layer_in0 ( test13.and_layer1 X ) ( test13.and_layer0 B ) + USE SIGNAL ;
-    - test13.layer_in1 ( test13.and_layer2 X ) ( test13.and_layer1 B ) + USE SIGNAL ;
-    - test13.layer_in2 + USE SIGNAL ;
-    - test14.layer_in0 ( test14.and_layer1 X ) ( test14.and_layer0 B ) + USE SIGNAL ;
-    - test14.layer_in1 ( test14.and_layer2 X ) ( test14.and_layer1 B ) + USE SIGNAL ;
-    - test14.layer_in2 + USE SIGNAL ;
-    - test15.layer_in0 ( test15.and_layer1 X ) ( test15.and_layer0 B ) + USE SIGNAL ;
-    - test15.layer_in1 ( test15.and_layer2 X ) ( test15.and_layer1 B ) + USE SIGNAL ;
-    - test15.layer_in2 + USE SIGNAL ;
-    - test2.layer_in0 ( test2.and_layer1 X ) ( test2.and_layer0 B ) + USE SIGNAL ;
-    - test2.layer_in1 ( test2.and_layer2 X ) ( test2.and_layer1 B ) + USE SIGNAL ;
-    - test2.layer_in2 + USE SIGNAL ;
-    - test3.layer_in0 ( test3.and_layer1 X ) ( test3.and_layer0 B ) + USE SIGNAL ;
-    - test3.layer_in1 ( test3.and_layer2 X ) ( test3.and_layer1 B ) + USE SIGNAL ;
-    - test3.layer_in2 + USE SIGNAL ;
-    - test4.layer_in0 ( test4.and_layer1 X ) ( test4.and_layer0 B ) + USE SIGNAL ;
-    - test4.layer_in1 ( test4.and_layer2 X ) ( test4.and_layer1 B ) + USE SIGNAL ;
-    - test4.layer_in2 + USE SIGNAL ;
-    - test5.layer_in0 ( test5.and_layer1 X ) ( test5.and_layer0 B ) + USE SIGNAL ;
-    - test5.layer_in1 ( test5.and_layer2 X ) ( test5.and_layer1 B ) + USE SIGNAL ;
-    - test5.layer_in2 + USE SIGNAL ;
-    - test6.layer_in0 ( test6.and_layer1 X ) ( test6.and_layer0 B ) + USE SIGNAL ;
-    - test6.layer_in1 ( test6.and_layer2 X ) ( test6.and_layer1 B ) + USE SIGNAL ;
-    - test6.layer_in2 + USE SIGNAL ;
-    - test7.layer_in0 ( test7.and_layer1 X ) ( test7.and_layer0 B ) + USE SIGNAL ;
-    - test7.layer_in1 ( test7.and_layer2 X ) ( test7.and_layer1 B ) + USE SIGNAL ;
-    - test7.layer_in2 + USE SIGNAL ;
-    - test8.layer_in0 ( test8.and_layer1 X ) ( test8.and_layer0 B ) + USE SIGNAL ;
-    - test8.layer_in1 ( test8.and_layer2 X ) ( test8.and_layer1 B ) + USE SIGNAL ;
-    - test8.layer_in2 + USE SIGNAL ;
-    - test9.layer_in0 ( test9.and_layer1 X ) ( test9.and_layer0 B ) + USE SIGNAL ;
-    - test9.layer_in1 ( test9.and_layer2 X ) ( test9.and_layer1 B ) + USE SIGNAL ;
-    - test9.layer_in2 + USE SIGNAL ;
     - write_enable[0] ( PIN write_enable[0] ) ( storage_15_0.gcand B ) ( storage_14_0.gcand B ) ( storage_13_0.gcand B ) ( storage_12_0.gcand B ) ( storage_11_0.gcand B ) ( storage_10_0.gcand B )
       ( storage_9_0.gcand B ) ( storage_8_0.gcand B ) ( storage_7_0.gcand B ) ( storage_6_0.gcand B ) ( storage_5_0.gcand B ) ( storage_4_0.gcand B ) ( storage_3_0.gcand B ) ( storage_2_0.gcand B )
       ( storage_1_0.gcand B ) ( storage_0_0.gcand B ) + USE SIGNAL ;

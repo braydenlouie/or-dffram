@@ -506,7 +506,7 @@ void RamGen::generate(const int bytes_per_word,
                                    Do));
       
       //adds elements to new column
-      and_layer->addElement(make_decoder(fmt::format("test{}", row), 
+      and_layer->addElement(make_decoder(fmt::format("decoder{}", row), 
       word_count, read_ports, word_decoder_nets, and_layer_nets[row]));                         
        
       
