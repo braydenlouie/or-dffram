@@ -414,52 +414,49 @@ void RamGen::generate(const int bytes_per_word,
   int numImputs = std::log2(word_count);
   vector<dbNet*> ram_inputs(numImputs, nullptr);
   for (int i = 0; i < numImputs; ++i) {
-    ram_inputs[i] = (makeBTerm(fmt::format("input{}", i)));
+    ram_inputs[i] = (makeBTerm(fmt::format("bit{}", i)));
   }
 
-  //vector of nets storing inverter inputs + inputbTerms
-  int numInputs = std::log2(word_count);
-  vector<dbNet*> input_nets(numInputs * 2);
-  for (int i = 0; i < numInputs; ++i) {
-    if (i % 2 == 0) { //places inverter for each input
-      input_nets[i] = makeNet("input", fmt::format("inv{}", i));
-    } else { //puts original input in invert nets
-      input_nets[i] = ram_inputs[i / 2];
-    }
-    
+  //vector of nets storing inverter nets
+  vector<dbNet*> inv_nets(numImputs);
+  for (int i = 0; i < numImputs; ++i) {
+    inv_nets[i] = makeNet("inv", fmt::format("bit{}", i));
   }
 
-  //tester code
-  vector<dbNet*> byte_and_inputs(numInputs);
-  int word_num = 4;
-  for (int i = 0; i < numInputs; ++i) {
-    if (word_num % 2 == 0) { //places inverter for each input
-      byte_and_inputs[i] = input_nets[0];
-    } else { //puts original input in invert nets
-      byte_and_inputs[i] = input_nets[1];
-    }
-  }
 
-  // //something is wrong here
-  // vector<vector<dbNet*>> and_layer_nets(numImputs);
-  // for (int word = 0; word < word_count; ++word) {
-  //   for (int input = numImputs - 1; input >= 0; ++ input) { //start at right most bit
-  //     and_layer_nets[word][input] = input_nets[input];
-  //     // int binary = word;
-  //     // int binary_remainder = binary % 2;
-  //     // binary /= 2;
-  //     // if (binary_remainder == 0) { //inverted net
-  //     //   and_layer_nets[word][input] = input_nets[input - 1]; 
-  //     // } else { //original net
-  //     //   and_layer_nets[word][input] = input_nets[input]; 
-  //     // }
+  // //tester code
+  // vector<dbNet*> byte_and_inputs(numInputs);
+  // int word_num = 4;
+  // for (int i = 0; i < numInputs; ++i) {
+  //   if (word_num % 2 == 0) { //places inverter for each input
+  //     byte_and_inputs[i] = input_nets[0];
+  //   } else { //puts original input in invert nets
+  //     byte_and_inputs[i] = input_nets[1];
   //   }
   // }
+  
+  // //something is wrong here
+  vector<vector<dbNet*>> and_layer_nets(word_count, vector<dbNet*> (numImputs));
+  for (int word = 0; word < word_count; ++word) {
+    int word_num = word;
+    for (int input = numImputs - 1; input >= 0; --input) { //start at right most bit
+      if (word_num % 2 == 0) {
+        //places inverter for each input
+        and_layer_nets[word][input] = inv_nets[input];
+      } else { //puts original input in invert nets
+        and_layer_nets[word][input] = ram_inputs[input];
+      }
+      word_num /= 2;
+    }
+  }
 
   vector<dbNet*> select(read_ports, nullptr);
   for (int port = 0; port < read_ports; ++port) {
     select[port] = makeBTerm(fmt::format("select{}", port));
   }
+
+  auto inv_layer = std::make_unique<Layout>(odb::vertical); //inverter column
+  vector<dbNet*> word_decoder_nets;
 
   for (int col = 0; col < bytes_per_word; ++col) {
     array<dbNet*, 8> Di0;
@@ -480,14 +477,14 @@ void RamGen::generate(const int bytes_per_word,
     vector<vector<dbNet*>> decoder_select_nets (word_count);
 
     auto column = std::make_unique<Layout>(odb::vertical); //byte column
-    auto invptr = std::make_unique<Layout>(odb::vertical); //inverter column
-
+    auto and_layer = std::make_unique<Layout>(odb::vertical); //inverter column
+    
     //auto test_layout = std::make_unique<Layout>(odb::horizontal);
     for (int row = 0; row < word_count; ++row) {
       
       
       auto name = fmt::format("storage_{}_{}", row, col);
-      vector<dbNet*> word_decoder_nets = decoder_selects(name, read_ports);
+      word_decoder_nets = decoder_selects(name, read_ports);
       // column->addElement(make_byte(name,
       //                              read_ports,
       //                              clock,
@@ -509,8 +506,8 @@ void RamGen::generate(const int bytes_per_word,
                                    Do));
       
       //adds elements to new column
-      invptr->addElement(make_decoder(fmt::format("test{}", row), 
-      word_count, read_ports, word_decoder_nets, ram_inputs));                         
+      and_layer->addElement(make_decoder(fmt::format("test{}", row), 
+      word_count, read_ports, word_decoder_nets, and_layer_nets[row]));                         
        
       
       
@@ -520,9 +517,30 @@ void RamGen::generate(const int bytes_per_word,
     //places byte first
     layout.addElement(std::make_unique<Element>(std::move(column)));
     //places inverters
-    layout.addElement(std::make_unique<Element>(std::move(invptr)));
+    layout.addElement(std::make_unique<Element>(std::move(and_layer)));
      
   }
+
+  if (numImputs > 1) {
+    for (int i = 0; i < numImputs; ++i) {
+      makeInst(inv_layer.get(),
+                "decoder",
+                fmt::format("inv_{}", i),
+                inv_cell_,
+                {{"A", ram_inputs[i]}, {"Y", inv_nets[i]}});
+    }
+  } else  {
+    makeInst (inv_layer.get(), 
+              "decoder",
+              fmt::format("inv_{}", 0),
+              inv_cell_,
+              {{"A", ram_inputs[0]}, {"Y", word_decoder_nets[0]}});
+  }
+
+  layout.addElement(std::make_unique<Element>(std::move(inv_layer)));
+  
+
+
   layout.position(odb::Point(0, 0));
 }
 
