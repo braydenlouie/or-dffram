@@ -204,7 +204,7 @@ std::unique_ptr<Element> RamGen::make_byte(
   return std::make_unique<Element>(std::move(layout));
 }
 
-std::unique_ptr<Element> RamGen::make_decoder (const std::string& prefix, 
+std::unique_ptr<Element> RamGen::create_and_layer (const std::string& prefix, 
   const int word_count, const int read_ports, 
   const std::vector<odb::dbNet*>& selects, const std::vector<odb::dbNet*>& ram_inputs) {
     
@@ -485,17 +485,12 @@ void RamGen::generate(const int bytes_per_word,
       
       auto name = fmt::format("storage_{}_{}", row, col);
       word_decoder_nets = decoder_selects(name, read_ports);
-      // column->addElement(make_byte(name,
-      //                              read_ports,
-      //                              clock,
-      //                              write_enable[col],
-      //                              select,
-      //                              Di0,
-      //                              Do));
+
+      //creates nets that decoders will use
       decoder_select_nets.push_back(word_decoder_nets);
 
       
-      
+      //makes bytes
       column->addElement(make_byte(       
                                   name,
                                    read_ports,
@@ -506,7 +501,7 @@ void RamGen::generate(const int bytes_per_word,
                                    Do));
       
       //adds elements to new column
-      and_layer->addElement(make_decoder(fmt::format("decoder{}", row), 
+      and_layer->addElement(create_and_layer(fmt::format("decoder{}", row), 
       word_count, read_ports, word_decoder_nets, and_layer_nets[row]));                         
        
       
@@ -521,6 +516,7 @@ void RamGen::generate(const int bytes_per_word,
      
   }
 
+  //if statement to check if AND gate layer is needed
   if (numImputs > 1) {
     for (int i = 0; i < numImputs; ++i) {
       makeInst(inv_layer.get(),
@@ -537,6 +533,7 @@ void RamGen::generate(const int bytes_per_word,
               {{"A", ram_inputs[0]}, {"Y", word_decoder_nets[0]}});
   }
 
+  //adds column of inverters
   layout.addElement(std::make_unique<Element>(std::move(inv_layer)));
   
 
