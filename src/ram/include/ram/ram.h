@@ -70,7 +70,9 @@ class RamGen
                 const int read_ports,
                 odb::dbMaster* storage_cell,
                 odb::dbMaster* tristate_cell,
-                odb::dbMaster* inv_cell);
+                odb::dbMaster* inv_cell,
+                odb::dbMaster* filler_cell,
+                odb::dbMaster* nand2_cell);
 
  private:
   void findMasters();
@@ -118,6 +120,8 @@ class RamGen
   odb::dbMaster* inv_cell_;
   odb::dbMaster* and2_cell_;
   odb::dbMaster* clock_gate_cell_;
+  odb::dbMaster* filler_cell_;
+  odb::dbMaster* nand2_cell_;
 };
 
 }  // namespace ram

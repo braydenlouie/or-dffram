@@ -237,6 +237,8 @@ std::unique_ptr<Element> RamGen::create_and_layer (const std::string& prefix,
       }
 
       
+
+      
     }
 
     
@@ -375,7 +377,9 @@ void RamGen::generate(const int bytes_per_word,
                       const int read_ports,
                       dbMaster* storage_cell,
                       dbMaster* tristate_cell,
-                      dbMaster* inv_cell)
+                      dbMaster* inv_cell,
+                      dbMaster* filler_cell,
+                      dbMaster* nand2_cell)
 {
   const int bits_per_word = bytes_per_word * 8;
   const std::string ram_name
@@ -388,6 +392,8 @@ void RamGen::generate(const int bytes_per_word,
   inv_cell_ = inv_cell;
   and2_cell_ = nullptr;
   clock_gate_cell_ = nullptr;
+  filler_cell_ = filler_cell;
+  nand2_cell_ = nand2_cell;
   findMasters();
 
   auto chip = db_->getChip();
@@ -519,11 +525,17 @@ void RamGen::generate(const int bytes_per_word,
   //if statement to check if AND gate layer is needed
   if (numImputs > 1) {
     for (int i = 0; i < numImputs; ++i) {
+      // makeInst(inv_layer.get(), 
+      //           "decoder",fmt::format("filler_{}", i),
+      //           filler_cell_,
+      //           {});
       makeInst(inv_layer.get(),
                 "decoder",
                 fmt::format("inv_{}", i),
                 inv_cell_,
                 {{"A", ram_inputs[i]}, {"Y", inv_nets[i]}});
+      
+      
     }
   } else  {
     makeInst (inv_layer.get(), 
@@ -532,6 +544,9 @@ void RamGen::generate(const int bytes_per_word,
               inv_cell_,
               {{"A", ram_inputs[0]}, {"Y", word_decoder_nets[0]}});
   }
+  auto nand_net = makeNet("nand", "nand2");
+  makeInst(inv_layer.get(), "nand2", "test", nand2_cell_,
+           {{"A", ram_inputs[0]}, {"B", ram_inputs[1]}, {"Y", nand_net}});
 
   //adds column of inverters
   layout.addElement(std::make_unique<Element>(std::move(inv_layer)));

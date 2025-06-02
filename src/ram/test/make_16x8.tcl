@@ -12,6 +12,8 @@ generate_ram_netlist \
     -storage_cell sky130_fd_sc_hd__dlxtp_1 
 #    -tristate_cell sky130_fd_sc_hd__ebufn_2 
 #    -inv_cell sky130_fd_sc_hd__inv_1
+    -filler_cell sky130_fd_sc_hd__fill
+    -nand2_cell sky_130_fd_sc_hd__nand
 
 ord::design_created
 
