@@ -10,4 +10,5 @@
 [INFO RAM-0016] Selected tristate cell sky130_fd_sc_hd__ebufn_1
 [INFO RAM-0016] Selected and2 cell sky130_fd_sc_hd__and2_0
 [INFO RAM-0016] Selected clock gate cell sky130_fd_sc_hd__dlclkp_1
+[INFO RAM-0016] no idea what this does
 No differences found.

@@ -348,6 +348,37 @@ void RamGen::findMasters()
         "and2");
   }
 
+  //FIX ME
+  // need to figure out a way to find masters for nand and filler cells
+
+  // if (!nand2_cell_) {
+  //   nand2_cell_ = findMaster(
+  //       [this](sta::LibertyPort* port) {
+  //         if (!port->direction()->isOutput()) {
+  //           return false;
+  //         }
+  //         auto function = port->function();
+  //         return function && function->op() == sta::FuncExpr::op_and
+  //                && function->left()->op() == sta::FuncExpr::op_port
+  //                && function->right()->op() == sta::FuncExpr::op_port;
+  //       },
+  //       "nand2");
+  // }
+
+  // if (!filler_cell_) {
+  //   filler_cell_ = findMaster(
+  //       [this](sta::LibertyPort* port) {
+  //         if (!port->direction()->isOutput()) {
+  //           return false;
+  //         }
+  //         auto function = port->function();
+  //         return function && function->op() == sta::FuncExpr::op_and
+  //                && function->left()->op() == sta::FuncExpr::op_port
+  //                && function->right()->op() == sta::FuncExpr::op_port;
+  //       },
+  //       "filler");
+  // }
+
   if (!storage_cell_) {
     // FIXME
     storage_cell_ = findMaster(
