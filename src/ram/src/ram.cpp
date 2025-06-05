@@ -549,7 +549,7 @@ void RamGen::generate(const int bytes_per_word,
 
   //if statement to check if AND gate layer is needed
   if (numImputs > 1) {
-    int numFill = std::log(numImputs);
+    int numFill = std::log2(word_count) - 1;
     for (int i = numImputs - 1; i >= 0; --i) {
       // makeInst(inv_layer.get(), 
       //           "decoder",fmt::format("filler_{}", i),
