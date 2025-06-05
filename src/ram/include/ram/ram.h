@@ -103,7 +103,7 @@ class RamGen
       const std::array<odb::dbNet*, 8>& data_input,
       const std::vector<std::array<odb::dbNet*, 8>>& data_output);
   
-  std::unique_ptr<Element> create_and_layer (const std::string& prefix,
+  std::unique_ptr<Element> create_nand_layer (const std::string& prefix,
       const int word_count, const int read_ports, 
       const std::vector<odb::dbNet*>& selects, const std::vector<odb::dbNet*>& ram_inputs
   );

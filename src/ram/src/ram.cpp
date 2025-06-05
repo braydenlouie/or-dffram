@@ -199,18 +199,16 @@ std::unique_ptr<Element> RamGen::make_byte(
            inv_cell_,
            {{"A", clock}, {"Y", clock_b_net}});
 
-  
-
   return std::make_unique<Element>(std::move(layout));
 }
 
-std::unique_ptr<Element> RamGen::create_and_layer (const std::string& prefix, 
+std::unique_ptr<Element> RamGen::create_nand_layer (const std::string& prefix, 
   const int word_count, const int read_ports, 
   const std::vector<odb::dbNet*>& selects, const std::vector<odb::dbNet*>& ram_inputs) {
     
     auto layout = std::make_unique<Layout>(odb::horizontal);
 
-    //can make this an AND gate layer method
+    //can make this an NAND gate layer method
     //places appropriate number of AND gates for each word
 
     //calculates number of and gate layers needed
@@ -219,20 +217,20 @@ std::unique_ptr<Element> RamGen::create_and_layer (const std::string& prefix,
     dbNet* prev_net = nullptr; //net to store previous and gate output
     for (int i = 0; i < layers; ++i) {
       auto input_net = makeNet(prefix, fmt::format("layer_in{}", i));
-      //sets up first AND gate, closest to byte's select + write enable gate
+      //sets up first NAND gate, closest to byte's select + write enable gate
       if (i == 0) {
-        makeInst(layout.get(), prefix, fmt::format("and_layer{}", i), and2_cell_, 
-          {{"A", ram_inputs[i]}, {"B", input_net}, {"X", selects[0]}});
+        makeInst(layout.get(), prefix, fmt::format("nand_layer{}", i), nand2_cell_, 
+          {{"A", ram_inputs[i]}, {"B", input_net}, {"Y", selects[0]}});
           prev_net = input_net;
       } 
-      else if (i == layers - 1) { //last AND gate layer
-        makeInst(layout.get(), prefix, fmt::format("and_layer{}", i), and2_cell_, {
-          {"A", ram_inputs[i]}, {"B", ram_inputs[i + 1]}, {"X", prev_net}});
+      else if (i == layers - 1) { //last NAND gate layer
+        makeInst(layout.get(), prefix, fmt::format("nand_layer{}", i), nand2_cell_, {
+          {"A", ram_inputs[i]}, {"B", ram_inputs[i + 1]}, {"Y", prev_net}});
           prev_net = input_net;
       } 
-      else { //middle AND gate layers
-        makeInst(layout.get(), prefix, fmt::format("and_layer{}", i), and2_cell_, 
-          {{"A", ram_inputs[i]}, {"B", input_net}, {"X", prev_net}});
+      else { //middle NAND gate layers
+        makeInst(layout.get(), prefix, fmt::format("nand_layer{}", i), nand2_cell_, 
+          {{"A", ram_inputs[i]}, {"B", input_net}, {"Y", prev_net}});
           prev_net = input_net;
       }
 
@@ -241,8 +239,6 @@ std::unique_ptr<Element> RamGen::create_and_layer (const std::string& prefix,
       
     }
 
-    
-    vector<vector<dbNet*>> and_layer_inputs(word_count);
   
 
   return std::make_unique<Element>(std::move(layout));
@@ -372,9 +368,7 @@ void RamGen::findMasters()
   //           return false;
   //         }
   //         auto function = port->function();
-  //         return function && function->op() == sta::FuncExpr::op_and
-  //                && function->left()->op() == sta::FuncExpr::op_port
-  //                && function->right()->op() == sta::FuncExpr::op_port;
+  //         return function && function->op() == sta::FuncExpr::op_one;
   //       },
   //       "filler");
   // }
@@ -473,15 +467,15 @@ void RamGen::generate(const int bytes_per_word,
   // }
   
   // //something is wrong here
-  vector<vector<dbNet*>> and_layer_nets(word_count, vector<dbNet*> (numImputs));
+  vector<vector<dbNet*>> nand_layer_nets(word_count, vector<dbNet*> (numImputs));
   for (int word = 0; word < word_count; ++word) {
     int word_num = word;
     for (int input = numImputs - 1; input >= 0; --input) { //start at right most bit
       if (word_num % 2 == 0) {
         //places inverter for each input
-        and_layer_nets[word][input] = inv_nets[input];
+        nand_layer_nets[word][input] = ram_inputs[input];
       } else { //puts original input in invert nets
-        and_layer_nets[word][input] = ram_inputs[input];
+        nand_layer_nets[word][input] = inv_nets[input];
       }
       word_num /= 2;
     }
@@ -538,8 +532,8 @@ void RamGen::generate(const int bytes_per_word,
                                    Do));
       
       //adds elements to new column
-      and_layer->addElement(create_and_layer(fmt::format("decoder{}", row), 
-      word_count, read_ports, word_decoder_nets, and_layer_nets[row]));                         
+      and_layer->addElement(create_nand_layer(fmt::format("decoder{}", row), 
+      word_count, read_ports, word_decoder_nets, nand_layer_nets[row]));                         
        
       
       
@@ -555,7 +549,8 @@ void RamGen::generate(const int bytes_per_word,
 
   //if statement to check if AND gate layer is needed
   if (numImputs > 1) {
-    for (int i = 0; i < numImputs; ++i) {
+    int numFill = std::log(numImputs);
+    for (int i = numImputs - 1; i >= 0; --i) {
       // makeInst(inv_layer.get(), 
       //           "decoder",fmt::format("filler_{}", i),
       //           filler_cell_,
@@ -565,6 +560,17 @@ void RamGen::generate(const int bytes_per_word,
                 fmt::format("inv_{}", i),
                 inv_cell_,
                 {{"A", ram_inputs[i]}, {"Y", inv_nets[i]}});
+
+      //filler cells
+      if (i > 0) {
+        for (int j = 0; j < numFill; ++j) {
+          makeInst(inv_layer.get(), 
+                    "decoder",
+                    fmt::format("filler_{}_{}", i, j),
+                    filler_cell_,
+                    {});
+        }
+      }
       
       
     }
@@ -575,9 +581,7 @@ void RamGen::generate(const int bytes_per_word,
               inv_cell_,
               {{"A", ram_inputs[0]}, {"Y", word_decoder_nets[0]}});
   }
-  auto nand_net = makeNet("nand", "nand2");
-  makeInst(inv_layer.get(), "nand2", "test", nand2_cell_,
-           {{"A", ram_inputs[0]}, {"B", ram_inputs[1]}, {"Y", nand_net}});
+  
 
   //adds column of inverters
   layout.addElement(std::make_unique<Element>(std::move(inv_layer)));
