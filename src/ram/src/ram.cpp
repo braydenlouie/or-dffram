@@ -395,6 +395,15 @@ void RamGen::findMasters()
         },
         "clock gate");
   }
+
+  //for input buffers
+  if (!buffer_cell_) {
+    buffer_cell_ = findMaster(
+        [this](sta::LibertyPort* port) {
+          return port->libertyCell()->isBuffer();
+        },
+        "buffer");
+  }
 }
 
 void RamGen::generate(const int bytes_per_word,
@@ -419,6 +428,7 @@ void RamGen::generate(const int bytes_per_word,
   clock_gate_cell_ = nullptr;
   filler_cell_ = filler_cell;
   nand2_cell_ = nand2_cell;
+  buffer_cell_ = nullptr;
   findMasters();
 
   auto chip = db_->getChip();
@@ -490,9 +500,11 @@ void RamGen::generate(const int bytes_per_word,
   vector<dbNet*> word_decoder_nets;
 
   for (int col = 0; col < bytes_per_word; ++col) {
-    array<dbNet*, 8> Di0;
+    array<dbNet*, 8> data_in; //b-term for external inputs
+    array<dbNet*, 8> Di0; //net for buffers
     for (int bit = 0; bit < 8; ++bit) {
-      Di0[bit] = makeBTerm(fmt::format("Di0[{}]", bit + col * 8));
+      data_in[bit] = makeBTerm(fmt::format("data_in[{}]", bit + col * 8));
+      Di0[bit] = makeNet(fmt::format("Di0[{}]", bit + col * 8), "net");
     }
 
     vector<array<dbNet*, 8>> Do;
@@ -536,14 +548,38 @@ void RamGen::generate(const int bytes_per_word,
       word_count, read_ports, word_decoder_nets, nand_layer_nets[row]));                         
        
       
+
+      
       
     }
 
+    auto input_buffer_layer = std::make_unique<Layout>(odb::horizontal); //input buffer layer
+    for (int bit = 0; bit < 8; ++bit) {
+      makeInst(input_buffer_layer.get(),
+                "buffer",
+                fmt::format("in[{}]", bit),
+                buffer_cell_,
+                {{"A", data_in[bit]}, {"X", Di0[bit]}});
+      for (int read = 0; read < 4 + read_ports * 4; ++read) {
+        makeInst(input_buffer_layer.get(),
+                  "buffer",
+                  fmt::format("bit[{}]_filler{}", bit, read),
+                  filler_cell_,
+                  {});
+      }
+
+    }
+
+    column->addElement(std::make_unique<Element>(std::move(input_buffer_layer))); //adds input buffer layer to column
+    
   
     //places byte first
     layout.addElement(std::make_unique<Element>(std::move(column)));
     //places inverters
     layout.addElement(std::make_unique<Element>(std::move(and_layer)));
+    // layout.addElement(std::make_unique<Element>(std::move(input_buffer_layer)));
+
+
      
   }
 
@@ -581,6 +617,7 @@ void RamGen::generate(const int bytes_per_word,
               inv_cell_,
               {{"A", ram_inputs[0]}, {"Y", word_decoder_nets[0]}});
   }
+  
   
 
   //adds column of inverters
