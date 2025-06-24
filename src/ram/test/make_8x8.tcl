@@ -7,7 +7,7 @@ read_lef sky130hd/sky130_fd_sc_hd_merged.lef
 
 generate_ram_netlist \
     -bytes_per_word 1 \
-    -word_count 8 \
+    -word_count 16 \
     -read_ports 2 \
     -storage_cell sky130_fd_sc_hd__dlxtp_1 \
     -filler_cell sky130_fd_sc_hd__fill_2 \

@@ -455,7 +455,7 @@ void RamGen::generate(const int bytes_per_word,
   int numImputs = std::log2(word_count);
   vector<dbNet*> ram_inputs(numImputs, nullptr);
   for (int i = 0; i < numImputs; ++i) {
-    ram_inputs[i] = (makeBTerm(fmt::format("bit{}", i)));
+    ram_inputs[i] = makeBTerm(fmt::format("bit[{}]", i));
   }
 
   //vector of nets storing inverter nets
@@ -476,7 +476,6 @@ void RamGen::generate(const int bytes_per_word,
   //   }
   // }
   
-  // //something is wrong here
   vector<vector<dbNet*>> nand_layer_nets(word_count, vector<dbNet*> (numImputs));
   for (int word = 0; word < word_count; ++word) {
     int word_num = word;
@@ -512,7 +511,7 @@ void RamGen::generate(const int bytes_per_word,
       array<dbNet*,8> d;
       for (int bit = 0; bit < 8; ++bit) {
         auto out_name = fmt::format("Do{}[{}]", read_port, bit + col * 8);
-        d[bit] = makeBTerm(out_name);
+        d[bit] = makeNet(out_name, "net");
       }
       Do.push_back(d);
     }
