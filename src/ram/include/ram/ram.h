@@ -87,6 +87,8 @@ class RamGen
       const std::vector<std::pair<std::string, odb::dbNet*>>& connections);
   odb::dbNet* makeBTerm(const std::string& name);
 
+  odb::dbNet* makeOutputBTerm(const std::string& name);
+
   std::unique_ptr<Element> make_bit(const std::string& prefix,
                                     const int read_ports,
                                     odb::dbNet* clock,

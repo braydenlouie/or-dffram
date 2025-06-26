@@ -99,6 +99,16 @@ dbNet* RamGen::makeBTerm(const std::string& name)
 {
   auto net = dbNet::create(block_, name.c_str());
   dbBTerm::create(net, name.c_str());
+  
+  return net;
+}
+
+dbNet* RamGen::makeOutputBTerm(const std::string& name)
+{
+  auto net = dbNet::create(block_, name.c_str());
+  auto bTerm = dbBTerm::create(net, name.c_str());
+
+  bTerm->setIoType(odb::dbIoType::OUTPUT);
   return net;
 }
 
@@ -198,6 +208,13 @@ std::unique_ptr<Element> RamGen::make_byte(
            "clock_inv",
            inv_cell_,
            {{"A", clock}, {"Y", clock_b_net}});
+
+
+  auto out_bterm = makeOutputBTerm(fmt::format("{}.out", prefix));
+  // test for b term output
+  makeInst(layout.get(), prefix, "we0_inv",
+           inv_cell_,
+           {{"A", write_enable}, {"Y", out_bterm}});
 
   return std::make_unique<Element>(std::move(layout));
 }
