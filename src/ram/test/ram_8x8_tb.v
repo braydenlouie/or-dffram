@@ -57,7 +57,32 @@ initial begin
     //read mode
     #1 we = 0;
 
-    adr = 3'000;
+    //read word 0
+    @(negedge clk)
+    adr = 3'b000;
+
+    @(negedge clk)
+    adr = 3'b001;
+
+    @(negedge clk)
+    adr = 3'b010;
+
+    @(negedge clk)
+    adr = 3'b011;
+    
+    @(negedge clk)
+    adr = 3'b100;
+
+    @(negedge clk)
+    adr = 3'b101;
+
+    @(negedge clk)
+    adr = 3'b110;
+
+    @(negedge clk)
+    adr = 3'b111;
+
+
 
 
 
