@@ -1,0 +1,6025 @@
+$date
+	Sun Jun 29 20:39:47 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module RAM8x8_tb $end
+$var wire 8 ! Q [7:0] $end
+$var reg 8 " D [7:0] $end
+$var reg 3 # addr [2:0] $end
+$var reg 1 $ clk $end
+$var reg 1 % we $end
+$scope module dut $end
+$var wire 8 & D [7:0] $end
+$var wire 8 ' Q [7:0] $end
+$var wire 3 ( addr [2:0] $end
+$var wire 1 $ clk $end
+$var wire 1 % we $end
+$var wire 1 ) \storage_7_0.we0 $end
+$var wire 1 * \storage_7_0.select0_b $end
+$var wire 1 + \storage_7_0.gclock $end
+$var wire 1 , \storage_7_0.decoder0 $end
+$var wire 1 - \storage_7_0.clock_b $end
+$var wire 1 . \storage_7_0.bit[7].storage $end
+$var wire 1 / \storage_7_0.bit[6].storage $end
+$var wire 1 0 \storage_7_0.bit[5].storage $end
+$var wire 1 1 \storage_7_0.bit[4].storage $end
+$var wire 1 2 \storage_7_0.bit[3].storage $end
+$var wire 1 3 \storage_7_0.bit[2].storage $end
+$var wire 1 4 \storage_7_0.bit[1].storage $end
+$var wire 1 5 \storage_7_0.bit[0].storage $end
+$var wire 1 6 \storage_6_0.we0 $end
+$var wire 1 7 \storage_6_0.select0_b $end
+$var wire 1 8 \storage_6_0.gclock $end
+$var wire 1 9 \storage_6_0.decoder0 $end
+$var wire 1 : \storage_6_0.clock_b $end
+$var wire 1 ; \storage_6_0.bit[7].storage $end
+$var wire 1 < \storage_6_0.bit[6].storage $end
+$var wire 1 = \storage_6_0.bit[5].storage $end
+$var wire 1 > \storage_6_0.bit[4].storage $end
+$var wire 1 ? \storage_6_0.bit[3].storage $end
+$var wire 1 @ \storage_6_0.bit[2].storage $end
+$var wire 1 A \storage_6_0.bit[1].storage $end
+$var wire 1 B \storage_6_0.bit[0].storage $end
+$var wire 1 C \storage_5_0.we0 $end
+$var wire 1 D \storage_5_0.select0_b $end
+$var wire 1 E \storage_5_0.gclock $end
+$var wire 1 F \storage_5_0.decoder0 $end
+$var wire 1 G \storage_5_0.clock_b $end
+$var wire 1 H \storage_5_0.bit[7].storage $end
+$var wire 1 I \storage_5_0.bit[6].storage $end
+$var wire 1 J \storage_5_0.bit[5].storage $end
+$var wire 1 K \storage_5_0.bit[4].storage $end
+$var wire 1 L \storage_5_0.bit[3].storage $end
+$var wire 1 M \storage_5_0.bit[2].storage $end
+$var wire 1 N \storage_5_0.bit[1].storage $end
+$var wire 1 O \storage_5_0.bit[0].storage $end
+$var wire 1 P \storage_4_0.we0 $end
+$var wire 1 Q \storage_4_0.select0_b $end
+$var wire 1 R \storage_4_0.gclock $end
+$var wire 1 S \storage_4_0.decoder0 $end
+$var wire 1 T \storage_4_0.clock_b $end
+$var wire 1 U \storage_4_0.bit[7].storage $end
+$var wire 1 V \storage_4_0.bit[6].storage $end
+$var wire 1 W \storage_4_0.bit[5].storage $end
+$var wire 1 X \storage_4_0.bit[4].storage $end
+$var wire 1 Y \storage_4_0.bit[3].storage $end
+$var wire 1 Z \storage_4_0.bit[2].storage $end
+$var wire 1 [ \storage_4_0.bit[1].storage $end
+$var wire 1 \ \storage_4_0.bit[0].storage $end
+$var wire 1 ] \storage_3_0.we0 $end
+$var wire 1 ^ \storage_3_0.select0_b $end
+$var wire 1 _ \storage_3_0.gclock $end
+$var wire 1 ` \storage_3_0.decoder0 $end
+$var wire 1 a \storage_3_0.clock_b $end
+$var wire 1 b \storage_3_0.bit[7].storage $end
+$var wire 1 c \storage_3_0.bit[6].storage $end
+$var wire 1 d \storage_3_0.bit[5].storage $end
+$var wire 1 e \storage_3_0.bit[4].storage $end
+$var wire 1 f \storage_3_0.bit[3].storage $end
+$var wire 1 g \storage_3_0.bit[2].storage $end
+$var wire 1 h \storage_3_0.bit[1].storage $end
+$var wire 1 i \storage_3_0.bit[0].storage $end
+$var wire 1 j \storage_2_0.we0 $end
+$var wire 1 k \storage_2_0.select0_b $end
+$var wire 1 l \storage_2_0.gclock $end
+$var wire 1 m \storage_2_0.decoder0 $end
+$var wire 1 n \storage_2_0.clock_b $end
+$var wire 1 o \storage_2_0.bit[7].storage $end
+$var wire 1 p \storage_2_0.bit[6].storage $end
+$var wire 1 q \storage_2_0.bit[5].storage $end
+$var wire 1 r \storage_2_0.bit[4].storage $end
+$var wire 1 s \storage_2_0.bit[3].storage $end
+$var wire 1 t \storage_2_0.bit[2].storage $end
+$var wire 1 u \storage_2_0.bit[1].storage $end
+$var wire 1 v \storage_2_0.bit[0].storage $end
+$var wire 1 w \storage_1_0.we0 $end
+$var wire 1 x \storage_1_0.select0_b $end
+$var wire 1 y \storage_1_0.gclock $end
+$var wire 1 z \storage_1_0.decoder0 $end
+$var wire 1 { \storage_1_0.clock_b $end
+$var wire 1 | \storage_1_0.bit[7].storage $end
+$var wire 1 } \storage_1_0.bit[6].storage $end
+$var wire 1 ~ \storage_1_0.bit[5].storage $end
+$var wire 1 !" \storage_1_0.bit[4].storage $end
+$var wire 1 "" \storage_1_0.bit[3].storage $end
+$var wire 1 #" \storage_1_0.bit[2].storage $end
+$var wire 1 $" \storage_1_0.bit[1].storage $end
+$var wire 1 %" \storage_1_0.bit[0].storage $end
+$var wire 1 &" \storage_0_0.we0 $end
+$var wire 1 '" \storage_0_0.select0_b $end
+$var wire 1 (" \storage_0_0.gclock $end
+$var wire 1 )" \storage_0_0.decoder0 $end
+$var wire 1 *" \storage_0_0.clock_b $end
+$var wire 1 +" \storage_0_0.bit[7].storage $end
+$var wire 1 ," \storage_0_0.bit[6].storage $end
+$var wire 1 -" \storage_0_0.bit[5].storage $end
+$var wire 1 ." \storage_0_0.bit[4].storage $end
+$var wire 1 /" \storage_0_0.bit[3].storage $end
+$var wire 1 0" \storage_0_0.bit[2].storage $end
+$var wire 1 1" \storage_0_0.bit[1].storage $end
+$var wire 1 2" \storage_0_0.bit[0].storage $end
+$var wire 1 3" \inv.addr2 $end
+$var wire 1 4" \inv.addr1 $end
+$var wire 1 5" \inv.addr0 $end
+$var wire 1 6" \decoder7.layer_in0 $end
+$var wire 1 7" \decoder6.layer_in0 $end
+$var wire 1 8" \decoder5.layer_in0 $end
+$var wire 1 9" \decoder4.layer_in0 $end
+$var wire 1 :" \decoder3.layer_in0 $end
+$var wire 1 ;" \decoder2.layer_in0 $end
+$var wire 1 <" \decoder1.layer_in0 $end
+$var wire 1 =" \decoder0.layer_in0 $end
+$var wire 1 >" \Di_nets[7].net $end
+$var wire 1 ?" \Di_nets[6].net $end
+$var wire 1 @" \Di_nets[5].net $end
+$var wire 1 A" \Di_nets[4].net $end
+$var wire 1 B" \Di_nets[3].net $end
+$var wire 1 C" \Di_nets[2].net $end
+$var wire 1 D" \Di_nets[1].net $end
+$var wire 1 E" \Di_nets[0].net $end
+$scope module buffer.bit[0]_filler0 $end
+$var wire 1 F" VGND $end
+$var wire 1 G" VNB $end
+$var wire 1 H" VPB $end
+$var wire 1 I" VPWR $end
+$scope module base $end
+$var wire 1 J" VGND $end
+$var wire 1 K" VNB $end
+$var wire 1 L" VPB $end
+$var wire 1 M" VPWR $end
+$upscope $end
+$upscope $end
+$scope module buffer.bit[0]_filler1 $end
+$var wire 1 N" VGND $end
+$var wire 1 O" VNB $end
+$var wire 1 P" VPB $end
+$var wire 1 Q" VPWR $end
+$scope module base $end
+$var wire 1 R" VGND $end
+$var wire 1 S" VNB $end
+$var wire 1 T" VPB $end
+$var wire 1 U" VPWR $end
+$upscope $end
+$upscope $end
+$scope module buffer.bit[0]_filler2 $end
+$var wire 1 V" VGND $end
+$var wire 1 W" VNB $end
+$var wire 1 X" VPB $end
+$var wire 1 Y" VPWR $end
+$scope module base $end
+$var wire 1 Z" VGND $end
+$var wire 1 [" VNB $end
+$var wire 1 \" VPB $end
+$var wire 1 ]" VPWR $end
+$upscope $end
+$upscope $end
+$scope module buffer.bit[0]_filler3 $end
+$var wire 1 ^" VGND $end
+$var wire 1 _" VNB $end
+$var wire 1 `" VPB $end
+$var wire 1 a" VPWR $end
+$scope module base $end
+$var wire 1 b" VGND $end
+$var wire 1 c" VNB $end
+$var wire 1 d" VPB $end
+$var wire 1 e" VPWR $end
+$upscope $end
+$upscope $end
+$scope module buffer.bit[0]_filler4 $end
+$var wire 1 f" VGND $end
+$var wire 1 g" VNB $end
+$var wire 1 h" VPB $end
+$var wire 1 i" VPWR $end
+$scope module base $end
+$var wire 1 j" VGND $end
+$var wire 1 k" VNB $end
+$var wire 1 l" VPB $end
+$var wire 1 m" VPWR $end
+$upscope $end
+$upscope $end
+$scope module buffer.bit[0]_filler5 $end
+$var wire 1 n" VGND $end
+$var wire 1 o" VNB $end
+$var wire 1 p" VPB $end
+$var wire 1 q" VPWR $end
+$scope module base $end
+$var wire 1 r" VGND $end
+$var wire 1 s" VNB $end
+$var wire 1 t" VPB $end
+$var wire 1 u" VPWR $end
+$upscope $end
+$upscope $end
+$scope module buffer.bit[0]_filler6 $end
+$var wire 1 v" VGND $end
+$var wire 1 w" VNB $end
+$var wire 1 x" VPB $end
+$var wire 1 y" VPWR $end
+$scope module base $end
+$var wire 1 z" VGND $end
+$var wire 1 {" VNB $end
+$var wire 1 |" VPB $end
+$var wire 1 }" VPWR $end
+$upscope $end
+$upscope $end
+$scope module buffer.bit[0]_filler7 $end
+$var wire 1 ~" VGND $end
+$var wire 1 !# VNB $end
+$var wire 1 "# VPB $end
+$var wire 1 ## VPWR $end
+$scope module base $end
+$var wire 1 $# VGND $end
+$var wire 1 %# VNB $end
+$var wire 1 &# VPB $end
+$var wire 1 '# VPWR $end
+$upscope $end
+$upscope $end
+$scope module buffer.bit[1]_filler0 $end
+$var wire 1 (# VGND $end
+$var wire 1 )# VNB $end
+$var wire 1 *# VPB $end
+$var wire 1 +# VPWR $end
+$scope module base $end
+$var wire 1 ,# VGND $end
+$var wire 1 -# VNB $end
+$var wire 1 .# VPB $end
+$var wire 1 /# VPWR $end
+$upscope $end
+$upscope $end
+$scope module buffer.bit[1]_filler1 $end
+$var wire 1 0# VGND $end
+$var wire 1 1# VNB $end
+$var wire 1 2# VPB $end
+$var wire 1 3# VPWR $end
+$scope module base $end
+$var wire 1 4# VGND $end
+$var wire 1 5# VNB $end
+$var wire 1 6# VPB $end
+$var wire 1 7# VPWR $end
+$upscope $end
+$upscope $end
+$scope module buffer.bit[1]_filler2 $end
+$var wire 1 8# VGND $end
+$var wire 1 9# VNB $end
+$var wire 1 :# VPB $end
+$var wire 1 ;# VPWR $end
+$scope module base $end
+$var wire 1 <# VGND $end
+$var wire 1 =# VNB $end
+$var wire 1 ># VPB $end
+$var wire 1 ?# VPWR $end
+$upscope $end
+$upscope $end
+$scope module buffer.bit[1]_filler3 $end
+$var wire 1 @# VGND $end
+$var wire 1 A# VNB $end
+$var wire 1 B# VPB $end
+$var wire 1 C# VPWR $end
+$scope module base $end
+$var wire 1 D# VGND $end
+$var wire 1 E# VNB $end
+$var wire 1 F# VPB $end
+$var wire 1 G# VPWR $end
+$upscope $end
+$upscope $end
+$scope module buffer.bit[1]_filler4 $end
+$var wire 1 H# VGND $end
+$var wire 1 I# VNB $end
+$var wire 1 J# VPB $end
+$var wire 1 K# VPWR $end
+$scope module base $end
+$var wire 1 L# VGND $end
+$var wire 1 M# VNB $end
+$var wire 1 N# VPB $end
+$var wire 1 O# VPWR $end
+$upscope $end
+$upscope $end
+$scope module buffer.bit[1]_filler5 $end
+$var wire 1 P# VGND $end
+$var wire 1 Q# VNB $end
+$var wire 1 R# VPB $end
+$var wire 1 S# VPWR $end
+$scope module base $end
+$var wire 1 T# VGND $end
+$var wire 1 U# VNB $end
+$var wire 1 V# VPB $end
+$var wire 1 W# VPWR $end
+$upscope $end
+$upscope $end
+$scope module buffer.bit[1]_filler6 $end
+$var wire 1 X# VGND $end
+$var wire 1 Y# VNB $end
+$var wire 1 Z# VPB $end
+$var wire 1 [# VPWR $end
+$scope module base $end
+$var wire 1 \# VGND $end
+$var wire 1 ]# VNB $end
+$var wire 1 ^# VPB $end
+$var wire 1 _# VPWR $end
+$upscope $end
+$upscope $end
+$scope module buffer.bit[1]_filler7 $end
+$var wire 1 `# VGND $end
+$var wire 1 a# VNB $end
+$var wire 1 b# VPB $end
+$var wire 1 c# VPWR $end
+$scope module base $end
+$var wire 1 d# VGND $end
+$var wire 1 e# VNB $end
+$var wire 1 f# VPB $end
+$var wire 1 g# VPWR $end
+$upscope $end
+$upscope $end
+$scope module buffer.bit[2]_filler0 $end
+$var wire 1 h# VGND $end
+$var wire 1 i# VNB $end
+$var wire 1 j# VPB $end
+$var wire 1 k# VPWR $end
+$scope module base $end
+$var wire 1 l# VGND $end
+$var wire 1 m# VNB $end
+$var wire 1 n# VPB $end
+$var wire 1 o# VPWR $end
+$upscope $end
+$upscope $end
+$scope module buffer.bit[2]_filler1 $end
+$var wire 1 p# VGND $end
+$var wire 1 q# VNB $end
+$var wire 1 r# VPB $end
+$var wire 1 s# VPWR $end
+$scope module base $end
+$var wire 1 t# VGND $end
+$var wire 1 u# VNB $end
+$var wire 1 v# VPB $end
+$var wire 1 w# VPWR $end
+$upscope $end
+$upscope $end
+$scope module buffer.bit[2]_filler2 $end
+$var wire 1 x# VGND $end
+$var wire 1 y# VNB $end
+$var wire 1 z# VPB $end
+$var wire 1 {# VPWR $end
+$scope module base $end
+$var wire 1 |# VGND $end
+$var wire 1 }# VNB $end
+$var wire 1 ~# VPB $end
+$var wire 1 !$ VPWR $end
+$upscope $end
+$upscope $end
+$scope module buffer.bit[2]_filler3 $end
+$var wire 1 "$ VGND $end
+$var wire 1 #$ VNB $end
+$var wire 1 $$ VPB $end
+$var wire 1 %$ VPWR $end
+$scope module base $end
+$var wire 1 &$ VGND $end
+$var wire 1 '$ VNB $end
+$var wire 1 ($ VPB $end
+$var wire 1 )$ VPWR $end
+$upscope $end
+$upscope $end
+$scope module buffer.bit[2]_filler4 $end
+$var wire 1 *$ VGND $end
+$var wire 1 +$ VNB $end
+$var wire 1 ,$ VPB $end
+$var wire 1 -$ VPWR $end
+$scope module base $end
+$var wire 1 .$ VGND $end
+$var wire 1 /$ VNB $end
+$var wire 1 0$ VPB $end
+$var wire 1 1$ VPWR $end
+$upscope $end
+$upscope $end
+$scope module buffer.bit[2]_filler5 $end
+$var wire 1 2$ VGND $end
+$var wire 1 3$ VNB $end
+$var wire 1 4$ VPB $end
+$var wire 1 5$ VPWR $end
+$scope module base $end
+$var wire 1 6$ VGND $end
+$var wire 1 7$ VNB $end
+$var wire 1 8$ VPB $end
+$var wire 1 9$ VPWR $end
+$upscope $end
+$upscope $end
+$scope module buffer.bit[2]_filler6 $end
+$var wire 1 :$ VGND $end
+$var wire 1 ;$ VNB $end
+$var wire 1 <$ VPB $end
+$var wire 1 =$ VPWR $end
+$scope module base $end
+$var wire 1 >$ VGND $end
+$var wire 1 ?$ VNB $end
+$var wire 1 @$ VPB $end
+$var wire 1 A$ VPWR $end
+$upscope $end
+$upscope $end
+$scope module buffer.bit[2]_filler7 $end
+$var wire 1 B$ VGND $end
+$var wire 1 C$ VNB $end
+$var wire 1 D$ VPB $end
+$var wire 1 E$ VPWR $end
+$scope module base $end
+$var wire 1 F$ VGND $end
+$var wire 1 G$ VNB $end
+$var wire 1 H$ VPB $end
+$var wire 1 I$ VPWR $end
+$upscope $end
+$upscope $end
+$scope module buffer.bit[3]_filler0 $end
+$var wire 1 J$ VGND $end
+$var wire 1 K$ VNB $end
+$var wire 1 L$ VPB $end
+$var wire 1 M$ VPWR $end
+$scope module base $end
+$var wire 1 N$ VGND $end
+$var wire 1 O$ VNB $end
+$var wire 1 P$ VPB $end
+$var wire 1 Q$ VPWR $end
+$upscope $end
+$upscope $end
+$scope module buffer.bit[3]_filler1 $end
+$var wire 1 R$ VGND $end
+$var wire 1 S$ VNB $end
+$var wire 1 T$ VPB $end
+$var wire 1 U$ VPWR $end
+$scope module base $end
+$var wire 1 V$ VGND $end
+$var wire 1 W$ VNB $end
+$var wire 1 X$ VPB $end
+$var wire 1 Y$ VPWR $end
+$upscope $end
+$upscope $end
+$scope module buffer.bit[3]_filler2 $end
+$var wire 1 Z$ VGND $end
+$var wire 1 [$ VNB $end
+$var wire 1 \$ VPB $end
+$var wire 1 ]$ VPWR $end
+$scope module base $end
+$var wire 1 ^$ VGND $end
+$var wire 1 _$ VNB $end
+$var wire 1 `$ VPB $end
+$var wire 1 a$ VPWR $end
+$upscope $end
+$upscope $end
+$scope module buffer.bit[3]_filler3 $end
+$var wire 1 b$ VGND $end
+$var wire 1 c$ VNB $end
+$var wire 1 d$ VPB $end
+$var wire 1 e$ VPWR $end
+$scope module base $end
+$var wire 1 f$ VGND $end
+$var wire 1 g$ VNB $end
+$var wire 1 h$ VPB $end
+$var wire 1 i$ VPWR $end
+$upscope $end
+$upscope $end
+$scope module buffer.bit[3]_filler4 $end
+$var wire 1 j$ VGND $end
+$var wire 1 k$ VNB $end
+$var wire 1 l$ VPB $end
+$var wire 1 m$ VPWR $end
+$scope module base $end
+$var wire 1 n$ VGND $end
+$var wire 1 o$ VNB $end
+$var wire 1 p$ VPB $end
+$var wire 1 q$ VPWR $end
+$upscope $end
+$upscope $end
+$scope module buffer.bit[3]_filler5 $end
+$var wire 1 r$ VGND $end
+$var wire 1 s$ VNB $end
+$var wire 1 t$ VPB $end
+$var wire 1 u$ VPWR $end
+$scope module base $end
+$var wire 1 v$ VGND $end
+$var wire 1 w$ VNB $end
+$var wire 1 x$ VPB $end
+$var wire 1 y$ VPWR $end
+$upscope $end
+$upscope $end
+$scope module buffer.bit[3]_filler6 $end
+$var wire 1 z$ VGND $end
+$var wire 1 {$ VNB $end
+$var wire 1 |$ VPB $end
+$var wire 1 }$ VPWR $end
+$scope module base $end
+$var wire 1 ~$ VGND $end
+$var wire 1 !% VNB $end
+$var wire 1 "% VPB $end
+$var wire 1 #% VPWR $end
+$upscope $end
+$upscope $end
+$scope module buffer.bit[3]_filler7 $end
+$var wire 1 $% VGND $end
+$var wire 1 %% VNB $end
+$var wire 1 &% VPB $end
+$var wire 1 '% VPWR $end
+$scope module base $end
+$var wire 1 (% VGND $end
+$var wire 1 )% VNB $end
+$var wire 1 *% VPB $end
+$var wire 1 +% VPWR $end
+$upscope $end
+$upscope $end
+$scope module buffer.bit[4]_filler0 $end
+$var wire 1 ,% VGND $end
+$var wire 1 -% VNB $end
+$var wire 1 .% VPB $end
+$var wire 1 /% VPWR $end
+$scope module base $end
+$var wire 1 0% VGND $end
+$var wire 1 1% VNB $end
+$var wire 1 2% VPB $end
+$var wire 1 3% VPWR $end
+$upscope $end
+$upscope $end
+$scope module buffer.bit[4]_filler1 $end
+$var wire 1 4% VGND $end
+$var wire 1 5% VNB $end
+$var wire 1 6% VPB $end
+$var wire 1 7% VPWR $end
+$scope module base $end
+$var wire 1 8% VGND $end
+$var wire 1 9% VNB $end
+$var wire 1 :% VPB $end
+$var wire 1 ;% VPWR $end
+$upscope $end
+$upscope $end
+$scope module buffer.bit[4]_filler2 $end
+$var wire 1 <% VGND $end
+$var wire 1 =% VNB $end
+$var wire 1 >% VPB $end
+$var wire 1 ?% VPWR $end
+$scope module base $end
+$var wire 1 @% VGND $end
+$var wire 1 A% VNB $end
+$var wire 1 B% VPB $end
+$var wire 1 C% VPWR $end
+$upscope $end
+$upscope $end
+$scope module buffer.bit[4]_filler3 $end
+$var wire 1 D% VGND $end
+$var wire 1 E% VNB $end
+$var wire 1 F% VPB $end
+$var wire 1 G% VPWR $end
+$scope module base $end
+$var wire 1 H% VGND $end
+$var wire 1 I% VNB $end
+$var wire 1 J% VPB $end
+$var wire 1 K% VPWR $end
+$upscope $end
+$upscope $end
+$scope module buffer.bit[4]_filler4 $end
+$var wire 1 L% VGND $end
+$var wire 1 M% VNB $end
+$var wire 1 N% VPB $end
+$var wire 1 O% VPWR $end
+$scope module base $end
+$var wire 1 P% VGND $end
+$var wire 1 Q% VNB $end
+$var wire 1 R% VPB $end
+$var wire 1 S% VPWR $end
+$upscope $end
+$upscope $end
+$scope module buffer.bit[4]_filler5 $end
+$var wire 1 T% VGND $end
+$var wire 1 U% VNB $end
+$var wire 1 V% VPB $end
+$var wire 1 W% VPWR $end
+$scope module base $end
+$var wire 1 X% VGND $end
+$var wire 1 Y% VNB $end
+$var wire 1 Z% VPB $end
+$var wire 1 [% VPWR $end
+$upscope $end
+$upscope $end
+$scope module buffer.bit[4]_filler6 $end
+$var wire 1 \% VGND $end
+$var wire 1 ]% VNB $end
+$var wire 1 ^% VPB $end
+$var wire 1 _% VPWR $end
+$scope module base $end
+$var wire 1 `% VGND $end
+$var wire 1 a% VNB $end
+$var wire 1 b% VPB $end
+$var wire 1 c% VPWR $end
+$upscope $end
+$upscope $end
+$scope module buffer.bit[4]_filler7 $end
+$var wire 1 d% VGND $end
+$var wire 1 e% VNB $end
+$var wire 1 f% VPB $end
+$var wire 1 g% VPWR $end
+$scope module base $end
+$var wire 1 h% VGND $end
+$var wire 1 i% VNB $end
+$var wire 1 j% VPB $end
+$var wire 1 k% VPWR $end
+$upscope $end
+$upscope $end
+$scope module buffer.bit[5]_filler0 $end
+$var wire 1 l% VGND $end
+$var wire 1 m% VNB $end
+$var wire 1 n% VPB $end
+$var wire 1 o% VPWR $end
+$scope module base $end
+$var wire 1 p% VGND $end
+$var wire 1 q% VNB $end
+$var wire 1 r% VPB $end
+$var wire 1 s% VPWR $end
+$upscope $end
+$upscope $end
+$scope module buffer.bit[5]_filler1 $end
+$var wire 1 t% VGND $end
+$var wire 1 u% VNB $end
+$var wire 1 v% VPB $end
+$var wire 1 w% VPWR $end
+$scope module base $end
+$var wire 1 x% VGND $end
+$var wire 1 y% VNB $end
+$var wire 1 z% VPB $end
+$var wire 1 {% VPWR $end
+$upscope $end
+$upscope $end
+$scope module buffer.bit[5]_filler2 $end
+$var wire 1 |% VGND $end
+$var wire 1 }% VNB $end
+$var wire 1 ~% VPB $end
+$var wire 1 !& VPWR $end
+$scope module base $end
+$var wire 1 "& VGND $end
+$var wire 1 #& VNB $end
+$var wire 1 $& VPB $end
+$var wire 1 %& VPWR $end
+$upscope $end
+$upscope $end
+$scope module buffer.bit[5]_filler3 $end
+$var wire 1 && VGND $end
+$var wire 1 '& VNB $end
+$var wire 1 (& VPB $end
+$var wire 1 )& VPWR $end
+$scope module base $end
+$var wire 1 *& VGND $end
+$var wire 1 +& VNB $end
+$var wire 1 ,& VPB $end
+$var wire 1 -& VPWR $end
+$upscope $end
+$upscope $end
+$scope module buffer.bit[5]_filler4 $end
+$var wire 1 .& VGND $end
+$var wire 1 /& VNB $end
+$var wire 1 0& VPB $end
+$var wire 1 1& VPWR $end
+$scope module base $end
+$var wire 1 2& VGND $end
+$var wire 1 3& VNB $end
+$var wire 1 4& VPB $end
+$var wire 1 5& VPWR $end
+$upscope $end
+$upscope $end
+$scope module buffer.bit[5]_filler5 $end
+$var wire 1 6& VGND $end
+$var wire 1 7& VNB $end
+$var wire 1 8& VPB $end
+$var wire 1 9& VPWR $end
+$scope module base $end
+$var wire 1 :& VGND $end
+$var wire 1 ;& VNB $end
+$var wire 1 <& VPB $end
+$var wire 1 =& VPWR $end
+$upscope $end
+$upscope $end
+$scope module buffer.bit[5]_filler6 $end
+$var wire 1 >& VGND $end
+$var wire 1 ?& VNB $end
+$var wire 1 @& VPB $end
+$var wire 1 A& VPWR $end
+$scope module base $end
+$var wire 1 B& VGND $end
+$var wire 1 C& VNB $end
+$var wire 1 D& VPB $end
+$var wire 1 E& VPWR $end
+$upscope $end
+$upscope $end
+$scope module buffer.bit[5]_filler7 $end
+$var wire 1 F& VGND $end
+$var wire 1 G& VNB $end
+$var wire 1 H& VPB $end
+$var wire 1 I& VPWR $end
+$scope module base $end
+$var wire 1 J& VGND $end
+$var wire 1 K& VNB $end
+$var wire 1 L& VPB $end
+$var wire 1 M& VPWR $end
+$upscope $end
+$upscope $end
+$scope module buffer.bit[6]_filler0 $end
+$var wire 1 N& VGND $end
+$var wire 1 O& VNB $end
+$var wire 1 P& VPB $end
+$var wire 1 Q& VPWR $end
+$scope module base $end
+$var wire 1 R& VGND $end
+$var wire 1 S& VNB $end
+$var wire 1 T& VPB $end
+$var wire 1 U& VPWR $end
+$upscope $end
+$upscope $end
+$scope module buffer.bit[6]_filler1 $end
+$var wire 1 V& VGND $end
+$var wire 1 W& VNB $end
+$var wire 1 X& VPB $end
+$var wire 1 Y& VPWR $end
+$scope module base $end
+$var wire 1 Z& VGND $end
+$var wire 1 [& VNB $end
+$var wire 1 \& VPB $end
+$var wire 1 ]& VPWR $end
+$upscope $end
+$upscope $end
+$scope module buffer.bit[6]_filler2 $end
+$var wire 1 ^& VGND $end
+$var wire 1 _& VNB $end
+$var wire 1 `& VPB $end
+$var wire 1 a& VPWR $end
+$scope module base $end
+$var wire 1 b& VGND $end
+$var wire 1 c& VNB $end
+$var wire 1 d& VPB $end
+$var wire 1 e& VPWR $end
+$upscope $end
+$upscope $end
+$scope module buffer.bit[6]_filler3 $end
+$var wire 1 f& VGND $end
+$var wire 1 g& VNB $end
+$var wire 1 h& VPB $end
+$var wire 1 i& VPWR $end
+$scope module base $end
+$var wire 1 j& VGND $end
+$var wire 1 k& VNB $end
+$var wire 1 l& VPB $end
+$var wire 1 m& VPWR $end
+$upscope $end
+$upscope $end
+$scope module buffer.bit[6]_filler4 $end
+$var wire 1 n& VGND $end
+$var wire 1 o& VNB $end
+$var wire 1 p& VPB $end
+$var wire 1 q& VPWR $end
+$scope module base $end
+$var wire 1 r& VGND $end
+$var wire 1 s& VNB $end
+$var wire 1 t& VPB $end
+$var wire 1 u& VPWR $end
+$upscope $end
+$upscope $end
+$scope module buffer.bit[6]_filler5 $end
+$var wire 1 v& VGND $end
+$var wire 1 w& VNB $end
+$var wire 1 x& VPB $end
+$var wire 1 y& VPWR $end
+$scope module base $end
+$var wire 1 z& VGND $end
+$var wire 1 {& VNB $end
+$var wire 1 |& VPB $end
+$var wire 1 }& VPWR $end
+$upscope $end
+$upscope $end
+$scope module buffer.bit[6]_filler6 $end
+$var wire 1 ~& VGND $end
+$var wire 1 !' VNB $end
+$var wire 1 "' VPB $end
+$var wire 1 #' VPWR $end
+$scope module base $end
+$var wire 1 $' VGND $end
+$var wire 1 %' VNB $end
+$var wire 1 &' VPB $end
+$var wire 1 '' VPWR $end
+$upscope $end
+$upscope $end
+$scope module buffer.bit[6]_filler7 $end
+$var wire 1 (' VGND $end
+$var wire 1 )' VNB $end
+$var wire 1 *' VPB $end
+$var wire 1 +' VPWR $end
+$scope module base $end
+$var wire 1 ,' VGND $end
+$var wire 1 -' VNB $end
+$var wire 1 .' VPB $end
+$var wire 1 /' VPWR $end
+$upscope $end
+$upscope $end
+$scope module buffer.bit[7]_filler0 $end
+$var wire 1 0' VGND $end
+$var wire 1 1' VNB $end
+$var wire 1 2' VPB $end
+$var wire 1 3' VPWR $end
+$scope module base $end
+$var wire 1 4' VGND $end
+$var wire 1 5' VNB $end
+$var wire 1 6' VPB $end
+$var wire 1 7' VPWR $end
+$upscope $end
+$upscope $end
+$scope module buffer.bit[7]_filler1 $end
+$var wire 1 8' VGND $end
+$var wire 1 9' VNB $end
+$var wire 1 :' VPB $end
+$var wire 1 ;' VPWR $end
+$scope module base $end
+$var wire 1 <' VGND $end
+$var wire 1 =' VNB $end
+$var wire 1 >' VPB $end
+$var wire 1 ?' VPWR $end
+$upscope $end
+$upscope $end
+$scope module buffer.bit[7]_filler2 $end
+$var wire 1 @' VGND $end
+$var wire 1 A' VNB $end
+$var wire 1 B' VPB $end
+$var wire 1 C' VPWR $end
+$scope module base $end
+$var wire 1 D' VGND $end
+$var wire 1 E' VNB $end
+$var wire 1 F' VPB $end
+$var wire 1 G' VPWR $end
+$upscope $end
+$upscope $end
+$scope module buffer.bit[7]_filler3 $end
+$var wire 1 H' VGND $end
+$var wire 1 I' VNB $end
+$var wire 1 J' VPB $end
+$var wire 1 K' VPWR $end
+$scope module base $end
+$var wire 1 L' VGND $end
+$var wire 1 M' VNB $end
+$var wire 1 N' VPB $end
+$var wire 1 O' VPWR $end
+$upscope $end
+$upscope $end
+$scope module buffer.bit[7]_filler4 $end
+$var wire 1 P' VGND $end
+$var wire 1 Q' VNB $end
+$var wire 1 R' VPB $end
+$var wire 1 S' VPWR $end
+$scope module base $end
+$var wire 1 T' VGND $end
+$var wire 1 U' VNB $end
+$var wire 1 V' VPB $end
+$var wire 1 W' VPWR $end
+$upscope $end
+$upscope $end
+$scope module buffer.bit[7]_filler5 $end
+$var wire 1 X' VGND $end
+$var wire 1 Y' VNB $end
+$var wire 1 Z' VPB $end
+$var wire 1 [' VPWR $end
+$scope module base $end
+$var wire 1 \' VGND $end
+$var wire 1 ]' VNB $end
+$var wire 1 ^' VPB $end
+$var wire 1 _' VPWR $end
+$upscope $end
+$upscope $end
+$scope module buffer.bit[7]_filler6 $end
+$var wire 1 `' VGND $end
+$var wire 1 a' VNB $end
+$var wire 1 b' VPB $end
+$var wire 1 c' VPWR $end
+$scope module base $end
+$var wire 1 d' VGND $end
+$var wire 1 e' VNB $end
+$var wire 1 f' VPB $end
+$var wire 1 g' VPWR $end
+$upscope $end
+$upscope $end
+$scope module buffer.bit[7]_filler7 $end
+$var wire 1 h' VGND $end
+$var wire 1 i' VNB $end
+$var wire 1 j' VPB $end
+$var wire 1 k' VPWR $end
+$scope module base $end
+$var wire 1 l' VGND $end
+$var wire 1 m' VNB $end
+$var wire 1 n' VPB $end
+$var wire 1 o' VPWR $end
+$upscope $end
+$upscope $end
+$scope module buffer.in[0] $end
+$var wire 1 p' A $end
+$var wire 1 q' VGND $end
+$var wire 1 r' VNB $end
+$var wire 1 s' VPB $end
+$var wire 1 t' VPWR $end
+$var wire 1 E" X $end
+$scope module base $end
+$var wire 1 p' A $end
+$var wire 1 E" X $end
+$var wire 1 u' buf0_out_X $end
+$upscope $end
+$upscope $end
+$scope module buffer.in[1] $end
+$var wire 1 v' A $end
+$var wire 1 w' VGND $end
+$var wire 1 x' VNB $end
+$var wire 1 y' VPB $end
+$var wire 1 z' VPWR $end
+$var wire 1 D" X $end
+$scope module base $end
+$var wire 1 v' A $end
+$var wire 1 D" X $end
+$var wire 1 {' buf0_out_X $end
+$upscope $end
+$upscope $end
+$scope module buffer.in[2] $end
+$var wire 1 |' A $end
+$var wire 1 }' VGND $end
+$var wire 1 ~' VNB $end
+$var wire 1 !( VPB $end
+$var wire 1 "( VPWR $end
+$var wire 1 C" X $end
+$scope module base $end
+$var wire 1 |' A $end
+$var wire 1 C" X $end
+$var wire 1 #( buf0_out_X $end
+$upscope $end
+$upscope $end
+$scope module buffer.in[3] $end
+$var wire 1 $( A $end
+$var wire 1 %( VGND $end
+$var wire 1 &( VNB $end
+$var wire 1 '( VPB $end
+$var wire 1 (( VPWR $end
+$var wire 1 B" X $end
+$scope module base $end
+$var wire 1 $( A $end
+$var wire 1 B" X $end
+$var wire 1 )( buf0_out_X $end
+$upscope $end
+$upscope $end
+$scope module buffer.in[4] $end
+$var wire 1 *( A $end
+$var wire 1 +( VGND $end
+$var wire 1 ,( VNB $end
+$var wire 1 -( VPB $end
+$var wire 1 .( VPWR $end
+$var wire 1 A" X $end
+$scope module base $end
+$var wire 1 *( A $end
+$var wire 1 A" X $end
+$var wire 1 /( buf0_out_X $end
+$upscope $end
+$upscope $end
+$scope module buffer.in[5] $end
+$var wire 1 0( A $end
+$var wire 1 1( VGND $end
+$var wire 1 2( VNB $end
+$var wire 1 3( VPB $end
+$var wire 1 4( VPWR $end
+$var wire 1 @" X $end
+$scope module base $end
+$var wire 1 0( A $end
+$var wire 1 @" X $end
+$var wire 1 5( buf0_out_X $end
+$upscope $end
+$upscope $end
+$scope module buffer.in[6] $end
+$var wire 1 6( A $end
+$var wire 1 7( VGND $end
+$var wire 1 8( VNB $end
+$var wire 1 9( VPB $end
+$var wire 1 :( VPWR $end
+$var wire 1 ?" X $end
+$scope module base $end
+$var wire 1 6( A $end
+$var wire 1 ?" X $end
+$var wire 1 ;( buf0_out_X $end
+$upscope $end
+$upscope $end
+$scope module buffer.in[7] $end
+$var wire 1 <( A $end
+$var wire 1 =( VGND $end
+$var wire 1 >( VNB $end
+$var wire 1 ?( VPB $end
+$var wire 1 @( VPWR $end
+$var wire 1 >" X $end
+$scope module base $end
+$var wire 1 <( A $end
+$var wire 1 >" X $end
+$var wire 1 A( buf0_out_X $end
+$upscope $end
+$upscope $end
+$scope module decoder.filler_1_0 $end
+$var wire 1 B( VGND $end
+$var wire 1 C( VNB $end
+$var wire 1 D( VPB $end
+$var wire 1 E( VPWR $end
+$scope module base $end
+$var wire 1 F( VGND $end
+$var wire 1 G( VNB $end
+$var wire 1 H( VPB $end
+$var wire 1 I( VPWR $end
+$upscope $end
+$upscope $end
+$scope module decoder.filler_1_1 $end
+$var wire 1 J( VGND $end
+$var wire 1 K( VNB $end
+$var wire 1 L( VPB $end
+$var wire 1 M( VPWR $end
+$scope module base $end
+$var wire 1 N( VGND $end
+$var wire 1 O( VNB $end
+$var wire 1 P( VPB $end
+$var wire 1 Q( VPWR $end
+$upscope $end
+$upscope $end
+$scope module decoder.filler_2_0 $end
+$var wire 1 R( VGND $end
+$var wire 1 S( VNB $end
+$var wire 1 T( VPB $end
+$var wire 1 U( VPWR $end
+$scope module base $end
+$var wire 1 V( VGND $end
+$var wire 1 W( VNB $end
+$var wire 1 X( VPB $end
+$var wire 1 Y( VPWR $end
+$upscope $end
+$upscope $end
+$scope module decoder.filler_2_1 $end
+$var wire 1 Z( VGND $end
+$var wire 1 [( VNB $end
+$var wire 1 \( VPB $end
+$var wire 1 ]( VPWR $end
+$scope module base $end
+$var wire 1 ^( VGND $end
+$var wire 1 _( VNB $end
+$var wire 1 `( VPB $end
+$var wire 1 a( VPWR $end
+$upscope $end
+$upscope $end
+$scope module decoder.inv_0 $end
+$var wire 1 b( A $end
+$var wire 1 c( VGND $end
+$var wire 1 d( VNB $end
+$var wire 1 e( VPB $end
+$var wire 1 f( VPWR $end
+$var wire 1 5" Y $end
+$scope module base $end
+$var wire 1 b( A $end
+$var wire 1 5" Y $end
+$var wire 1 g( not0_out_Y $end
+$upscope $end
+$upscope $end
+$scope module decoder.inv_1 $end
+$var wire 1 h( A $end
+$var wire 1 i( VGND $end
+$var wire 1 j( VNB $end
+$var wire 1 k( VPB $end
+$var wire 1 l( VPWR $end
+$var wire 1 4" Y $end
+$scope module base $end
+$var wire 1 h( A $end
+$var wire 1 4" Y $end
+$var wire 1 m( not0_out_Y $end
+$upscope $end
+$upscope $end
+$scope module decoder.inv_2 $end
+$var wire 1 n( A $end
+$var wire 1 o( VGND $end
+$var wire 1 p( VNB $end
+$var wire 1 q( VPB $end
+$var wire 1 r( VPWR $end
+$var wire 1 3" Y $end
+$scope module base $end
+$var wire 1 n( A $end
+$var wire 1 3" Y $end
+$var wire 1 s( not0_out_Y $end
+$upscope $end
+$upscope $end
+$scope module decoder0.nand_layer0 $end
+$var wire 1 t( A $end
+$var wire 1 u( VGND $end
+$var wire 1 v( VNB $end
+$var wire 1 w( VPB $end
+$var wire 1 x( VPWR $end
+$var wire 1 )" Y $end
+$var wire 1 =" B $end
+$scope module base $end
+$var wire 1 t( A $end
+$var wire 1 )" Y $end
+$var wire 1 y( nand0_out_Y $end
+$var wire 1 =" B $end
+$upscope $end
+$upscope $end
+$scope module decoder0.nand_layer1 $end
+$var wire 1 z( A $end
+$var wire 1 {( B $end
+$var wire 1 |( VGND $end
+$var wire 1 }( VNB $end
+$var wire 1 ~( VPB $end
+$var wire 1 !) VPWR $end
+$var wire 1 =" Y $end
+$scope module base $end
+$var wire 1 z( A $end
+$var wire 1 {( B $end
+$var wire 1 =" Y $end
+$var wire 1 ") nand0_out_Y $end
+$upscope $end
+$upscope $end
+$scope module decoder1.nand_layer0 $end
+$var wire 1 #) A $end
+$var wire 1 $) VGND $end
+$var wire 1 %) VNB $end
+$var wire 1 &) VPB $end
+$var wire 1 ') VPWR $end
+$var wire 1 z Y $end
+$var wire 1 <" B $end
+$scope module base $end
+$var wire 1 #) A $end
+$var wire 1 z Y $end
+$var wire 1 () nand0_out_Y $end
+$var wire 1 <" B $end
+$upscope $end
+$upscope $end
+$scope module decoder1.nand_layer1 $end
+$var wire 1 )) A $end
+$var wire 1 3" B $end
+$var wire 1 *) VGND $end
+$var wire 1 +) VNB $end
+$var wire 1 ,) VPB $end
+$var wire 1 -) VPWR $end
+$var wire 1 <" Y $end
+$scope module base $end
+$var wire 1 )) A $end
+$var wire 1 3" B $end
+$var wire 1 <" Y $end
+$var wire 1 .) nand0_out_Y $end
+$upscope $end
+$upscope $end
+$scope module decoder2.nand_layer0 $end
+$var wire 1 /) A $end
+$var wire 1 0) VGND $end
+$var wire 1 1) VNB $end
+$var wire 1 2) VPB $end
+$var wire 1 3) VPWR $end
+$var wire 1 m Y $end
+$var wire 1 ;" B $end
+$scope module base $end
+$var wire 1 /) A $end
+$var wire 1 m Y $end
+$var wire 1 4) nand0_out_Y $end
+$var wire 1 ;" B $end
+$upscope $end
+$upscope $end
+$scope module decoder2.nand_layer1 $end
+$var wire 1 4" A $end
+$var wire 1 5) B $end
+$var wire 1 6) VGND $end
+$var wire 1 7) VNB $end
+$var wire 1 8) VPB $end
+$var wire 1 9) VPWR $end
+$var wire 1 ;" Y $end
+$scope module base $end
+$var wire 1 4" A $end
+$var wire 1 5) B $end
+$var wire 1 ;" Y $end
+$var wire 1 :) nand0_out_Y $end
+$upscope $end
+$upscope $end
+$scope module decoder3.nand_layer0 $end
+$var wire 1 ;) A $end
+$var wire 1 <) VGND $end
+$var wire 1 =) VNB $end
+$var wire 1 >) VPB $end
+$var wire 1 ?) VPWR $end
+$var wire 1 ` Y $end
+$var wire 1 :" B $end
+$scope module base $end
+$var wire 1 ;) A $end
+$var wire 1 ` Y $end
+$var wire 1 @) nand0_out_Y $end
+$var wire 1 :" B $end
+$upscope $end
+$upscope $end
+$scope module decoder3.nand_layer1 $end
+$var wire 1 4" A $end
+$var wire 1 3" B $end
+$var wire 1 A) VGND $end
+$var wire 1 B) VNB $end
+$var wire 1 C) VPB $end
+$var wire 1 D) VPWR $end
+$var wire 1 :" Y $end
+$scope module base $end
+$var wire 1 4" A $end
+$var wire 1 3" B $end
+$var wire 1 :" Y $end
+$var wire 1 E) nand0_out_Y $end
+$upscope $end
+$upscope $end
+$scope module decoder4.nand_layer0 $end
+$var wire 1 5" A $end
+$var wire 1 F) VGND $end
+$var wire 1 G) VNB $end
+$var wire 1 H) VPB $end
+$var wire 1 I) VPWR $end
+$var wire 1 S Y $end
+$var wire 1 9" B $end
+$scope module base $end
+$var wire 1 5" A $end
+$var wire 1 S Y $end
+$var wire 1 J) nand0_out_Y $end
+$var wire 1 9" B $end
+$upscope $end
+$upscope $end
+$scope module decoder4.nand_layer1 $end
+$var wire 1 K) A $end
+$var wire 1 L) B $end
+$var wire 1 M) VGND $end
+$var wire 1 N) VNB $end
+$var wire 1 O) VPB $end
+$var wire 1 P) VPWR $end
+$var wire 1 9" Y $end
+$scope module base $end
+$var wire 1 K) A $end
+$var wire 1 L) B $end
+$var wire 1 9" Y $end
+$var wire 1 Q) nand0_out_Y $end
+$upscope $end
+$upscope $end
+$scope module decoder5.nand_layer0 $end
+$var wire 1 5" A $end
+$var wire 1 R) VGND $end
+$var wire 1 S) VNB $end
+$var wire 1 T) VPB $end
+$var wire 1 U) VPWR $end
+$var wire 1 F Y $end
+$var wire 1 8" B $end
+$scope module base $end
+$var wire 1 5" A $end
+$var wire 1 F Y $end
+$var wire 1 V) nand0_out_Y $end
+$var wire 1 8" B $end
+$upscope $end
+$upscope $end
+$scope module decoder5.nand_layer1 $end
+$var wire 1 W) A $end
+$var wire 1 3" B $end
+$var wire 1 X) VGND $end
+$var wire 1 Y) VNB $end
+$var wire 1 Z) VPB $end
+$var wire 1 [) VPWR $end
+$var wire 1 8" Y $end
+$scope module base $end
+$var wire 1 W) A $end
+$var wire 1 3" B $end
+$var wire 1 8" Y $end
+$var wire 1 \) nand0_out_Y $end
+$upscope $end
+$upscope $end
+$scope module decoder6.nand_layer0 $end
+$var wire 1 5" A $end
+$var wire 1 ]) VGND $end
+$var wire 1 ^) VNB $end
+$var wire 1 _) VPB $end
+$var wire 1 `) VPWR $end
+$var wire 1 9 Y $end
+$var wire 1 7" B $end
+$scope module base $end
+$var wire 1 5" A $end
+$var wire 1 9 Y $end
+$var wire 1 a) nand0_out_Y $end
+$var wire 1 7" B $end
+$upscope $end
+$upscope $end
+$scope module decoder6.nand_layer1 $end
+$var wire 1 4" A $end
+$var wire 1 b) B $end
+$var wire 1 c) VGND $end
+$var wire 1 d) VNB $end
+$var wire 1 e) VPB $end
+$var wire 1 f) VPWR $end
+$var wire 1 7" Y $end
+$scope module base $end
+$var wire 1 4" A $end
+$var wire 1 b) B $end
+$var wire 1 7" Y $end
+$var wire 1 g) nand0_out_Y $end
+$upscope $end
+$upscope $end
+$scope module decoder7.nand_layer0 $end
+$var wire 1 5" A $end
+$var wire 1 h) VGND $end
+$var wire 1 i) VNB $end
+$var wire 1 j) VPB $end
+$var wire 1 k) VPWR $end
+$var wire 1 , Y $end
+$var wire 1 6" B $end
+$scope module base $end
+$var wire 1 5" A $end
+$var wire 1 , Y $end
+$var wire 1 l) nand0_out_Y $end
+$var wire 1 6" B $end
+$upscope $end
+$upscope $end
+$scope module decoder7.nand_layer1 $end
+$var wire 1 4" A $end
+$var wire 1 3" B $end
+$var wire 1 m) VGND $end
+$var wire 1 n) VNB $end
+$var wire 1 o) VPB $end
+$var wire 1 p) VPWR $end
+$var wire 1 6" Y $end
+$scope module base $end
+$var wire 1 4" A $end
+$var wire 1 3" B $end
+$var wire 1 6" Y $end
+$var wire 1 q) nand0_out_Y $end
+$upscope $end
+$upscope $end
+$scope module storage_0_0.bit[0].bit $end
+$var wire 1 E" D $end
+$var wire 1 r) VGND $end
+$var wire 1 s) VNB $end
+$var wire 1 t) VPB $end
+$var wire 1 u) VPWR $end
+$var wire 1 2" Q $end
+$var wire 1 (" GATE $end
+$scope module base $end
+$var wire 1 E" D $end
+$var wire 1 2" Q $end
+$var wire 1 v) buf_Q $end
+$var wire 1 (" GATE $end
+$scope module dlatch0 $end
+$var wire 1 E" D $end
+$var wire 1 (" GATE $end
+$var reg 1 v) Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_0_0.bit[0].obuf0 $end
+$var wire 1 2" A $end
+$var wire 1 w) VGND $end
+$var wire 1 x) VNB $end
+$var wire 1 y) VPB $end
+$var wire 1 z) VPWR $end
+$var wire 1 {) Z $end
+$var wire 1 '" TE_B $end
+$scope module base $end
+$var wire 1 2" A $end
+$var wire 1 {) Z $end
+$var wire 1 '" TE_B $end
+$upscope $end
+$upscope $end
+$scope module storage_0_0.bit[1].bit $end
+$var wire 1 D" D $end
+$var wire 1 |) VGND $end
+$var wire 1 }) VNB $end
+$var wire 1 ~) VPB $end
+$var wire 1 !* VPWR $end
+$var wire 1 1" Q $end
+$var wire 1 (" GATE $end
+$scope module base $end
+$var wire 1 D" D $end
+$var wire 1 1" Q $end
+$var wire 1 "* buf_Q $end
+$var wire 1 (" GATE $end
+$scope module dlatch0 $end
+$var wire 1 D" D $end
+$var wire 1 (" GATE $end
+$var reg 1 "* Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_0_0.bit[1].obuf0 $end
+$var wire 1 1" A $end
+$var wire 1 #* VGND $end
+$var wire 1 $* VNB $end
+$var wire 1 %* VPB $end
+$var wire 1 &* VPWR $end
+$var wire 1 '* Z $end
+$var wire 1 '" TE_B $end
+$scope module base $end
+$var wire 1 1" A $end
+$var wire 1 '* Z $end
+$var wire 1 '" TE_B $end
+$upscope $end
+$upscope $end
+$scope module storage_0_0.bit[2].bit $end
+$var wire 1 C" D $end
+$var wire 1 (* VGND $end
+$var wire 1 )* VNB $end
+$var wire 1 ** VPB $end
+$var wire 1 +* VPWR $end
+$var wire 1 0" Q $end
+$var wire 1 (" GATE $end
+$scope module base $end
+$var wire 1 C" D $end
+$var wire 1 0" Q $end
+$var wire 1 ,* buf_Q $end
+$var wire 1 (" GATE $end
+$scope module dlatch0 $end
+$var wire 1 C" D $end
+$var wire 1 (" GATE $end
+$var reg 1 ,* Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_0_0.bit[2].obuf0 $end
+$var wire 1 0" A $end
+$var wire 1 -* VGND $end
+$var wire 1 .* VNB $end
+$var wire 1 /* VPB $end
+$var wire 1 0* VPWR $end
+$var wire 1 1* Z $end
+$var wire 1 '" TE_B $end
+$scope module base $end
+$var wire 1 0" A $end
+$var wire 1 1* Z $end
+$var wire 1 '" TE_B $end
+$upscope $end
+$upscope $end
+$scope module storage_0_0.bit[3].bit $end
+$var wire 1 B" D $end
+$var wire 1 2* VGND $end
+$var wire 1 3* VNB $end
+$var wire 1 4* VPB $end
+$var wire 1 5* VPWR $end
+$var wire 1 /" Q $end
+$var wire 1 (" GATE $end
+$scope module base $end
+$var wire 1 B" D $end
+$var wire 1 /" Q $end
+$var wire 1 6* buf_Q $end
+$var wire 1 (" GATE $end
+$scope module dlatch0 $end
+$var wire 1 B" D $end
+$var wire 1 (" GATE $end
+$var reg 1 6* Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_0_0.bit[3].obuf0 $end
+$var wire 1 /" A $end
+$var wire 1 7* VGND $end
+$var wire 1 8* VNB $end
+$var wire 1 9* VPB $end
+$var wire 1 :* VPWR $end
+$var wire 1 ;* Z $end
+$var wire 1 '" TE_B $end
+$scope module base $end
+$var wire 1 /" A $end
+$var wire 1 ;* Z $end
+$var wire 1 '" TE_B $end
+$upscope $end
+$upscope $end
+$scope module storage_0_0.bit[4].bit $end
+$var wire 1 A" D $end
+$var wire 1 <* VGND $end
+$var wire 1 =* VNB $end
+$var wire 1 >* VPB $end
+$var wire 1 ?* VPWR $end
+$var wire 1 ." Q $end
+$var wire 1 (" GATE $end
+$scope module base $end
+$var wire 1 A" D $end
+$var wire 1 ." Q $end
+$var wire 1 @* buf_Q $end
+$var wire 1 (" GATE $end
+$scope module dlatch0 $end
+$var wire 1 A" D $end
+$var wire 1 (" GATE $end
+$var reg 1 @* Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_0_0.bit[4].obuf0 $end
+$var wire 1 ." A $end
+$var wire 1 A* VGND $end
+$var wire 1 B* VNB $end
+$var wire 1 C* VPB $end
+$var wire 1 D* VPWR $end
+$var wire 1 E* Z $end
+$var wire 1 '" TE_B $end
+$scope module base $end
+$var wire 1 ." A $end
+$var wire 1 E* Z $end
+$var wire 1 '" TE_B $end
+$upscope $end
+$upscope $end
+$scope module storage_0_0.bit[5].bit $end
+$var wire 1 @" D $end
+$var wire 1 F* VGND $end
+$var wire 1 G* VNB $end
+$var wire 1 H* VPB $end
+$var wire 1 I* VPWR $end
+$var wire 1 -" Q $end
+$var wire 1 (" GATE $end
+$scope module base $end
+$var wire 1 @" D $end
+$var wire 1 -" Q $end
+$var wire 1 J* buf_Q $end
+$var wire 1 (" GATE $end
+$scope module dlatch0 $end
+$var wire 1 @" D $end
+$var wire 1 (" GATE $end
+$var reg 1 J* Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_0_0.bit[5].obuf0 $end
+$var wire 1 -" A $end
+$var wire 1 K* VGND $end
+$var wire 1 L* VNB $end
+$var wire 1 M* VPB $end
+$var wire 1 N* VPWR $end
+$var wire 1 O* Z $end
+$var wire 1 '" TE_B $end
+$scope module base $end
+$var wire 1 -" A $end
+$var wire 1 O* Z $end
+$var wire 1 '" TE_B $end
+$upscope $end
+$upscope $end
+$scope module storage_0_0.bit[6].bit $end
+$var wire 1 ?" D $end
+$var wire 1 P* VGND $end
+$var wire 1 Q* VNB $end
+$var wire 1 R* VPB $end
+$var wire 1 S* VPWR $end
+$var wire 1 ," Q $end
+$var wire 1 (" GATE $end
+$scope module base $end
+$var wire 1 ?" D $end
+$var wire 1 ," Q $end
+$var wire 1 T* buf_Q $end
+$var wire 1 (" GATE $end
+$scope module dlatch0 $end
+$var wire 1 ?" D $end
+$var wire 1 (" GATE $end
+$var reg 1 T* Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_0_0.bit[6].obuf0 $end
+$var wire 1 ," A $end
+$var wire 1 U* VGND $end
+$var wire 1 V* VNB $end
+$var wire 1 W* VPB $end
+$var wire 1 X* VPWR $end
+$var wire 1 Y* Z $end
+$var wire 1 '" TE_B $end
+$scope module base $end
+$var wire 1 ," A $end
+$var wire 1 Y* Z $end
+$var wire 1 '" TE_B $end
+$upscope $end
+$upscope $end
+$scope module storage_0_0.bit[7].bit $end
+$var wire 1 >" D $end
+$var wire 1 Z* VGND $end
+$var wire 1 [* VNB $end
+$var wire 1 \* VPB $end
+$var wire 1 ]* VPWR $end
+$var wire 1 +" Q $end
+$var wire 1 (" GATE $end
+$scope module base $end
+$var wire 1 >" D $end
+$var wire 1 +" Q $end
+$var wire 1 ^* buf_Q $end
+$var wire 1 (" GATE $end
+$scope module dlatch0 $end
+$var wire 1 >" D $end
+$var wire 1 (" GATE $end
+$var reg 1 ^* Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_0_0.bit[7].obuf0 $end
+$var wire 1 +" A $end
+$var wire 1 _* VGND $end
+$var wire 1 `* VNB $end
+$var wire 1 a* VPB $end
+$var wire 1 b* VPWR $end
+$var wire 1 c* Z $end
+$var wire 1 '" TE_B $end
+$scope module base $end
+$var wire 1 +" A $end
+$var wire 1 c* Z $end
+$var wire 1 '" TE_B $end
+$upscope $end
+$upscope $end
+$scope module storage_0_0.cg $end
+$var wire 1 d* VGND $end
+$var wire 1 e* VNB $end
+$var wire 1 f* VPB $end
+$var wire 1 g* VPWR $end
+$var wire 1 (" GCLK $end
+$var wire 1 &" GATE $end
+$var wire 1 *" CLK $end
+$scope module base $end
+$var wire 1 (" GCLK $end
+$var wire 1 h* clkn $end
+$var wire 1 i* m0 $end
+$var wire 1 &" GATE $end
+$var wire 1 *" CLK $end
+$scope module dlatch0 $end
+$var wire 1 h* GATE $end
+$var wire 1 &" D $end
+$var reg 1 i* Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_0_0.clock_inv $end
+$var wire 1 $ A $end
+$var wire 1 j* VGND $end
+$var wire 1 k* VNB $end
+$var wire 1 l* VPB $end
+$var wire 1 m* VPWR $end
+$var wire 1 *" Y $end
+$scope module base $end
+$var wire 1 $ A $end
+$var wire 1 *" Y $end
+$var wire 1 n* not0_out_Y $end
+$upscope $end
+$upscope $end
+$scope module storage_0_0.gcand $end
+$var wire 1 )" A $end
+$var wire 1 % B $end
+$var wire 1 o* VGND $end
+$var wire 1 p* VNB $end
+$var wire 1 q* VPB $end
+$var wire 1 r* VPWR $end
+$var wire 1 &" X $end
+$scope module base $end
+$var wire 1 )" A $end
+$var wire 1 % B $end
+$var wire 1 &" X $end
+$var wire 1 s* and0_out_X $end
+$upscope $end
+$upscope $end
+$scope module storage_0_0.select_inv_0 $end
+$var wire 1 )" A $end
+$var wire 1 t* VGND $end
+$var wire 1 u* VNB $end
+$var wire 1 v* VPB $end
+$var wire 1 w* VPWR $end
+$var wire 1 '" Y $end
+$scope module base $end
+$var wire 1 )" A $end
+$var wire 1 '" Y $end
+$var wire 1 x* not0_out_Y $end
+$upscope $end
+$upscope $end
+$scope module storage_1_0.bit[0].bit $end
+$var wire 1 E" D $end
+$var wire 1 y* VGND $end
+$var wire 1 z* VNB $end
+$var wire 1 {* VPB $end
+$var wire 1 |* VPWR $end
+$var wire 1 %" Q $end
+$var wire 1 y GATE $end
+$scope module base $end
+$var wire 1 E" D $end
+$var wire 1 %" Q $end
+$var wire 1 }* buf_Q $end
+$var wire 1 y GATE $end
+$scope module dlatch0 $end
+$var wire 1 E" D $end
+$var wire 1 y GATE $end
+$var reg 1 }* Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_1_0.bit[0].obuf0 $end
+$var wire 1 %" A $end
+$var wire 1 ~* VGND $end
+$var wire 1 !+ VNB $end
+$var wire 1 "+ VPB $end
+$var wire 1 #+ VPWR $end
+$var wire 1 $+ Z $end
+$var wire 1 x TE_B $end
+$scope module base $end
+$var wire 1 %" A $end
+$var wire 1 $+ Z $end
+$var wire 1 x TE_B $end
+$upscope $end
+$upscope $end
+$scope module storage_1_0.bit[1].bit $end
+$var wire 1 D" D $end
+$var wire 1 %+ VGND $end
+$var wire 1 &+ VNB $end
+$var wire 1 '+ VPB $end
+$var wire 1 (+ VPWR $end
+$var wire 1 $" Q $end
+$var wire 1 y GATE $end
+$scope module base $end
+$var wire 1 D" D $end
+$var wire 1 $" Q $end
+$var wire 1 )+ buf_Q $end
+$var wire 1 y GATE $end
+$scope module dlatch0 $end
+$var wire 1 D" D $end
+$var wire 1 y GATE $end
+$var reg 1 )+ Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_1_0.bit[1].obuf0 $end
+$var wire 1 $" A $end
+$var wire 1 *+ VGND $end
+$var wire 1 ++ VNB $end
+$var wire 1 ,+ VPB $end
+$var wire 1 -+ VPWR $end
+$var wire 1 .+ Z $end
+$var wire 1 x TE_B $end
+$scope module base $end
+$var wire 1 $" A $end
+$var wire 1 .+ Z $end
+$var wire 1 x TE_B $end
+$upscope $end
+$upscope $end
+$scope module storage_1_0.bit[2].bit $end
+$var wire 1 C" D $end
+$var wire 1 /+ VGND $end
+$var wire 1 0+ VNB $end
+$var wire 1 1+ VPB $end
+$var wire 1 2+ VPWR $end
+$var wire 1 #" Q $end
+$var wire 1 y GATE $end
+$scope module base $end
+$var wire 1 C" D $end
+$var wire 1 #" Q $end
+$var wire 1 3+ buf_Q $end
+$var wire 1 y GATE $end
+$scope module dlatch0 $end
+$var wire 1 C" D $end
+$var wire 1 y GATE $end
+$var reg 1 3+ Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_1_0.bit[2].obuf0 $end
+$var wire 1 #" A $end
+$var wire 1 4+ VGND $end
+$var wire 1 5+ VNB $end
+$var wire 1 6+ VPB $end
+$var wire 1 7+ VPWR $end
+$var wire 1 8+ Z $end
+$var wire 1 x TE_B $end
+$scope module base $end
+$var wire 1 #" A $end
+$var wire 1 8+ Z $end
+$var wire 1 x TE_B $end
+$upscope $end
+$upscope $end
+$scope module storage_1_0.bit[3].bit $end
+$var wire 1 B" D $end
+$var wire 1 9+ VGND $end
+$var wire 1 :+ VNB $end
+$var wire 1 ;+ VPB $end
+$var wire 1 <+ VPWR $end
+$var wire 1 "" Q $end
+$var wire 1 y GATE $end
+$scope module base $end
+$var wire 1 B" D $end
+$var wire 1 "" Q $end
+$var wire 1 =+ buf_Q $end
+$var wire 1 y GATE $end
+$scope module dlatch0 $end
+$var wire 1 B" D $end
+$var wire 1 y GATE $end
+$var reg 1 =+ Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_1_0.bit[3].obuf0 $end
+$var wire 1 "" A $end
+$var wire 1 >+ VGND $end
+$var wire 1 ?+ VNB $end
+$var wire 1 @+ VPB $end
+$var wire 1 A+ VPWR $end
+$var wire 1 B+ Z $end
+$var wire 1 x TE_B $end
+$scope module base $end
+$var wire 1 "" A $end
+$var wire 1 B+ Z $end
+$var wire 1 x TE_B $end
+$upscope $end
+$upscope $end
+$scope module storage_1_0.bit[4].bit $end
+$var wire 1 A" D $end
+$var wire 1 C+ VGND $end
+$var wire 1 D+ VNB $end
+$var wire 1 E+ VPB $end
+$var wire 1 F+ VPWR $end
+$var wire 1 !" Q $end
+$var wire 1 y GATE $end
+$scope module base $end
+$var wire 1 A" D $end
+$var wire 1 !" Q $end
+$var wire 1 G+ buf_Q $end
+$var wire 1 y GATE $end
+$scope module dlatch0 $end
+$var wire 1 A" D $end
+$var wire 1 y GATE $end
+$var reg 1 G+ Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_1_0.bit[4].obuf0 $end
+$var wire 1 !" A $end
+$var wire 1 H+ VGND $end
+$var wire 1 I+ VNB $end
+$var wire 1 J+ VPB $end
+$var wire 1 K+ VPWR $end
+$var wire 1 L+ Z $end
+$var wire 1 x TE_B $end
+$scope module base $end
+$var wire 1 !" A $end
+$var wire 1 L+ Z $end
+$var wire 1 x TE_B $end
+$upscope $end
+$upscope $end
+$scope module storage_1_0.bit[5].bit $end
+$var wire 1 @" D $end
+$var wire 1 M+ VGND $end
+$var wire 1 N+ VNB $end
+$var wire 1 O+ VPB $end
+$var wire 1 P+ VPWR $end
+$var wire 1 ~ Q $end
+$var wire 1 y GATE $end
+$scope module base $end
+$var wire 1 @" D $end
+$var wire 1 ~ Q $end
+$var wire 1 Q+ buf_Q $end
+$var wire 1 y GATE $end
+$scope module dlatch0 $end
+$var wire 1 @" D $end
+$var wire 1 y GATE $end
+$var reg 1 Q+ Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_1_0.bit[5].obuf0 $end
+$var wire 1 ~ A $end
+$var wire 1 R+ VGND $end
+$var wire 1 S+ VNB $end
+$var wire 1 T+ VPB $end
+$var wire 1 U+ VPWR $end
+$var wire 1 V+ Z $end
+$var wire 1 x TE_B $end
+$scope module base $end
+$var wire 1 ~ A $end
+$var wire 1 V+ Z $end
+$var wire 1 x TE_B $end
+$upscope $end
+$upscope $end
+$scope module storage_1_0.bit[6].bit $end
+$var wire 1 ?" D $end
+$var wire 1 W+ VGND $end
+$var wire 1 X+ VNB $end
+$var wire 1 Y+ VPB $end
+$var wire 1 Z+ VPWR $end
+$var wire 1 } Q $end
+$var wire 1 y GATE $end
+$scope module base $end
+$var wire 1 ?" D $end
+$var wire 1 } Q $end
+$var wire 1 [+ buf_Q $end
+$var wire 1 y GATE $end
+$scope module dlatch0 $end
+$var wire 1 ?" D $end
+$var wire 1 y GATE $end
+$var reg 1 [+ Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_1_0.bit[6].obuf0 $end
+$var wire 1 } A $end
+$var wire 1 \+ VGND $end
+$var wire 1 ]+ VNB $end
+$var wire 1 ^+ VPB $end
+$var wire 1 _+ VPWR $end
+$var wire 1 `+ Z $end
+$var wire 1 x TE_B $end
+$scope module base $end
+$var wire 1 } A $end
+$var wire 1 `+ Z $end
+$var wire 1 x TE_B $end
+$upscope $end
+$upscope $end
+$scope module storage_1_0.bit[7].bit $end
+$var wire 1 >" D $end
+$var wire 1 a+ VGND $end
+$var wire 1 b+ VNB $end
+$var wire 1 c+ VPB $end
+$var wire 1 d+ VPWR $end
+$var wire 1 | Q $end
+$var wire 1 y GATE $end
+$scope module base $end
+$var wire 1 >" D $end
+$var wire 1 | Q $end
+$var wire 1 e+ buf_Q $end
+$var wire 1 y GATE $end
+$scope module dlatch0 $end
+$var wire 1 >" D $end
+$var wire 1 y GATE $end
+$var reg 1 e+ Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_1_0.bit[7].obuf0 $end
+$var wire 1 | A $end
+$var wire 1 f+ VGND $end
+$var wire 1 g+ VNB $end
+$var wire 1 h+ VPB $end
+$var wire 1 i+ VPWR $end
+$var wire 1 j+ Z $end
+$var wire 1 x TE_B $end
+$scope module base $end
+$var wire 1 | A $end
+$var wire 1 j+ Z $end
+$var wire 1 x TE_B $end
+$upscope $end
+$upscope $end
+$scope module storage_1_0.cg $end
+$var wire 1 k+ VGND $end
+$var wire 1 l+ VNB $end
+$var wire 1 m+ VPB $end
+$var wire 1 n+ VPWR $end
+$var wire 1 y GCLK $end
+$var wire 1 w GATE $end
+$var wire 1 { CLK $end
+$scope module base $end
+$var wire 1 y GCLK $end
+$var wire 1 o+ clkn $end
+$var wire 1 p+ m0 $end
+$var wire 1 w GATE $end
+$var wire 1 { CLK $end
+$scope module dlatch0 $end
+$var wire 1 o+ GATE $end
+$var wire 1 w D $end
+$var reg 1 p+ Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_1_0.clock_inv $end
+$var wire 1 $ A $end
+$var wire 1 q+ VGND $end
+$var wire 1 r+ VNB $end
+$var wire 1 s+ VPB $end
+$var wire 1 t+ VPWR $end
+$var wire 1 { Y $end
+$scope module base $end
+$var wire 1 $ A $end
+$var wire 1 { Y $end
+$var wire 1 u+ not0_out_Y $end
+$upscope $end
+$upscope $end
+$scope module storage_1_0.gcand $end
+$var wire 1 z A $end
+$var wire 1 % B $end
+$var wire 1 v+ VGND $end
+$var wire 1 w+ VNB $end
+$var wire 1 x+ VPB $end
+$var wire 1 y+ VPWR $end
+$var wire 1 w X $end
+$scope module base $end
+$var wire 1 z A $end
+$var wire 1 % B $end
+$var wire 1 w X $end
+$var wire 1 z+ and0_out_X $end
+$upscope $end
+$upscope $end
+$scope module storage_1_0.select_inv_0 $end
+$var wire 1 z A $end
+$var wire 1 {+ VGND $end
+$var wire 1 |+ VNB $end
+$var wire 1 }+ VPB $end
+$var wire 1 ~+ VPWR $end
+$var wire 1 x Y $end
+$scope module base $end
+$var wire 1 z A $end
+$var wire 1 x Y $end
+$var wire 1 !, not0_out_Y $end
+$upscope $end
+$upscope $end
+$scope module storage_2_0.bit[0].bit $end
+$var wire 1 E" D $end
+$var wire 1 ", VGND $end
+$var wire 1 #, VNB $end
+$var wire 1 $, VPB $end
+$var wire 1 %, VPWR $end
+$var wire 1 v Q $end
+$var wire 1 l GATE $end
+$scope module base $end
+$var wire 1 E" D $end
+$var wire 1 v Q $end
+$var wire 1 &, buf_Q $end
+$var wire 1 l GATE $end
+$scope module dlatch0 $end
+$var wire 1 E" D $end
+$var wire 1 l GATE $end
+$var reg 1 &, Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_2_0.bit[0].obuf0 $end
+$var wire 1 v A $end
+$var wire 1 ', VGND $end
+$var wire 1 (, VNB $end
+$var wire 1 ), VPB $end
+$var wire 1 *, VPWR $end
+$var wire 1 +, Z $end
+$var wire 1 k TE_B $end
+$scope module base $end
+$var wire 1 v A $end
+$var wire 1 +, Z $end
+$var wire 1 k TE_B $end
+$upscope $end
+$upscope $end
+$scope module storage_2_0.bit[1].bit $end
+$var wire 1 D" D $end
+$var wire 1 ,, VGND $end
+$var wire 1 -, VNB $end
+$var wire 1 ., VPB $end
+$var wire 1 /, VPWR $end
+$var wire 1 u Q $end
+$var wire 1 l GATE $end
+$scope module base $end
+$var wire 1 D" D $end
+$var wire 1 u Q $end
+$var wire 1 0, buf_Q $end
+$var wire 1 l GATE $end
+$scope module dlatch0 $end
+$var wire 1 D" D $end
+$var wire 1 l GATE $end
+$var reg 1 0, Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_2_0.bit[1].obuf0 $end
+$var wire 1 u A $end
+$var wire 1 1, VGND $end
+$var wire 1 2, VNB $end
+$var wire 1 3, VPB $end
+$var wire 1 4, VPWR $end
+$var wire 1 5, Z $end
+$var wire 1 k TE_B $end
+$scope module base $end
+$var wire 1 u A $end
+$var wire 1 5, Z $end
+$var wire 1 k TE_B $end
+$upscope $end
+$upscope $end
+$scope module storage_2_0.bit[2].bit $end
+$var wire 1 C" D $end
+$var wire 1 6, VGND $end
+$var wire 1 7, VNB $end
+$var wire 1 8, VPB $end
+$var wire 1 9, VPWR $end
+$var wire 1 t Q $end
+$var wire 1 l GATE $end
+$scope module base $end
+$var wire 1 C" D $end
+$var wire 1 t Q $end
+$var wire 1 :, buf_Q $end
+$var wire 1 l GATE $end
+$scope module dlatch0 $end
+$var wire 1 C" D $end
+$var wire 1 l GATE $end
+$var reg 1 :, Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_2_0.bit[2].obuf0 $end
+$var wire 1 t A $end
+$var wire 1 ;, VGND $end
+$var wire 1 <, VNB $end
+$var wire 1 =, VPB $end
+$var wire 1 >, VPWR $end
+$var wire 1 ?, Z $end
+$var wire 1 k TE_B $end
+$scope module base $end
+$var wire 1 t A $end
+$var wire 1 ?, Z $end
+$var wire 1 k TE_B $end
+$upscope $end
+$upscope $end
+$scope module storage_2_0.bit[3].bit $end
+$var wire 1 B" D $end
+$var wire 1 @, VGND $end
+$var wire 1 A, VNB $end
+$var wire 1 B, VPB $end
+$var wire 1 C, VPWR $end
+$var wire 1 s Q $end
+$var wire 1 l GATE $end
+$scope module base $end
+$var wire 1 B" D $end
+$var wire 1 s Q $end
+$var wire 1 D, buf_Q $end
+$var wire 1 l GATE $end
+$scope module dlatch0 $end
+$var wire 1 B" D $end
+$var wire 1 l GATE $end
+$var reg 1 D, Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_2_0.bit[3].obuf0 $end
+$var wire 1 s A $end
+$var wire 1 E, VGND $end
+$var wire 1 F, VNB $end
+$var wire 1 G, VPB $end
+$var wire 1 H, VPWR $end
+$var wire 1 I, Z $end
+$var wire 1 k TE_B $end
+$scope module base $end
+$var wire 1 s A $end
+$var wire 1 I, Z $end
+$var wire 1 k TE_B $end
+$upscope $end
+$upscope $end
+$scope module storage_2_0.bit[4].bit $end
+$var wire 1 A" D $end
+$var wire 1 J, VGND $end
+$var wire 1 K, VNB $end
+$var wire 1 L, VPB $end
+$var wire 1 M, VPWR $end
+$var wire 1 r Q $end
+$var wire 1 l GATE $end
+$scope module base $end
+$var wire 1 A" D $end
+$var wire 1 r Q $end
+$var wire 1 N, buf_Q $end
+$var wire 1 l GATE $end
+$scope module dlatch0 $end
+$var wire 1 A" D $end
+$var wire 1 l GATE $end
+$var reg 1 N, Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_2_0.bit[4].obuf0 $end
+$var wire 1 r A $end
+$var wire 1 O, VGND $end
+$var wire 1 P, VNB $end
+$var wire 1 Q, VPB $end
+$var wire 1 R, VPWR $end
+$var wire 1 S, Z $end
+$var wire 1 k TE_B $end
+$scope module base $end
+$var wire 1 r A $end
+$var wire 1 S, Z $end
+$var wire 1 k TE_B $end
+$upscope $end
+$upscope $end
+$scope module storage_2_0.bit[5].bit $end
+$var wire 1 @" D $end
+$var wire 1 T, VGND $end
+$var wire 1 U, VNB $end
+$var wire 1 V, VPB $end
+$var wire 1 W, VPWR $end
+$var wire 1 q Q $end
+$var wire 1 l GATE $end
+$scope module base $end
+$var wire 1 @" D $end
+$var wire 1 q Q $end
+$var wire 1 X, buf_Q $end
+$var wire 1 l GATE $end
+$scope module dlatch0 $end
+$var wire 1 @" D $end
+$var wire 1 l GATE $end
+$var reg 1 X, Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_2_0.bit[5].obuf0 $end
+$var wire 1 q A $end
+$var wire 1 Y, VGND $end
+$var wire 1 Z, VNB $end
+$var wire 1 [, VPB $end
+$var wire 1 \, VPWR $end
+$var wire 1 ], Z $end
+$var wire 1 k TE_B $end
+$scope module base $end
+$var wire 1 q A $end
+$var wire 1 ], Z $end
+$var wire 1 k TE_B $end
+$upscope $end
+$upscope $end
+$scope module storage_2_0.bit[6].bit $end
+$var wire 1 ?" D $end
+$var wire 1 ^, VGND $end
+$var wire 1 _, VNB $end
+$var wire 1 `, VPB $end
+$var wire 1 a, VPWR $end
+$var wire 1 p Q $end
+$var wire 1 l GATE $end
+$scope module base $end
+$var wire 1 ?" D $end
+$var wire 1 p Q $end
+$var wire 1 b, buf_Q $end
+$var wire 1 l GATE $end
+$scope module dlatch0 $end
+$var wire 1 ?" D $end
+$var wire 1 l GATE $end
+$var reg 1 b, Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_2_0.bit[6].obuf0 $end
+$var wire 1 p A $end
+$var wire 1 c, VGND $end
+$var wire 1 d, VNB $end
+$var wire 1 e, VPB $end
+$var wire 1 f, VPWR $end
+$var wire 1 g, Z $end
+$var wire 1 k TE_B $end
+$scope module base $end
+$var wire 1 p A $end
+$var wire 1 g, Z $end
+$var wire 1 k TE_B $end
+$upscope $end
+$upscope $end
+$scope module storage_2_0.bit[7].bit $end
+$var wire 1 >" D $end
+$var wire 1 h, VGND $end
+$var wire 1 i, VNB $end
+$var wire 1 j, VPB $end
+$var wire 1 k, VPWR $end
+$var wire 1 o Q $end
+$var wire 1 l GATE $end
+$scope module base $end
+$var wire 1 >" D $end
+$var wire 1 o Q $end
+$var wire 1 l, buf_Q $end
+$var wire 1 l GATE $end
+$scope module dlatch0 $end
+$var wire 1 >" D $end
+$var wire 1 l GATE $end
+$var reg 1 l, Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_2_0.bit[7].obuf0 $end
+$var wire 1 o A $end
+$var wire 1 m, VGND $end
+$var wire 1 n, VNB $end
+$var wire 1 o, VPB $end
+$var wire 1 p, VPWR $end
+$var wire 1 q, Z $end
+$var wire 1 k TE_B $end
+$scope module base $end
+$var wire 1 o A $end
+$var wire 1 q, Z $end
+$var wire 1 k TE_B $end
+$upscope $end
+$upscope $end
+$scope module storage_2_0.cg $end
+$var wire 1 r, VGND $end
+$var wire 1 s, VNB $end
+$var wire 1 t, VPB $end
+$var wire 1 u, VPWR $end
+$var wire 1 l GCLK $end
+$var wire 1 j GATE $end
+$var wire 1 n CLK $end
+$scope module base $end
+$var wire 1 l GCLK $end
+$var wire 1 v, clkn $end
+$var wire 1 w, m0 $end
+$var wire 1 j GATE $end
+$var wire 1 n CLK $end
+$scope module dlatch0 $end
+$var wire 1 v, GATE $end
+$var wire 1 j D $end
+$var reg 1 w, Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_2_0.clock_inv $end
+$var wire 1 $ A $end
+$var wire 1 x, VGND $end
+$var wire 1 y, VNB $end
+$var wire 1 z, VPB $end
+$var wire 1 {, VPWR $end
+$var wire 1 n Y $end
+$scope module base $end
+$var wire 1 $ A $end
+$var wire 1 n Y $end
+$var wire 1 |, not0_out_Y $end
+$upscope $end
+$upscope $end
+$scope module storage_2_0.gcand $end
+$var wire 1 m A $end
+$var wire 1 % B $end
+$var wire 1 }, VGND $end
+$var wire 1 ~, VNB $end
+$var wire 1 !- VPB $end
+$var wire 1 "- VPWR $end
+$var wire 1 j X $end
+$scope module base $end
+$var wire 1 m A $end
+$var wire 1 % B $end
+$var wire 1 j X $end
+$var wire 1 #- and0_out_X $end
+$upscope $end
+$upscope $end
+$scope module storage_2_0.select_inv_0 $end
+$var wire 1 m A $end
+$var wire 1 $- VGND $end
+$var wire 1 %- VNB $end
+$var wire 1 &- VPB $end
+$var wire 1 '- VPWR $end
+$var wire 1 k Y $end
+$scope module base $end
+$var wire 1 m A $end
+$var wire 1 k Y $end
+$var wire 1 (- not0_out_Y $end
+$upscope $end
+$upscope $end
+$scope module storage_3_0.bit[0].bit $end
+$var wire 1 E" D $end
+$var wire 1 )- VGND $end
+$var wire 1 *- VNB $end
+$var wire 1 +- VPB $end
+$var wire 1 ,- VPWR $end
+$var wire 1 i Q $end
+$var wire 1 _ GATE $end
+$scope module base $end
+$var wire 1 E" D $end
+$var wire 1 i Q $end
+$var wire 1 -- buf_Q $end
+$var wire 1 _ GATE $end
+$scope module dlatch0 $end
+$var wire 1 E" D $end
+$var wire 1 _ GATE $end
+$var reg 1 -- Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_3_0.bit[0].obuf0 $end
+$var wire 1 i A $end
+$var wire 1 .- VGND $end
+$var wire 1 /- VNB $end
+$var wire 1 0- VPB $end
+$var wire 1 1- VPWR $end
+$var wire 1 2- Z $end
+$var wire 1 ^ TE_B $end
+$scope module base $end
+$var wire 1 i A $end
+$var wire 1 2- Z $end
+$var wire 1 ^ TE_B $end
+$upscope $end
+$upscope $end
+$scope module storage_3_0.bit[1].bit $end
+$var wire 1 D" D $end
+$var wire 1 3- VGND $end
+$var wire 1 4- VNB $end
+$var wire 1 5- VPB $end
+$var wire 1 6- VPWR $end
+$var wire 1 h Q $end
+$var wire 1 _ GATE $end
+$scope module base $end
+$var wire 1 D" D $end
+$var wire 1 h Q $end
+$var wire 1 7- buf_Q $end
+$var wire 1 _ GATE $end
+$scope module dlatch0 $end
+$var wire 1 D" D $end
+$var wire 1 _ GATE $end
+$var reg 1 7- Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_3_0.bit[1].obuf0 $end
+$var wire 1 h A $end
+$var wire 1 8- VGND $end
+$var wire 1 9- VNB $end
+$var wire 1 :- VPB $end
+$var wire 1 ;- VPWR $end
+$var wire 1 <- Z $end
+$var wire 1 ^ TE_B $end
+$scope module base $end
+$var wire 1 h A $end
+$var wire 1 <- Z $end
+$var wire 1 ^ TE_B $end
+$upscope $end
+$upscope $end
+$scope module storage_3_0.bit[2].bit $end
+$var wire 1 C" D $end
+$var wire 1 =- VGND $end
+$var wire 1 >- VNB $end
+$var wire 1 ?- VPB $end
+$var wire 1 @- VPWR $end
+$var wire 1 g Q $end
+$var wire 1 _ GATE $end
+$scope module base $end
+$var wire 1 C" D $end
+$var wire 1 g Q $end
+$var wire 1 A- buf_Q $end
+$var wire 1 _ GATE $end
+$scope module dlatch0 $end
+$var wire 1 C" D $end
+$var wire 1 _ GATE $end
+$var reg 1 A- Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_3_0.bit[2].obuf0 $end
+$var wire 1 g A $end
+$var wire 1 B- VGND $end
+$var wire 1 C- VNB $end
+$var wire 1 D- VPB $end
+$var wire 1 E- VPWR $end
+$var wire 1 F- Z $end
+$var wire 1 ^ TE_B $end
+$scope module base $end
+$var wire 1 g A $end
+$var wire 1 F- Z $end
+$var wire 1 ^ TE_B $end
+$upscope $end
+$upscope $end
+$scope module storage_3_0.bit[3].bit $end
+$var wire 1 B" D $end
+$var wire 1 G- VGND $end
+$var wire 1 H- VNB $end
+$var wire 1 I- VPB $end
+$var wire 1 J- VPWR $end
+$var wire 1 f Q $end
+$var wire 1 _ GATE $end
+$scope module base $end
+$var wire 1 B" D $end
+$var wire 1 f Q $end
+$var wire 1 K- buf_Q $end
+$var wire 1 _ GATE $end
+$scope module dlatch0 $end
+$var wire 1 B" D $end
+$var wire 1 _ GATE $end
+$var reg 1 K- Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_3_0.bit[3].obuf0 $end
+$var wire 1 f A $end
+$var wire 1 L- VGND $end
+$var wire 1 M- VNB $end
+$var wire 1 N- VPB $end
+$var wire 1 O- VPWR $end
+$var wire 1 P- Z $end
+$var wire 1 ^ TE_B $end
+$scope module base $end
+$var wire 1 f A $end
+$var wire 1 P- Z $end
+$var wire 1 ^ TE_B $end
+$upscope $end
+$upscope $end
+$scope module storage_3_0.bit[4].bit $end
+$var wire 1 A" D $end
+$var wire 1 Q- VGND $end
+$var wire 1 R- VNB $end
+$var wire 1 S- VPB $end
+$var wire 1 T- VPWR $end
+$var wire 1 e Q $end
+$var wire 1 _ GATE $end
+$scope module base $end
+$var wire 1 A" D $end
+$var wire 1 e Q $end
+$var wire 1 U- buf_Q $end
+$var wire 1 _ GATE $end
+$scope module dlatch0 $end
+$var wire 1 A" D $end
+$var wire 1 _ GATE $end
+$var reg 1 U- Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_3_0.bit[4].obuf0 $end
+$var wire 1 e A $end
+$var wire 1 V- VGND $end
+$var wire 1 W- VNB $end
+$var wire 1 X- VPB $end
+$var wire 1 Y- VPWR $end
+$var wire 1 Z- Z $end
+$var wire 1 ^ TE_B $end
+$scope module base $end
+$var wire 1 e A $end
+$var wire 1 Z- Z $end
+$var wire 1 ^ TE_B $end
+$upscope $end
+$upscope $end
+$scope module storage_3_0.bit[5].bit $end
+$var wire 1 @" D $end
+$var wire 1 [- VGND $end
+$var wire 1 \- VNB $end
+$var wire 1 ]- VPB $end
+$var wire 1 ^- VPWR $end
+$var wire 1 d Q $end
+$var wire 1 _ GATE $end
+$scope module base $end
+$var wire 1 @" D $end
+$var wire 1 d Q $end
+$var wire 1 _- buf_Q $end
+$var wire 1 _ GATE $end
+$scope module dlatch0 $end
+$var wire 1 @" D $end
+$var wire 1 _ GATE $end
+$var reg 1 _- Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_3_0.bit[5].obuf0 $end
+$var wire 1 d A $end
+$var wire 1 `- VGND $end
+$var wire 1 a- VNB $end
+$var wire 1 b- VPB $end
+$var wire 1 c- VPWR $end
+$var wire 1 d- Z $end
+$var wire 1 ^ TE_B $end
+$scope module base $end
+$var wire 1 d A $end
+$var wire 1 d- Z $end
+$var wire 1 ^ TE_B $end
+$upscope $end
+$upscope $end
+$scope module storage_3_0.bit[6].bit $end
+$var wire 1 ?" D $end
+$var wire 1 e- VGND $end
+$var wire 1 f- VNB $end
+$var wire 1 g- VPB $end
+$var wire 1 h- VPWR $end
+$var wire 1 c Q $end
+$var wire 1 _ GATE $end
+$scope module base $end
+$var wire 1 ?" D $end
+$var wire 1 c Q $end
+$var wire 1 i- buf_Q $end
+$var wire 1 _ GATE $end
+$scope module dlatch0 $end
+$var wire 1 ?" D $end
+$var wire 1 _ GATE $end
+$var reg 1 i- Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_3_0.bit[6].obuf0 $end
+$var wire 1 c A $end
+$var wire 1 j- VGND $end
+$var wire 1 k- VNB $end
+$var wire 1 l- VPB $end
+$var wire 1 m- VPWR $end
+$var wire 1 n- Z $end
+$var wire 1 ^ TE_B $end
+$scope module base $end
+$var wire 1 c A $end
+$var wire 1 n- Z $end
+$var wire 1 ^ TE_B $end
+$upscope $end
+$upscope $end
+$scope module storage_3_0.bit[7].bit $end
+$var wire 1 >" D $end
+$var wire 1 o- VGND $end
+$var wire 1 p- VNB $end
+$var wire 1 q- VPB $end
+$var wire 1 r- VPWR $end
+$var wire 1 b Q $end
+$var wire 1 _ GATE $end
+$scope module base $end
+$var wire 1 >" D $end
+$var wire 1 b Q $end
+$var wire 1 s- buf_Q $end
+$var wire 1 _ GATE $end
+$scope module dlatch0 $end
+$var wire 1 >" D $end
+$var wire 1 _ GATE $end
+$var reg 1 s- Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_3_0.bit[7].obuf0 $end
+$var wire 1 b A $end
+$var wire 1 t- VGND $end
+$var wire 1 u- VNB $end
+$var wire 1 v- VPB $end
+$var wire 1 w- VPWR $end
+$var wire 1 x- Z $end
+$var wire 1 ^ TE_B $end
+$scope module base $end
+$var wire 1 b A $end
+$var wire 1 x- Z $end
+$var wire 1 ^ TE_B $end
+$upscope $end
+$upscope $end
+$scope module storage_3_0.cg $end
+$var wire 1 y- VGND $end
+$var wire 1 z- VNB $end
+$var wire 1 {- VPB $end
+$var wire 1 |- VPWR $end
+$var wire 1 _ GCLK $end
+$var wire 1 ] GATE $end
+$var wire 1 a CLK $end
+$scope module base $end
+$var wire 1 _ GCLK $end
+$var wire 1 }- clkn $end
+$var wire 1 ~- m0 $end
+$var wire 1 ] GATE $end
+$var wire 1 a CLK $end
+$scope module dlatch0 $end
+$var wire 1 }- GATE $end
+$var wire 1 ] D $end
+$var reg 1 ~- Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_3_0.clock_inv $end
+$var wire 1 $ A $end
+$var wire 1 !. VGND $end
+$var wire 1 ". VNB $end
+$var wire 1 #. VPB $end
+$var wire 1 $. VPWR $end
+$var wire 1 a Y $end
+$scope module base $end
+$var wire 1 $ A $end
+$var wire 1 a Y $end
+$var wire 1 %. not0_out_Y $end
+$upscope $end
+$upscope $end
+$scope module storage_3_0.gcand $end
+$var wire 1 ` A $end
+$var wire 1 % B $end
+$var wire 1 &. VGND $end
+$var wire 1 '. VNB $end
+$var wire 1 (. VPB $end
+$var wire 1 ). VPWR $end
+$var wire 1 ] X $end
+$scope module base $end
+$var wire 1 ` A $end
+$var wire 1 % B $end
+$var wire 1 ] X $end
+$var wire 1 *. and0_out_X $end
+$upscope $end
+$upscope $end
+$scope module storage_3_0.select_inv_0 $end
+$var wire 1 ` A $end
+$var wire 1 +. VGND $end
+$var wire 1 ,. VNB $end
+$var wire 1 -. VPB $end
+$var wire 1 .. VPWR $end
+$var wire 1 ^ Y $end
+$scope module base $end
+$var wire 1 ` A $end
+$var wire 1 ^ Y $end
+$var wire 1 /. not0_out_Y $end
+$upscope $end
+$upscope $end
+$scope module storage_4_0.bit[0].bit $end
+$var wire 1 E" D $end
+$var wire 1 0. VGND $end
+$var wire 1 1. VNB $end
+$var wire 1 2. VPB $end
+$var wire 1 3. VPWR $end
+$var wire 1 \ Q $end
+$var wire 1 R GATE $end
+$scope module base $end
+$var wire 1 E" D $end
+$var wire 1 \ Q $end
+$var wire 1 4. buf_Q $end
+$var wire 1 R GATE $end
+$scope module dlatch0 $end
+$var wire 1 E" D $end
+$var wire 1 R GATE $end
+$var reg 1 4. Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_4_0.bit[0].obuf0 $end
+$var wire 1 \ A $end
+$var wire 1 5. VGND $end
+$var wire 1 6. VNB $end
+$var wire 1 7. VPB $end
+$var wire 1 8. VPWR $end
+$var wire 1 9. Z $end
+$var wire 1 Q TE_B $end
+$scope module base $end
+$var wire 1 \ A $end
+$var wire 1 9. Z $end
+$var wire 1 Q TE_B $end
+$upscope $end
+$upscope $end
+$scope module storage_4_0.bit[1].bit $end
+$var wire 1 D" D $end
+$var wire 1 :. VGND $end
+$var wire 1 ;. VNB $end
+$var wire 1 <. VPB $end
+$var wire 1 =. VPWR $end
+$var wire 1 [ Q $end
+$var wire 1 R GATE $end
+$scope module base $end
+$var wire 1 D" D $end
+$var wire 1 [ Q $end
+$var wire 1 >. buf_Q $end
+$var wire 1 R GATE $end
+$scope module dlatch0 $end
+$var wire 1 D" D $end
+$var wire 1 R GATE $end
+$var reg 1 >. Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_4_0.bit[1].obuf0 $end
+$var wire 1 [ A $end
+$var wire 1 ?. VGND $end
+$var wire 1 @. VNB $end
+$var wire 1 A. VPB $end
+$var wire 1 B. VPWR $end
+$var wire 1 C. Z $end
+$var wire 1 Q TE_B $end
+$scope module base $end
+$var wire 1 [ A $end
+$var wire 1 C. Z $end
+$var wire 1 Q TE_B $end
+$upscope $end
+$upscope $end
+$scope module storage_4_0.bit[2].bit $end
+$var wire 1 C" D $end
+$var wire 1 D. VGND $end
+$var wire 1 E. VNB $end
+$var wire 1 F. VPB $end
+$var wire 1 G. VPWR $end
+$var wire 1 Z Q $end
+$var wire 1 R GATE $end
+$scope module base $end
+$var wire 1 C" D $end
+$var wire 1 Z Q $end
+$var wire 1 H. buf_Q $end
+$var wire 1 R GATE $end
+$scope module dlatch0 $end
+$var wire 1 C" D $end
+$var wire 1 R GATE $end
+$var reg 1 H. Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_4_0.bit[2].obuf0 $end
+$var wire 1 Z A $end
+$var wire 1 I. VGND $end
+$var wire 1 J. VNB $end
+$var wire 1 K. VPB $end
+$var wire 1 L. VPWR $end
+$var wire 1 M. Z $end
+$var wire 1 Q TE_B $end
+$scope module base $end
+$var wire 1 Z A $end
+$var wire 1 M. Z $end
+$var wire 1 Q TE_B $end
+$upscope $end
+$upscope $end
+$scope module storage_4_0.bit[3].bit $end
+$var wire 1 B" D $end
+$var wire 1 N. VGND $end
+$var wire 1 O. VNB $end
+$var wire 1 P. VPB $end
+$var wire 1 Q. VPWR $end
+$var wire 1 Y Q $end
+$var wire 1 R GATE $end
+$scope module base $end
+$var wire 1 B" D $end
+$var wire 1 Y Q $end
+$var wire 1 R. buf_Q $end
+$var wire 1 R GATE $end
+$scope module dlatch0 $end
+$var wire 1 B" D $end
+$var wire 1 R GATE $end
+$var reg 1 R. Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_4_0.bit[3].obuf0 $end
+$var wire 1 Y A $end
+$var wire 1 S. VGND $end
+$var wire 1 T. VNB $end
+$var wire 1 U. VPB $end
+$var wire 1 V. VPWR $end
+$var wire 1 W. Z $end
+$var wire 1 Q TE_B $end
+$scope module base $end
+$var wire 1 Y A $end
+$var wire 1 W. Z $end
+$var wire 1 Q TE_B $end
+$upscope $end
+$upscope $end
+$scope module storage_4_0.bit[4].bit $end
+$var wire 1 A" D $end
+$var wire 1 X. VGND $end
+$var wire 1 Y. VNB $end
+$var wire 1 Z. VPB $end
+$var wire 1 [. VPWR $end
+$var wire 1 X Q $end
+$var wire 1 R GATE $end
+$scope module base $end
+$var wire 1 A" D $end
+$var wire 1 X Q $end
+$var wire 1 \. buf_Q $end
+$var wire 1 R GATE $end
+$scope module dlatch0 $end
+$var wire 1 A" D $end
+$var wire 1 R GATE $end
+$var reg 1 \. Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_4_0.bit[4].obuf0 $end
+$var wire 1 X A $end
+$var wire 1 ]. VGND $end
+$var wire 1 ^. VNB $end
+$var wire 1 _. VPB $end
+$var wire 1 `. VPWR $end
+$var wire 1 a. Z $end
+$var wire 1 Q TE_B $end
+$scope module base $end
+$var wire 1 X A $end
+$var wire 1 a. Z $end
+$var wire 1 Q TE_B $end
+$upscope $end
+$upscope $end
+$scope module storage_4_0.bit[5].bit $end
+$var wire 1 @" D $end
+$var wire 1 b. VGND $end
+$var wire 1 c. VNB $end
+$var wire 1 d. VPB $end
+$var wire 1 e. VPWR $end
+$var wire 1 W Q $end
+$var wire 1 R GATE $end
+$scope module base $end
+$var wire 1 @" D $end
+$var wire 1 W Q $end
+$var wire 1 f. buf_Q $end
+$var wire 1 R GATE $end
+$scope module dlatch0 $end
+$var wire 1 @" D $end
+$var wire 1 R GATE $end
+$var reg 1 f. Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_4_0.bit[5].obuf0 $end
+$var wire 1 W A $end
+$var wire 1 g. VGND $end
+$var wire 1 h. VNB $end
+$var wire 1 i. VPB $end
+$var wire 1 j. VPWR $end
+$var wire 1 k. Z $end
+$var wire 1 Q TE_B $end
+$scope module base $end
+$var wire 1 W A $end
+$var wire 1 k. Z $end
+$var wire 1 Q TE_B $end
+$upscope $end
+$upscope $end
+$scope module storage_4_0.bit[6].bit $end
+$var wire 1 ?" D $end
+$var wire 1 l. VGND $end
+$var wire 1 m. VNB $end
+$var wire 1 n. VPB $end
+$var wire 1 o. VPWR $end
+$var wire 1 V Q $end
+$var wire 1 R GATE $end
+$scope module base $end
+$var wire 1 ?" D $end
+$var wire 1 V Q $end
+$var wire 1 p. buf_Q $end
+$var wire 1 R GATE $end
+$scope module dlatch0 $end
+$var wire 1 ?" D $end
+$var wire 1 R GATE $end
+$var reg 1 p. Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_4_0.bit[6].obuf0 $end
+$var wire 1 V A $end
+$var wire 1 q. VGND $end
+$var wire 1 r. VNB $end
+$var wire 1 s. VPB $end
+$var wire 1 t. VPWR $end
+$var wire 1 u. Z $end
+$var wire 1 Q TE_B $end
+$scope module base $end
+$var wire 1 V A $end
+$var wire 1 u. Z $end
+$var wire 1 Q TE_B $end
+$upscope $end
+$upscope $end
+$scope module storage_4_0.bit[7].bit $end
+$var wire 1 >" D $end
+$var wire 1 v. VGND $end
+$var wire 1 w. VNB $end
+$var wire 1 x. VPB $end
+$var wire 1 y. VPWR $end
+$var wire 1 U Q $end
+$var wire 1 R GATE $end
+$scope module base $end
+$var wire 1 >" D $end
+$var wire 1 U Q $end
+$var wire 1 z. buf_Q $end
+$var wire 1 R GATE $end
+$scope module dlatch0 $end
+$var wire 1 >" D $end
+$var wire 1 R GATE $end
+$var reg 1 z. Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_4_0.bit[7].obuf0 $end
+$var wire 1 U A $end
+$var wire 1 {. VGND $end
+$var wire 1 |. VNB $end
+$var wire 1 }. VPB $end
+$var wire 1 ~. VPWR $end
+$var wire 1 !/ Z $end
+$var wire 1 Q TE_B $end
+$scope module base $end
+$var wire 1 U A $end
+$var wire 1 !/ Z $end
+$var wire 1 Q TE_B $end
+$upscope $end
+$upscope $end
+$scope module storage_4_0.cg $end
+$var wire 1 "/ VGND $end
+$var wire 1 #/ VNB $end
+$var wire 1 $/ VPB $end
+$var wire 1 %/ VPWR $end
+$var wire 1 R GCLK $end
+$var wire 1 P GATE $end
+$var wire 1 T CLK $end
+$scope module base $end
+$var wire 1 R GCLK $end
+$var wire 1 &/ clkn $end
+$var wire 1 '/ m0 $end
+$var wire 1 P GATE $end
+$var wire 1 T CLK $end
+$scope module dlatch0 $end
+$var wire 1 &/ GATE $end
+$var wire 1 P D $end
+$var reg 1 '/ Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_4_0.clock_inv $end
+$var wire 1 $ A $end
+$var wire 1 (/ VGND $end
+$var wire 1 )/ VNB $end
+$var wire 1 */ VPB $end
+$var wire 1 +/ VPWR $end
+$var wire 1 T Y $end
+$scope module base $end
+$var wire 1 $ A $end
+$var wire 1 T Y $end
+$var wire 1 ,/ not0_out_Y $end
+$upscope $end
+$upscope $end
+$scope module storage_4_0.gcand $end
+$var wire 1 S A $end
+$var wire 1 % B $end
+$var wire 1 -/ VGND $end
+$var wire 1 ./ VNB $end
+$var wire 1 // VPB $end
+$var wire 1 0/ VPWR $end
+$var wire 1 P X $end
+$scope module base $end
+$var wire 1 S A $end
+$var wire 1 % B $end
+$var wire 1 P X $end
+$var wire 1 1/ and0_out_X $end
+$upscope $end
+$upscope $end
+$scope module storage_4_0.select_inv_0 $end
+$var wire 1 S A $end
+$var wire 1 2/ VGND $end
+$var wire 1 3/ VNB $end
+$var wire 1 4/ VPB $end
+$var wire 1 5/ VPWR $end
+$var wire 1 Q Y $end
+$scope module base $end
+$var wire 1 S A $end
+$var wire 1 Q Y $end
+$var wire 1 6/ not0_out_Y $end
+$upscope $end
+$upscope $end
+$scope module storage_5_0.bit[0].bit $end
+$var wire 1 E" D $end
+$var wire 1 7/ VGND $end
+$var wire 1 8/ VNB $end
+$var wire 1 9/ VPB $end
+$var wire 1 :/ VPWR $end
+$var wire 1 O Q $end
+$var wire 1 E GATE $end
+$scope module base $end
+$var wire 1 E" D $end
+$var wire 1 O Q $end
+$var wire 1 ;/ buf_Q $end
+$var wire 1 E GATE $end
+$scope module dlatch0 $end
+$var wire 1 E" D $end
+$var wire 1 E GATE $end
+$var reg 1 ;/ Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_5_0.bit[0].obuf0 $end
+$var wire 1 O A $end
+$var wire 1 </ VGND $end
+$var wire 1 =/ VNB $end
+$var wire 1 >/ VPB $end
+$var wire 1 ?/ VPWR $end
+$var wire 1 @/ Z $end
+$var wire 1 D TE_B $end
+$scope module base $end
+$var wire 1 O A $end
+$var wire 1 @/ Z $end
+$var wire 1 D TE_B $end
+$upscope $end
+$upscope $end
+$scope module storage_5_0.bit[1].bit $end
+$var wire 1 D" D $end
+$var wire 1 A/ VGND $end
+$var wire 1 B/ VNB $end
+$var wire 1 C/ VPB $end
+$var wire 1 D/ VPWR $end
+$var wire 1 N Q $end
+$var wire 1 E GATE $end
+$scope module base $end
+$var wire 1 D" D $end
+$var wire 1 N Q $end
+$var wire 1 E/ buf_Q $end
+$var wire 1 E GATE $end
+$scope module dlatch0 $end
+$var wire 1 D" D $end
+$var wire 1 E GATE $end
+$var reg 1 E/ Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_5_0.bit[1].obuf0 $end
+$var wire 1 N A $end
+$var wire 1 F/ VGND $end
+$var wire 1 G/ VNB $end
+$var wire 1 H/ VPB $end
+$var wire 1 I/ VPWR $end
+$var wire 1 J/ Z $end
+$var wire 1 D TE_B $end
+$scope module base $end
+$var wire 1 N A $end
+$var wire 1 J/ Z $end
+$var wire 1 D TE_B $end
+$upscope $end
+$upscope $end
+$scope module storage_5_0.bit[2].bit $end
+$var wire 1 C" D $end
+$var wire 1 K/ VGND $end
+$var wire 1 L/ VNB $end
+$var wire 1 M/ VPB $end
+$var wire 1 N/ VPWR $end
+$var wire 1 M Q $end
+$var wire 1 E GATE $end
+$scope module base $end
+$var wire 1 C" D $end
+$var wire 1 M Q $end
+$var wire 1 O/ buf_Q $end
+$var wire 1 E GATE $end
+$scope module dlatch0 $end
+$var wire 1 C" D $end
+$var wire 1 E GATE $end
+$var reg 1 O/ Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_5_0.bit[2].obuf0 $end
+$var wire 1 M A $end
+$var wire 1 P/ VGND $end
+$var wire 1 Q/ VNB $end
+$var wire 1 R/ VPB $end
+$var wire 1 S/ VPWR $end
+$var wire 1 T/ Z $end
+$var wire 1 D TE_B $end
+$scope module base $end
+$var wire 1 M A $end
+$var wire 1 T/ Z $end
+$var wire 1 D TE_B $end
+$upscope $end
+$upscope $end
+$scope module storage_5_0.bit[3].bit $end
+$var wire 1 B" D $end
+$var wire 1 U/ VGND $end
+$var wire 1 V/ VNB $end
+$var wire 1 W/ VPB $end
+$var wire 1 X/ VPWR $end
+$var wire 1 L Q $end
+$var wire 1 E GATE $end
+$scope module base $end
+$var wire 1 B" D $end
+$var wire 1 L Q $end
+$var wire 1 Y/ buf_Q $end
+$var wire 1 E GATE $end
+$scope module dlatch0 $end
+$var wire 1 B" D $end
+$var wire 1 E GATE $end
+$var reg 1 Y/ Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_5_0.bit[3].obuf0 $end
+$var wire 1 L A $end
+$var wire 1 Z/ VGND $end
+$var wire 1 [/ VNB $end
+$var wire 1 \/ VPB $end
+$var wire 1 ]/ VPWR $end
+$var wire 1 ^/ Z $end
+$var wire 1 D TE_B $end
+$scope module base $end
+$var wire 1 L A $end
+$var wire 1 ^/ Z $end
+$var wire 1 D TE_B $end
+$upscope $end
+$upscope $end
+$scope module storage_5_0.bit[4].bit $end
+$var wire 1 A" D $end
+$var wire 1 _/ VGND $end
+$var wire 1 `/ VNB $end
+$var wire 1 a/ VPB $end
+$var wire 1 b/ VPWR $end
+$var wire 1 K Q $end
+$var wire 1 E GATE $end
+$scope module base $end
+$var wire 1 A" D $end
+$var wire 1 K Q $end
+$var wire 1 c/ buf_Q $end
+$var wire 1 E GATE $end
+$scope module dlatch0 $end
+$var wire 1 A" D $end
+$var wire 1 E GATE $end
+$var reg 1 c/ Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_5_0.bit[4].obuf0 $end
+$var wire 1 K A $end
+$var wire 1 d/ VGND $end
+$var wire 1 e/ VNB $end
+$var wire 1 f/ VPB $end
+$var wire 1 g/ VPWR $end
+$var wire 1 h/ Z $end
+$var wire 1 D TE_B $end
+$scope module base $end
+$var wire 1 K A $end
+$var wire 1 h/ Z $end
+$var wire 1 D TE_B $end
+$upscope $end
+$upscope $end
+$scope module storage_5_0.bit[5].bit $end
+$var wire 1 @" D $end
+$var wire 1 i/ VGND $end
+$var wire 1 j/ VNB $end
+$var wire 1 k/ VPB $end
+$var wire 1 l/ VPWR $end
+$var wire 1 J Q $end
+$var wire 1 E GATE $end
+$scope module base $end
+$var wire 1 @" D $end
+$var wire 1 J Q $end
+$var wire 1 m/ buf_Q $end
+$var wire 1 E GATE $end
+$scope module dlatch0 $end
+$var wire 1 @" D $end
+$var wire 1 E GATE $end
+$var reg 1 m/ Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_5_0.bit[5].obuf0 $end
+$var wire 1 J A $end
+$var wire 1 n/ VGND $end
+$var wire 1 o/ VNB $end
+$var wire 1 p/ VPB $end
+$var wire 1 q/ VPWR $end
+$var wire 1 r/ Z $end
+$var wire 1 D TE_B $end
+$scope module base $end
+$var wire 1 J A $end
+$var wire 1 r/ Z $end
+$var wire 1 D TE_B $end
+$upscope $end
+$upscope $end
+$scope module storage_5_0.bit[6].bit $end
+$var wire 1 ?" D $end
+$var wire 1 s/ VGND $end
+$var wire 1 t/ VNB $end
+$var wire 1 u/ VPB $end
+$var wire 1 v/ VPWR $end
+$var wire 1 I Q $end
+$var wire 1 E GATE $end
+$scope module base $end
+$var wire 1 ?" D $end
+$var wire 1 I Q $end
+$var wire 1 w/ buf_Q $end
+$var wire 1 E GATE $end
+$scope module dlatch0 $end
+$var wire 1 ?" D $end
+$var wire 1 E GATE $end
+$var reg 1 w/ Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_5_0.bit[6].obuf0 $end
+$var wire 1 I A $end
+$var wire 1 x/ VGND $end
+$var wire 1 y/ VNB $end
+$var wire 1 z/ VPB $end
+$var wire 1 {/ VPWR $end
+$var wire 1 |/ Z $end
+$var wire 1 D TE_B $end
+$scope module base $end
+$var wire 1 I A $end
+$var wire 1 |/ Z $end
+$var wire 1 D TE_B $end
+$upscope $end
+$upscope $end
+$scope module storage_5_0.bit[7].bit $end
+$var wire 1 >" D $end
+$var wire 1 }/ VGND $end
+$var wire 1 ~/ VNB $end
+$var wire 1 !0 VPB $end
+$var wire 1 "0 VPWR $end
+$var wire 1 H Q $end
+$var wire 1 E GATE $end
+$scope module base $end
+$var wire 1 >" D $end
+$var wire 1 H Q $end
+$var wire 1 #0 buf_Q $end
+$var wire 1 E GATE $end
+$scope module dlatch0 $end
+$var wire 1 >" D $end
+$var wire 1 E GATE $end
+$var reg 1 #0 Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_5_0.bit[7].obuf0 $end
+$var wire 1 H A $end
+$var wire 1 $0 VGND $end
+$var wire 1 %0 VNB $end
+$var wire 1 &0 VPB $end
+$var wire 1 '0 VPWR $end
+$var wire 1 (0 Z $end
+$var wire 1 D TE_B $end
+$scope module base $end
+$var wire 1 H A $end
+$var wire 1 (0 Z $end
+$var wire 1 D TE_B $end
+$upscope $end
+$upscope $end
+$scope module storage_5_0.cg $end
+$var wire 1 )0 VGND $end
+$var wire 1 *0 VNB $end
+$var wire 1 +0 VPB $end
+$var wire 1 ,0 VPWR $end
+$var wire 1 E GCLK $end
+$var wire 1 C GATE $end
+$var wire 1 G CLK $end
+$scope module base $end
+$var wire 1 E GCLK $end
+$var wire 1 -0 clkn $end
+$var wire 1 .0 m0 $end
+$var wire 1 C GATE $end
+$var wire 1 G CLK $end
+$scope module dlatch0 $end
+$var wire 1 -0 GATE $end
+$var wire 1 C D $end
+$var reg 1 .0 Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_5_0.clock_inv $end
+$var wire 1 $ A $end
+$var wire 1 /0 VGND $end
+$var wire 1 00 VNB $end
+$var wire 1 10 VPB $end
+$var wire 1 20 VPWR $end
+$var wire 1 G Y $end
+$scope module base $end
+$var wire 1 $ A $end
+$var wire 1 G Y $end
+$var wire 1 30 not0_out_Y $end
+$upscope $end
+$upscope $end
+$scope module storage_5_0.gcand $end
+$var wire 1 F A $end
+$var wire 1 % B $end
+$var wire 1 40 VGND $end
+$var wire 1 50 VNB $end
+$var wire 1 60 VPB $end
+$var wire 1 70 VPWR $end
+$var wire 1 C X $end
+$scope module base $end
+$var wire 1 F A $end
+$var wire 1 % B $end
+$var wire 1 C X $end
+$var wire 1 80 and0_out_X $end
+$upscope $end
+$upscope $end
+$scope module storage_5_0.select_inv_0 $end
+$var wire 1 F A $end
+$var wire 1 90 VGND $end
+$var wire 1 :0 VNB $end
+$var wire 1 ;0 VPB $end
+$var wire 1 <0 VPWR $end
+$var wire 1 D Y $end
+$scope module base $end
+$var wire 1 F A $end
+$var wire 1 D Y $end
+$var wire 1 =0 not0_out_Y $end
+$upscope $end
+$upscope $end
+$scope module storage_6_0.bit[0].bit $end
+$var wire 1 E" D $end
+$var wire 1 >0 VGND $end
+$var wire 1 ?0 VNB $end
+$var wire 1 @0 VPB $end
+$var wire 1 A0 VPWR $end
+$var wire 1 B Q $end
+$var wire 1 8 GATE $end
+$scope module base $end
+$var wire 1 E" D $end
+$var wire 1 B Q $end
+$var wire 1 B0 buf_Q $end
+$var wire 1 8 GATE $end
+$scope module dlatch0 $end
+$var wire 1 E" D $end
+$var wire 1 8 GATE $end
+$var reg 1 B0 Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_6_0.bit[0].obuf0 $end
+$var wire 1 B A $end
+$var wire 1 C0 VGND $end
+$var wire 1 D0 VNB $end
+$var wire 1 E0 VPB $end
+$var wire 1 F0 VPWR $end
+$var wire 1 G0 Z $end
+$var wire 1 7 TE_B $end
+$scope module base $end
+$var wire 1 B A $end
+$var wire 1 G0 Z $end
+$var wire 1 7 TE_B $end
+$upscope $end
+$upscope $end
+$scope module storage_6_0.bit[1].bit $end
+$var wire 1 D" D $end
+$var wire 1 H0 VGND $end
+$var wire 1 I0 VNB $end
+$var wire 1 J0 VPB $end
+$var wire 1 K0 VPWR $end
+$var wire 1 A Q $end
+$var wire 1 8 GATE $end
+$scope module base $end
+$var wire 1 D" D $end
+$var wire 1 A Q $end
+$var wire 1 L0 buf_Q $end
+$var wire 1 8 GATE $end
+$scope module dlatch0 $end
+$var wire 1 D" D $end
+$var wire 1 8 GATE $end
+$var reg 1 L0 Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_6_0.bit[1].obuf0 $end
+$var wire 1 A A $end
+$var wire 1 M0 VGND $end
+$var wire 1 N0 VNB $end
+$var wire 1 O0 VPB $end
+$var wire 1 P0 VPWR $end
+$var wire 1 Q0 Z $end
+$var wire 1 7 TE_B $end
+$scope module base $end
+$var wire 1 A A $end
+$var wire 1 Q0 Z $end
+$var wire 1 7 TE_B $end
+$upscope $end
+$upscope $end
+$scope module storage_6_0.bit[2].bit $end
+$var wire 1 C" D $end
+$var wire 1 R0 VGND $end
+$var wire 1 S0 VNB $end
+$var wire 1 T0 VPB $end
+$var wire 1 U0 VPWR $end
+$var wire 1 @ Q $end
+$var wire 1 8 GATE $end
+$scope module base $end
+$var wire 1 C" D $end
+$var wire 1 @ Q $end
+$var wire 1 V0 buf_Q $end
+$var wire 1 8 GATE $end
+$scope module dlatch0 $end
+$var wire 1 C" D $end
+$var wire 1 8 GATE $end
+$var reg 1 V0 Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_6_0.bit[2].obuf0 $end
+$var wire 1 @ A $end
+$var wire 1 W0 VGND $end
+$var wire 1 X0 VNB $end
+$var wire 1 Y0 VPB $end
+$var wire 1 Z0 VPWR $end
+$var wire 1 [0 Z $end
+$var wire 1 7 TE_B $end
+$scope module base $end
+$var wire 1 @ A $end
+$var wire 1 [0 Z $end
+$var wire 1 7 TE_B $end
+$upscope $end
+$upscope $end
+$scope module storage_6_0.bit[3].bit $end
+$var wire 1 B" D $end
+$var wire 1 \0 VGND $end
+$var wire 1 ]0 VNB $end
+$var wire 1 ^0 VPB $end
+$var wire 1 _0 VPWR $end
+$var wire 1 ? Q $end
+$var wire 1 8 GATE $end
+$scope module base $end
+$var wire 1 B" D $end
+$var wire 1 ? Q $end
+$var wire 1 `0 buf_Q $end
+$var wire 1 8 GATE $end
+$scope module dlatch0 $end
+$var wire 1 B" D $end
+$var wire 1 8 GATE $end
+$var reg 1 `0 Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_6_0.bit[3].obuf0 $end
+$var wire 1 ? A $end
+$var wire 1 a0 VGND $end
+$var wire 1 b0 VNB $end
+$var wire 1 c0 VPB $end
+$var wire 1 d0 VPWR $end
+$var wire 1 e0 Z $end
+$var wire 1 7 TE_B $end
+$scope module base $end
+$var wire 1 ? A $end
+$var wire 1 e0 Z $end
+$var wire 1 7 TE_B $end
+$upscope $end
+$upscope $end
+$scope module storage_6_0.bit[4].bit $end
+$var wire 1 A" D $end
+$var wire 1 f0 VGND $end
+$var wire 1 g0 VNB $end
+$var wire 1 h0 VPB $end
+$var wire 1 i0 VPWR $end
+$var wire 1 > Q $end
+$var wire 1 8 GATE $end
+$scope module base $end
+$var wire 1 A" D $end
+$var wire 1 > Q $end
+$var wire 1 j0 buf_Q $end
+$var wire 1 8 GATE $end
+$scope module dlatch0 $end
+$var wire 1 A" D $end
+$var wire 1 8 GATE $end
+$var reg 1 j0 Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_6_0.bit[4].obuf0 $end
+$var wire 1 > A $end
+$var wire 1 k0 VGND $end
+$var wire 1 l0 VNB $end
+$var wire 1 m0 VPB $end
+$var wire 1 n0 VPWR $end
+$var wire 1 o0 Z $end
+$var wire 1 7 TE_B $end
+$scope module base $end
+$var wire 1 > A $end
+$var wire 1 o0 Z $end
+$var wire 1 7 TE_B $end
+$upscope $end
+$upscope $end
+$scope module storage_6_0.bit[5].bit $end
+$var wire 1 @" D $end
+$var wire 1 p0 VGND $end
+$var wire 1 q0 VNB $end
+$var wire 1 r0 VPB $end
+$var wire 1 s0 VPWR $end
+$var wire 1 = Q $end
+$var wire 1 8 GATE $end
+$scope module base $end
+$var wire 1 @" D $end
+$var wire 1 = Q $end
+$var wire 1 t0 buf_Q $end
+$var wire 1 8 GATE $end
+$scope module dlatch0 $end
+$var wire 1 @" D $end
+$var wire 1 8 GATE $end
+$var reg 1 t0 Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_6_0.bit[5].obuf0 $end
+$var wire 1 = A $end
+$var wire 1 u0 VGND $end
+$var wire 1 v0 VNB $end
+$var wire 1 w0 VPB $end
+$var wire 1 x0 VPWR $end
+$var wire 1 y0 Z $end
+$var wire 1 7 TE_B $end
+$scope module base $end
+$var wire 1 = A $end
+$var wire 1 y0 Z $end
+$var wire 1 7 TE_B $end
+$upscope $end
+$upscope $end
+$scope module storage_6_0.bit[6].bit $end
+$var wire 1 ?" D $end
+$var wire 1 z0 VGND $end
+$var wire 1 {0 VNB $end
+$var wire 1 |0 VPB $end
+$var wire 1 }0 VPWR $end
+$var wire 1 < Q $end
+$var wire 1 8 GATE $end
+$scope module base $end
+$var wire 1 ?" D $end
+$var wire 1 < Q $end
+$var wire 1 ~0 buf_Q $end
+$var wire 1 8 GATE $end
+$scope module dlatch0 $end
+$var wire 1 ?" D $end
+$var wire 1 8 GATE $end
+$var reg 1 ~0 Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_6_0.bit[6].obuf0 $end
+$var wire 1 < A $end
+$var wire 1 !1 VGND $end
+$var wire 1 "1 VNB $end
+$var wire 1 #1 VPB $end
+$var wire 1 $1 VPWR $end
+$var wire 1 %1 Z $end
+$var wire 1 7 TE_B $end
+$scope module base $end
+$var wire 1 < A $end
+$var wire 1 %1 Z $end
+$var wire 1 7 TE_B $end
+$upscope $end
+$upscope $end
+$scope module storage_6_0.bit[7].bit $end
+$var wire 1 >" D $end
+$var wire 1 &1 VGND $end
+$var wire 1 '1 VNB $end
+$var wire 1 (1 VPB $end
+$var wire 1 )1 VPWR $end
+$var wire 1 ; Q $end
+$var wire 1 8 GATE $end
+$scope module base $end
+$var wire 1 >" D $end
+$var wire 1 ; Q $end
+$var wire 1 *1 buf_Q $end
+$var wire 1 8 GATE $end
+$scope module dlatch0 $end
+$var wire 1 >" D $end
+$var wire 1 8 GATE $end
+$var reg 1 *1 Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_6_0.bit[7].obuf0 $end
+$var wire 1 ; A $end
+$var wire 1 +1 VGND $end
+$var wire 1 ,1 VNB $end
+$var wire 1 -1 VPB $end
+$var wire 1 .1 VPWR $end
+$var wire 1 /1 Z $end
+$var wire 1 7 TE_B $end
+$scope module base $end
+$var wire 1 ; A $end
+$var wire 1 /1 Z $end
+$var wire 1 7 TE_B $end
+$upscope $end
+$upscope $end
+$scope module storage_6_0.cg $end
+$var wire 1 01 VGND $end
+$var wire 1 11 VNB $end
+$var wire 1 21 VPB $end
+$var wire 1 31 VPWR $end
+$var wire 1 8 GCLK $end
+$var wire 1 6 GATE $end
+$var wire 1 : CLK $end
+$scope module base $end
+$var wire 1 8 GCLK $end
+$var wire 1 41 clkn $end
+$var wire 1 51 m0 $end
+$var wire 1 6 GATE $end
+$var wire 1 : CLK $end
+$scope module dlatch0 $end
+$var wire 1 41 GATE $end
+$var wire 1 6 D $end
+$var reg 1 51 Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_6_0.clock_inv $end
+$var wire 1 $ A $end
+$var wire 1 61 VGND $end
+$var wire 1 71 VNB $end
+$var wire 1 81 VPB $end
+$var wire 1 91 VPWR $end
+$var wire 1 : Y $end
+$scope module base $end
+$var wire 1 $ A $end
+$var wire 1 : Y $end
+$var wire 1 :1 not0_out_Y $end
+$upscope $end
+$upscope $end
+$scope module storage_6_0.gcand $end
+$var wire 1 9 A $end
+$var wire 1 % B $end
+$var wire 1 ;1 VGND $end
+$var wire 1 <1 VNB $end
+$var wire 1 =1 VPB $end
+$var wire 1 >1 VPWR $end
+$var wire 1 6 X $end
+$scope module base $end
+$var wire 1 9 A $end
+$var wire 1 % B $end
+$var wire 1 6 X $end
+$var wire 1 ?1 and0_out_X $end
+$upscope $end
+$upscope $end
+$scope module storage_6_0.select_inv_0 $end
+$var wire 1 9 A $end
+$var wire 1 @1 VGND $end
+$var wire 1 A1 VNB $end
+$var wire 1 B1 VPB $end
+$var wire 1 C1 VPWR $end
+$var wire 1 7 Y $end
+$scope module base $end
+$var wire 1 9 A $end
+$var wire 1 7 Y $end
+$var wire 1 D1 not0_out_Y $end
+$upscope $end
+$upscope $end
+$scope module storage_7_0.bit[0].bit $end
+$var wire 1 E" D $end
+$var wire 1 E1 VGND $end
+$var wire 1 F1 VNB $end
+$var wire 1 G1 VPB $end
+$var wire 1 H1 VPWR $end
+$var wire 1 5 Q $end
+$var wire 1 + GATE $end
+$scope module base $end
+$var wire 1 E" D $end
+$var wire 1 5 Q $end
+$var wire 1 I1 buf_Q $end
+$var wire 1 + GATE $end
+$scope module dlatch0 $end
+$var wire 1 E" D $end
+$var wire 1 + GATE $end
+$var reg 1 I1 Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_7_0.bit[0].obuf0 $end
+$var wire 1 5 A $end
+$var wire 1 J1 VGND $end
+$var wire 1 K1 VNB $end
+$var wire 1 L1 VPB $end
+$var wire 1 M1 VPWR $end
+$var wire 1 N1 Z $end
+$var wire 1 * TE_B $end
+$scope module base $end
+$var wire 1 5 A $end
+$var wire 1 N1 Z $end
+$var wire 1 * TE_B $end
+$upscope $end
+$upscope $end
+$scope module storage_7_0.bit[1].bit $end
+$var wire 1 D" D $end
+$var wire 1 O1 VGND $end
+$var wire 1 P1 VNB $end
+$var wire 1 Q1 VPB $end
+$var wire 1 R1 VPWR $end
+$var wire 1 4 Q $end
+$var wire 1 + GATE $end
+$scope module base $end
+$var wire 1 D" D $end
+$var wire 1 4 Q $end
+$var wire 1 S1 buf_Q $end
+$var wire 1 + GATE $end
+$scope module dlatch0 $end
+$var wire 1 D" D $end
+$var wire 1 + GATE $end
+$var reg 1 S1 Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_7_0.bit[1].obuf0 $end
+$var wire 1 4 A $end
+$var wire 1 T1 VGND $end
+$var wire 1 U1 VNB $end
+$var wire 1 V1 VPB $end
+$var wire 1 W1 VPWR $end
+$var wire 1 X1 Z $end
+$var wire 1 * TE_B $end
+$scope module base $end
+$var wire 1 4 A $end
+$var wire 1 X1 Z $end
+$var wire 1 * TE_B $end
+$upscope $end
+$upscope $end
+$scope module storage_7_0.bit[2].bit $end
+$var wire 1 C" D $end
+$var wire 1 Y1 VGND $end
+$var wire 1 Z1 VNB $end
+$var wire 1 [1 VPB $end
+$var wire 1 \1 VPWR $end
+$var wire 1 3 Q $end
+$var wire 1 + GATE $end
+$scope module base $end
+$var wire 1 C" D $end
+$var wire 1 3 Q $end
+$var wire 1 ]1 buf_Q $end
+$var wire 1 + GATE $end
+$scope module dlatch0 $end
+$var wire 1 C" D $end
+$var wire 1 + GATE $end
+$var reg 1 ]1 Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_7_0.bit[2].obuf0 $end
+$var wire 1 3 A $end
+$var wire 1 ^1 VGND $end
+$var wire 1 _1 VNB $end
+$var wire 1 `1 VPB $end
+$var wire 1 a1 VPWR $end
+$var wire 1 b1 Z $end
+$var wire 1 * TE_B $end
+$scope module base $end
+$var wire 1 3 A $end
+$var wire 1 b1 Z $end
+$var wire 1 * TE_B $end
+$upscope $end
+$upscope $end
+$scope module storage_7_0.bit[3].bit $end
+$var wire 1 B" D $end
+$var wire 1 c1 VGND $end
+$var wire 1 d1 VNB $end
+$var wire 1 e1 VPB $end
+$var wire 1 f1 VPWR $end
+$var wire 1 2 Q $end
+$var wire 1 + GATE $end
+$scope module base $end
+$var wire 1 B" D $end
+$var wire 1 2 Q $end
+$var wire 1 g1 buf_Q $end
+$var wire 1 + GATE $end
+$scope module dlatch0 $end
+$var wire 1 B" D $end
+$var wire 1 + GATE $end
+$var reg 1 g1 Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_7_0.bit[3].obuf0 $end
+$var wire 1 2 A $end
+$var wire 1 h1 VGND $end
+$var wire 1 i1 VNB $end
+$var wire 1 j1 VPB $end
+$var wire 1 k1 VPWR $end
+$var wire 1 l1 Z $end
+$var wire 1 * TE_B $end
+$scope module base $end
+$var wire 1 2 A $end
+$var wire 1 l1 Z $end
+$var wire 1 * TE_B $end
+$upscope $end
+$upscope $end
+$scope module storage_7_0.bit[4].bit $end
+$var wire 1 A" D $end
+$var wire 1 m1 VGND $end
+$var wire 1 n1 VNB $end
+$var wire 1 o1 VPB $end
+$var wire 1 p1 VPWR $end
+$var wire 1 1 Q $end
+$var wire 1 + GATE $end
+$scope module base $end
+$var wire 1 A" D $end
+$var wire 1 1 Q $end
+$var wire 1 q1 buf_Q $end
+$var wire 1 + GATE $end
+$scope module dlatch0 $end
+$var wire 1 A" D $end
+$var wire 1 + GATE $end
+$var reg 1 q1 Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_7_0.bit[4].obuf0 $end
+$var wire 1 1 A $end
+$var wire 1 r1 VGND $end
+$var wire 1 s1 VNB $end
+$var wire 1 t1 VPB $end
+$var wire 1 u1 VPWR $end
+$var wire 1 v1 Z $end
+$var wire 1 * TE_B $end
+$scope module base $end
+$var wire 1 1 A $end
+$var wire 1 v1 Z $end
+$var wire 1 * TE_B $end
+$upscope $end
+$upscope $end
+$scope module storage_7_0.bit[5].bit $end
+$var wire 1 @" D $end
+$var wire 1 w1 VGND $end
+$var wire 1 x1 VNB $end
+$var wire 1 y1 VPB $end
+$var wire 1 z1 VPWR $end
+$var wire 1 0 Q $end
+$var wire 1 + GATE $end
+$scope module base $end
+$var wire 1 @" D $end
+$var wire 1 0 Q $end
+$var wire 1 {1 buf_Q $end
+$var wire 1 + GATE $end
+$scope module dlatch0 $end
+$var wire 1 @" D $end
+$var wire 1 + GATE $end
+$var reg 1 {1 Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_7_0.bit[5].obuf0 $end
+$var wire 1 0 A $end
+$var wire 1 |1 VGND $end
+$var wire 1 }1 VNB $end
+$var wire 1 ~1 VPB $end
+$var wire 1 !2 VPWR $end
+$var wire 1 "2 Z $end
+$var wire 1 * TE_B $end
+$scope module base $end
+$var wire 1 0 A $end
+$var wire 1 "2 Z $end
+$var wire 1 * TE_B $end
+$upscope $end
+$upscope $end
+$scope module storage_7_0.bit[6].bit $end
+$var wire 1 ?" D $end
+$var wire 1 #2 VGND $end
+$var wire 1 $2 VNB $end
+$var wire 1 %2 VPB $end
+$var wire 1 &2 VPWR $end
+$var wire 1 / Q $end
+$var wire 1 + GATE $end
+$scope module base $end
+$var wire 1 ?" D $end
+$var wire 1 / Q $end
+$var wire 1 '2 buf_Q $end
+$var wire 1 + GATE $end
+$scope module dlatch0 $end
+$var wire 1 ?" D $end
+$var wire 1 + GATE $end
+$var reg 1 '2 Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_7_0.bit[6].obuf0 $end
+$var wire 1 / A $end
+$var wire 1 (2 VGND $end
+$var wire 1 )2 VNB $end
+$var wire 1 *2 VPB $end
+$var wire 1 +2 VPWR $end
+$var wire 1 ,2 Z $end
+$var wire 1 * TE_B $end
+$scope module base $end
+$var wire 1 / A $end
+$var wire 1 ,2 Z $end
+$var wire 1 * TE_B $end
+$upscope $end
+$upscope $end
+$scope module storage_7_0.bit[7].bit $end
+$var wire 1 >" D $end
+$var wire 1 -2 VGND $end
+$var wire 1 .2 VNB $end
+$var wire 1 /2 VPB $end
+$var wire 1 02 VPWR $end
+$var wire 1 . Q $end
+$var wire 1 + GATE $end
+$scope module base $end
+$var wire 1 >" D $end
+$var wire 1 . Q $end
+$var wire 1 12 buf_Q $end
+$var wire 1 + GATE $end
+$scope module dlatch0 $end
+$var wire 1 >" D $end
+$var wire 1 + GATE $end
+$var reg 1 12 Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_7_0.bit[7].obuf0 $end
+$var wire 1 . A $end
+$var wire 1 22 VGND $end
+$var wire 1 32 VNB $end
+$var wire 1 42 VPB $end
+$var wire 1 52 VPWR $end
+$var wire 1 62 Z $end
+$var wire 1 * TE_B $end
+$scope module base $end
+$var wire 1 . A $end
+$var wire 1 62 Z $end
+$var wire 1 * TE_B $end
+$upscope $end
+$upscope $end
+$scope module storage_7_0.cg $end
+$var wire 1 72 VGND $end
+$var wire 1 82 VNB $end
+$var wire 1 92 VPB $end
+$var wire 1 :2 VPWR $end
+$var wire 1 + GCLK $end
+$var wire 1 ) GATE $end
+$var wire 1 - CLK $end
+$scope module base $end
+$var wire 1 + GCLK $end
+$var wire 1 ;2 clkn $end
+$var wire 1 <2 m0 $end
+$var wire 1 ) GATE $end
+$var wire 1 - CLK $end
+$scope module dlatch0 $end
+$var wire 1 ;2 GATE $end
+$var wire 1 ) D $end
+$var reg 1 <2 Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module storage_7_0.clock_inv $end
+$var wire 1 $ A $end
+$var wire 1 =2 VGND $end
+$var wire 1 >2 VNB $end
+$var wire 1 ?2 VPB $end
+$var wire 1 @2 VPWR $end
+$var wire 1 - Y $end
+$scope module base $end
+$var wire 1 $ A $end
+$var wire 1 - Y $end
+$var wire 1 A2 not0_out_Y $end
+$upscope $end
+$upscope $end
+$scope module storage_7_0.gcand $end
+$var wire 1 , A $end
+$var wire 1 % B $end
+$var wire 1 B2 VGND $end
+$var wire 1 C2 VNB $end
+$var wire 1 D2 VPB $end
+$var wire 1 E2 VPWR $end
+$var wire 1 ) X $end
+$scope module base $end
+$var wire 1 , A $end
+$var wire 1 % B $end
+$var wire 1 ) X $end
+$var wire 1 F2 and0_out_X $end
+$upscope $end
+$upscope $end
+$scope module storage_7_0.select_inv_0 $end
+$var wire 1 , A $end
+$var wire 1 G2 VGND $end
+$var wire 1 H2 VNB $end
+$var wire 1 I2 VPB $end
+$var wire 1 J2 VPWR $end
+$var wire 1 * Y $end
+$scope module base $end
+$var wire 1 , A $end
+$var wire 1 * Y $end
+$var wire 1 K2 not0_out_Y $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0K2
+1J2
+1I2
+0H2
+0G2
+1F2
+1E2
+1D2
+0C2
+0B2
+xA2
+1@2
+1?2
+0>2
+0=2
+x<2
+x;2
+1:2
+192
+082
+072
+x62
+152
+142
+032
+022
+x12
+102
+1/2
+0.2
+0-2
+x,2
+1+2
+1*2
+0)2
+0(2
+x'2
+1&2
+1%2
+0$2
+0#2
+x"2
+1!2
+1~1
+0}1
+0|1
+x{1
+1z1
+1y1
+0x1
+0w1
+xv1
+1u1
+1t1
+0s1
+0r1
+xq1
+1p1
+1o1
+0n1
+0m1
+xl1
+1k1
+1j1
+0i1
+0h1
+xg1
+1f1
+1e1
+0d1
+0c1
+xb1
+1a1
+1`1
+0_1
+0^1
+x]1
+1\1
+1[1
+0Z1
+0Y1
+xX1
+1W1
+1V1
+0U1
+0T1
+xS1
+1R1
+1Q1
+0P1
+0O1
+xN1
+1M1
+1L1
+0K1
+0J1
+xI1
+1H1
+1G1
+0F1
+0E1
+1D1
+1C1
+1B1
+0A1
+0@1
+0?1
+1>1
+1=1
+0<1
+0;1
+x:1
+191
+181
+071
+061
+x51
+x41
+131
+121
+011
+001
+z/1
+1.1
+1-1
+0,1
+0+1
+x*1
+1)1
+1(1
+0'1
+0&1
+z%1
+1$1
+1#1
+0"1
+0!1
+x~0
+1}0
+1|0
+0{0
+0z0
+zy0
+1x0
+1w0
+0v0
+0u0
+xt0
+1s0
+1r0
+0q0
+0p0
+zo0
+1n0
+1m0
+0l0
+0k0
+xj0
+1i0
+1h0
+0g0
+0f0
+ze0
+1d0
+1c0
+0b0
+0a0
+x`0
+1_0
+1^0
+0]0
+0\0
+z[0
+1Z0
+1Y0
+0X0
+0W0
+xV0
+1U0
+1T0
+0S0
+0R0
+zQ0
+1P0
+1O0
+0N0
+0M0
+xL0
+1K0
+1J0
+0I0
+0H0
+zG0
+1F0
+1E0
+0D0
+0C0
+xB0
+1A0
+1@0
+0?0
+0>0
+1=0
+1<0
+1;0
+0:0
+090
+080
+170
+160
+050
+040
+x30
+120
+110
+000
+0/0
+x.0
+x-0
+1,0
+1+0
+0*0
+0)0
+z(0
+1'0
+1&0
+0%0
+0$0
+x#0
+1"0
+1!0
+0~/
+0}/
+z|/
+1{/
+1z/
+0y/
+0x/
+xw/
+1v/
+1u/
+0t/
+0s/
+zr/
+1q/
+1p/
+0o/
+0n/
+xm/
+1l/
+1k/
+0j/
+0i/
+zh/
+1g/
+1f/
+0e/
+0d/
+xc/
+1b/
+1a/
+0`/
+0_/
+z^/
+1]/
+1\/
+0[/
+0Z/
+xY/
+1X/
+1W/
+0V/
+0U/
+zT/
+1S/
+1R/
+0Q/
+0P/
+xO/
+1N/
+1M/
+0L/
+0K/
+zJ/
+1I/
+1H/
+0G/
+0F/
+xE/
+1D/
+1C/
+0B/
+0A/
+z@/
+1?/
+1>/
+0=/
+0</
+x;/
+1:/
+19/
+08/
+07/
+16/
+15/
+14/
+03/
+02/
+01/
+10/
+1//
+0./
+0-/
+x,/
+1+/
+1*/
+0)/
+0(/
+x'/
+x&/
+1%/
+1$/
+0#/
+0"/
+z!/
+1~.
+1}.
+0|.
+0{.
+xz.
+1y.
+1x.
+0w.
+0v.
+zu.
+1t.
+1s.
+0r.
+0q.
+xp.
+1o.
+1n.
+0m.
+0l.
+zk.
+1j.
+1i.
+0h.
+0g.
+xf.
+1e.
+1d.
+0c.
+0b.
+za.
+1`.
+1_.
+0^.
+0].
+x\.
+1[.
+1Z.
+0Y.
+0X.
+zW.
+1V.
+1U.
+0T.
+0S.
+xR.
+1Q.
+1P.
+0O.
+0N.
+zM.
+1L.
+1K.
+0J.
+0I.
+xH.
+1G.
+1F.
+0E.
+0D.
+zC.
+1B.
+1A.
+0@.
+0?.
+x>.
+1=.
+1<.
+0;.
+0:.
+z9.
+18.
+17.
+06.
+05.
+x4.
+13.
+12.
+01.
+00.
+0/.
+1..
+1-.
+0,.
+0+.
+1*.
+1).
+1(.
+0'.
+0&.
+x%.
+1$.
+1#.
+0".
+0!.
+x~-
+x}-
+1|-
+1{-
+0z-
+0y-
+xx-
+1w-
+1v-
+0u-
+0t-
+xs-
+1r-
+1q-
+0p-
+0o-
+xn-
+1m-
+1l-
+0k-
+0j-
+xi-
+1h-
+1g-
+0f-
+0e-
+xd-
+1c-
+1b-
+0a-
+0`-
+x_-
+1^-
+1]-
+0\-
+0[-
+xZ-
+1Y-
+1X-
+0W-
+0V-
+xU-
+1T-
+1S-
+0R-
+0Q-
+xP-
+1O-
+1N-
+0M-
+0L-
+xK-
+1J-
+1I-
+0H-
+0G-
+xF-
+1E-
+1D-
+0C-
+0B-
+xA-
+1@-
+1?-
+0>-
+0=-
+x<-
+1;-
+1:-
+09-
+08-
+x7-
+16-
+15-
+04-
+03-
+x2-
+11-
+10-
+0/-
+0.-
+x--
+1,-
+1+-
+0*-
+0)-
+0(-
+1'-
+1&-
+0%-
+0$-
+1#-
+1"-
+1!-
+0~,
+0},
+x|,
+1{,
+1z,
+0y,
+0x,
+xw,
+xv,
+1u,
+1t,
+0s,
+0r,
+xq,
+1p,
+1o,
+0n,
+0m,
+xl,
+1k,
+1j,
+0i,
+0h,
+xg,
+1f,
+1e,
+0d,
+0c,
+xb,
+1a,
+1`,
+0_,
+0^,
+x],
+1\,
+1[,
+0Z,
+0Y,
+xX,
+1W,
+1V,
+0U,
+0T,
+xS,
+1R,
+1Q,
+0P,
+0O,
+xN,
+1M,
+1L,
+0K,
+0J,
+xI,
+1H,
+1G,
+0F,
+0E,
+xD,
+1C,
+1B,
+0A,
+0@,
+x?,
+1>,
+1=,
+0<,
+0;,
+x:,
+19,
+18,
+07,
+06,
+x5,
+14,
+13,
+02,
+01,
+x0,
+1/,
+1.,
+0-,
+0,,
+x+,
+1*,
+1),
+0(,
+0',
+x&,
+1%,
+1$,
+0#,
+0",
+0!,
+1~+
+1}+
+0|+
+0{+
+1z+
+1y+
+1x+
+0w+
+0v+
+xu+
+1t+
+1s+
+0r+
+0q+
+xp+
+xo+
+1n+
+1m+
+0l+
+0k+
+xj+
+1i+
+1h+
+0g+
+0f+
+xe+
+1d+
+1c+
+0b+
+0a+
+x`+
+1_+
+1^+
+0]+
+0\+
+x[+
+1Z+
+1Y+
+0X+
+0W+
+xV+
+1U+
+1T+
+0S+
+0R+
+xQ+
+1P+
+1O+
+0N+
+0M+
+xL+
+1K+
+1J+
+0I+
+0H+
+xG+
+1F+
+1E+
+0D+
+0C+
+xB+
+1A+
+1@+
+0?+
+0>+
+x=+
+1<+
+1;+
+0:+
+09+
+x8+
+17+
+16+
+05+
+04+
+x3+
+12+
+11+
+00+
+0/+
+x.+
+1-+
+1,+
+0++
+0*+
+x)+
+1(+
+1'+
+0&+
+0%+
+x$+
+1#+
+1"+
+0!+
+0~*
+x}*
+1|*
+1{*
+0z*
+0y*
+0x*
+1w*
+1v*
+0u*
+0t*
+1s*
+1r*
+1q*
+0p*
+0o*
+xn*
+1m*
+1l*
+0k*
+0j*
+xi*
+xh*
+1g*
+1f*
+0e*
+0d*
+xc*
+1b*
+1a*
+0`*
+0_*
+x^*
+1]*
+1\*
+0[*
+0Z*
+xY*
+1X*
+1W*
+0V*
+0U*
+xT*
+1S*
+1R*
+0Q*
+0P*
+xO*
+1N*
+1M*
+0L*
+0K*
+xJ*
+1I*
+1H*
+0G*
+0F*
+xE*
+1D*
+1C*
+0B*
+0A*
+x@*
+1?*
+1>*
+0=*
+0<*
+x;*
+1:*
+19*
+08*
+07*
+x6*
+15*
+14*
+03*
+02*
+x1*
+10*
+1/*
+0.*
+0-*
+x,*
+1+*
+1**
+0)*
+0(*
+x'*
+1&*
+1%*
+0$*
+0#*
+x"*
+1!*
+1~)
+0})
+0|)
+x{)
+1z)
+1y)
+0x)
+0w)
+xv)
+1u)
+1t)
+0s)
+0r)
+0q)
+1p)
+1o)
+0n)
+0m)
+1l)
+1k)
+1j)
+0i)
+0h)
+1g)
+1f)
+1e)
+0d)
+0c)
+0b)
+0a)
+1`)
+1_)
+0^)
+0])
+1\)
+1[)
+1Z)
+0Y)
+0X)
+0W)
+0V)
+1U)
+1T)
+0S)
+0R)
+1Q)
+1P)
+1O)
+0N)
+0M)
+0L)
+0K)
+0J)
+1I)
+1H)
+0G)
+0F)
+0E)
+1D)
+1C)
+0B)
+0A)
+1@)
+1?)
+1>)
+0=)
+0<)
+0;)
+1:)
+19)
+18)
+07)
+06)
+05)
+14)
+13)
+12)
+01)
+00)
+0/)
+1.)
+1-)
+1,)
+0+)
+0*)
+0))
+1()
+1')
+1&)
+0%)
+0$)
+0#)
+1")
+1!)
+1~(
+0}(
+0|(
+0{(
+0z(
+1y(
+1x(
+1w(
+0v(
+0u(
+0t(
+1s(
+1r(
+1q(
+0p(
+0o(
+0n(
+1m(
+1l(
+1k(
+0j(
+0i(
+0h(
+1g(
+1f(
+1e(
+0d(
+0c(
+0b(
+1a(
+1`(
+0_(
+0^(
+1](
+1\(
+0[(
+0Z(
+1Y(
+1X(
+0W(
+0V(
+1U(
+1T(
+0S(
+0R(
+1Q(
+1P(
+0O(
+0N(
+1M(
+1L(
+0K(
+0J(
+1I(
+1H(
+0G(
+0F(
+1E(
+1D(
+0C(
+0B(
+1A(
+1@(
+1?(
+0>(
+0=(
+1<(
+1;(
+1:(
+19(
+08(
+07(
+16(
+15(
+14(
+13(
+02(
+01(
+10(
+1/(
+1.(
+1-(
+0,(
+0+(
+1*(
+1)(
+1((
+1'(
+0&(
+0%(
+1$(
+1#(
+1"(
+1!(
+0~'
+0}'
+1|'
+1{'
+1z'
+1y'
+0x'
+0w'
+1v'
+1u'
+1t'
+1s'
+0r'
+0q'
+1p'
+1o'
+1n'
+0m'
+0l'
+1k'
+1j'
+0i'
+0h'
+1g'
+1f'
+0e'
+0d'
+1c'
+1b'
+0a'
+0`'
+1_'
+1^'
+0]'
+0\'
+1['
+1Z'
+0Y'
+0X'
+1W'
+1V'
+0U'
+0T'
+1S'
+1R'
+0Q'
+0P'
+1O'
+1N'
+0M'
+0L'
+1K'
+1J'
+0I'
+0H'
+1G'
+1F'
+0E'
+0D'
+1C'
+1B'
+0A'
+0@'
+1?'
+1>'
+0='
+0<'
+1;'
+1:'
+09'
+08'
+17'
+16'
+05'
+04'
+13'
+12'
+01'
+00'
+1/'
+1.'
+0-'
+0,'
+1+'
+1*'
+0)'
+0('
+1''
+1&'
+0%'
+0$'
+1#'
+1"'
+0!'
+0~&
+1}&
+1|&
+0{&
+0z&
+1y&
+1x&
+0w&
+0v&
+1u&
+1t&
+0s&
+0r&
+1q&
+1p&
+0o&
+0n&
+1m&
+1l&
+0k&
+0j&
+1i&
+1h&
+0g&
+0f&
+1e&
+1d&
+0c&
+0b&
+1a&
+1`&
+0_&
+0^&
+1]&
+1\&
+0[&
+0Z&
+1Y&
+1X&
+0W&
+0V&
+1U&
+1T&
+0S&
+0R&
+1Q&
+1P&
+0O&
+0N&
+1M&
+1L&
+0K&
+0J&
+1I&
+1H&
+0G&
+0F&
+1E&
+1D&
+0C&
+0B&
+1A&
+1@&
+0?&
+0>&
+1=&
+1<&
+0;&
+0:&
+19&
+18&
+07&
+06&
+15&
+14&
+03&
+02&
+11&
+10&
+0/&
+0.&
+1-&
+1,&
+0+&
+0*&
+1)&
+1(&
+0'&
+0&&
+1%&
+1$&
+0#&
+0"&
+1!&
+1~%
+0}%
+0|%
+1{%
+1z%
+0y%
+0x%
+1w%
+1v%
+0u%
+0t%
+1s%
+1r%
+0q%
+0p%
+1o%
+1n%
+0m%
+0l%
+1k%
+1j%
+0i%
+0h%
+1g%
+1f%
+0e%
+0d%
+1c%
+1b%
+0a%
+0`%
+1_%
+1^%
+0]%
+0\%
+1[%
+1Z%
+0Y%
+0X%
+1W%
+1V%
+0U%
+0T%
+1S%
+1R%
+0Q%
+0P%
+1O%
+1N%
+0M%
+0L%
+1K%
+1J%
+0I%
+0H%
+1G%
+1F%
+0E%
+0D%
+1C%
+1B%
+0A%
+0@%
+1?%
+1>%
+0=%
+0<%
+1;%
+1:%
+09%
+08%
+17%
+16%
+05%
+04%
+13%
+12%
+01%
+00%
+1/%
+1.%
+0-%
+0,%
+1+%
+1*%
+0)%
+0(%
+1'%
+1&%
+0%%
+0$%
+1#%
+1"%
+0!%
+0~$
+1}$
+1|$
+0{$
+0z$
+1y$
+1x$
+0w$
+0v$
+1u$
+1t$
+0s$
+0r$
+1q$
+1p$
+0o$
+0n$
+1m$
+1l$
+0k$
+0j$
+1i$
+1h$
+0g$
+0f$
+1e$
+1d$
+0c$
+0b$
+1a$
+1`$
+0_$
+0^$
+1]$
+1\$
+0[$
+0Z$
+1Y$
+1X$
+0W$
+0V$
+1U$
+1T$
+0S$
+0R$
+1Q$
+1P$
+0O$
+0N$
+1M$
+1L$
+0K$
+0J$
+1I$
+1H$
+0G$
+0F$
+1E$
+1D$
+0C$
+0B$
+1A$
+1@$
+0?$
+0>$
+1=$
+1<$
+0;$
+0:$
+19$
+18$
+07$
+06$
+15$
+14$
+03$
+02$
+11$
+10$
+0/$
+0.$
+1-$
+1,$
+0+$
+0*$
+1)$
+1($
+0'$
+0&$
+1%$
+1$$
+0#$
+0"$
+1!$
+1~#
+0}#
+0|#
+1{#
+1z#
+0y#
+0x#
+1w#
+1v#
+0u#
+0t#
+1s#
+1r#
+0q#
+0p#
+1o#
+1n#
+0m#
+0l#
+1k#
+1j#
+0i#
+0h#
+1g#
+1f#
+0e#
+0d#
+1c#
+1b#
+0a#
+0`#
+1_#
+1^#
+0]#
+0\#
+1[#
+1Z#
+0Y#
+0X#
+1W#
+1V#
+0U#
+0T#
+1S#
+1R#
+0Q#
+0P#
+1O#
+1N#
+0M#
+0L#
+1K#
+1J#
+0I#
+0H#
+1G#
+1F#
+0E#
+0D#
+1C#
+1B#
+0A#
+0@#
+1?#
+1>#
+0=#
+0<#
+1;#
+1:#
+09#
+08#
+17#
+16#
+05#
+04#
+13#
+12#
+01#
+00#
+1/#
+1.#
+0-#
+0,#
+1+#
+1*#
+0)#
+0(#
+1'#
+1&#
+0%#
+0$#
+1##
+1"#
+0!#
+0~"
+1}"
+1|"
+0{"
+0z"
+1y"
+1x"
+0w"
+0v"
+1u"
+1t"
+0s"
+0r"
+1q"
+1p"
+0o"
+0n"
+1m"
+1l"
+0k"
+0j"
+1i"
+1h"
+0g"
+0f"
+1e"
+1d"
+0c"
+0b"
+1a"
+1`"
+0_"
+0^"
+1]"
+1\"
+0["
+0Z"
+1Y"
+1X"
+0W"
+0V"
+1U"
+1T"
+0S"
+0R"
+1Q"
+1P"
+0O"
+0N"
+1M"
+1L"
+0K"
+0J"
+1I"
+1H"
+0G"
+0F"
+1E"
+1D"
+1C"
+1B"
+1A"
+1@"
+1?"
+1>"
+1="
+1<"
+1;"
+0:"
+19"
+18"
+17"
+06"
+15"
+14"
+13"
+x2"
+x1"
+x0"
+x/"
+x."
+x-"
+x,"
+x+"
+x*"
+1)"
+x("
+0'"
+1&"
+x%"
+x$"
+x#"
+x""
+x!"
+x~
+x}
+x|
+x{
+1z
+xy
+0x
+1w
+xv
+xu
+xt
+xs
+xr
+xq
+xp
+xo
+xn
+1m
+xl
+0k
+1j
+xi
+xh
+xg
+xf
+xe
+xd
+xc
+xb
+xa
+1`
+x_
+0^
+1]
+x\
+x[
+xZ
+xY
+xX
+xW
+xV
+xU
+xT
+0S
+xR
+1Q
+0P
+xO
+xN
+xM
+xL
+xK
+xJ
+xI
+xH
+xG
+0F
+xE
+1D
+0C
+xB
+xA
+x@
+x?
+x>
+x=
+x<
+x;
+x:
+09
+x8
+17
+06
+x5
+x4
+x3
+x2
+x1
+x0
+x/
+x.
+x-
+1,
+x+
+0*
+1)
+b0 (
+bx '
+b11111111 &
+1%
+x$
+b0 #
+b11111111 "
+bx !
+$end
+#10
+1P
+x!/
+xu.
+xk.
+xa.
+xW.
+xM.
+xC.
+x9.
+0Q
+1C
+x(0
+x|/
+xr/
+xh/
+x^/
+xT/
+xJ/
+x@/
+0D
+16
+x/1
+x%1
+xy0
+xo0
+xe0
+x[0
+xQ0
+xG0
+07
+11/
+06/
+180
+0=0
+1?1
+0D1
+0&"
+zc*
+zY*
+zO*
+zE*
+z;*
+z1*
+z'*
+z{)
+1'"
+0w
+zj+
+z`+
+zV+
+zL+
+zB+
+z8+
+z.+
+z$+
+1x
+0j
+zq,
+zg,
+z],
+zS,
+zI,
+z?,
+z5,
+z+,
+1k
+1S
+1F
+19
+0s*
+1x*
+0z+
+1!,
+0#-
+1(-
+1J)
+1V)
+1a)
+0)"
+0z
+0m
+05"
+0D"
+0C"
+0B"
+0A"
+0@"
+0?"
+0>"
+0y(
+0()
+04)
+0g(
+0{'
+0#(
+0)(
+0/(
+05(
+0;(
+0A(
+1t(
+1#)
+1/)
+1;)
+1b(
+0v'
+0|'
+0$(
+0*(
+00(
+06(
+0<(
+b1 #
+b1 (
+b1 "
+b1 &
+#20
+0i*
+0p+
+0w,
+1~-
+1'/
+1.0
+151
+1<2
+0("
+1h*
+0y
+1o+
+0l
+1v,
+0_
+1}-
+0R
+1&/
+0E
+1-0
+08
+141
+0+
+1;2
+0*"
+0{
+0n
+0a
+0T
+0G
+0:
+0-
+0n*
+0u+
+0|,
+0%.
+0,/
+030
+0:1
+0A2
+1$
+#30
+12-
+1i
+0<-
+0h
+0F-
+0g
+0P-
+0f
+0Z-
+0e
+0d-
+0d
+0n-
+0c
+b1 !
+b1 '
+0x-
+0b
+19.
+1\
+0C.
+0[
+0M.
+0Z
+0W.
+0Y
+0a.
+0X
+0k.
+0W
+0u.
+0V
+0!/
+0U
+1@/
+1O
+0J/
+0N
+0T/
+0M
+0^/
+0L
+0h/
+0K
+0r/
+0J
+0|/
+0I
+0(0
+0H
+1G0
+1B
+0Q0
+0A
+0[0
+0@
+0e0
+0?
+0o0
+0>
+0y0
+0=
+0%1
+0<
+0/1
+0;
+1N1
+15
+0X1
+04
+0b1
+03
+0l1
+02
+0v1
+01
+0"2
+00
+0,2
+0/
+062
+0.
+1--
+07-
+0A-
+0K-
+0U-
+0_-
+0i-
+0s-
+14.
+0>.
+0H.
+0R.
+0\.
+0f.
+0p.
+0z.
+1;/
+0E/
+0O/
+0Y/
+0c/
+0m/
+0w/
+0#0
+1B0
+0L0
+0V0
+0`0
+0j0
+0t0
+0~0
+0*1
+1I1
+0S1
+0]1
+0g1
+0q1
+0{1
+0'2
+012
+0h*
+0o+
+0v,
+1_
+0}-
+1R
+0&/
+1E
+0-0
+18
+041
+1+
+0;2
+0]
+0P
+0C
+06
+0)
+1*"
+1{
+1n
+1a
+1T
+1G
+1:
+1-
+0*.
+01/
+080
+0?1
+0F2
+1n*
+1u+
+1|,
+1%.
+1,/
+130
+1:1
+1A2
+0%
+0$
+#40
+0~-
+0'/
+0.0
+051
+0<2
+1h*
+1o+
+1v,
+0_
+1}-
+0R
+1&/
+0E
+1-0
+08
+141
+0+
+1;2
+0*"
+0{
+0n
+0a
+0T
+0G
+0:
+0-
+0n*
+0u+
+0|,
+0%.
+0,/
+030
+0:1
+0A2
+1$
+#50

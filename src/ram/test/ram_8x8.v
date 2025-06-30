@@ -1,11 +1,11 @@
 module RAM8x8 (clk,
     D,
-    Q0,
+    Q,
     addr,
     we);
  input clk;
  input [7:0] D;
- output [7:0] Q0;
+ output [7:0] Q;
  input [2:0] addr;
  input [0:0] we;
 
@@ -146,49 +146,49 @@ module RAM8x8 (clk,
     .GATE(\storage_0_0.gclock ));
  sky130_fd_sc_hd__ebufn_1 \storage_0_0.bit[0].obuf0  (.A(\storage_0_0.bit[0].storage ),
     .TE_B(\storage_0_0.select0_b ),
-    .Z(Q0[0]));
+    .Z(Q[0]));
  sky130_fd_sc_hd__dlxtp_1 \storage_0_0.bit[1].bit  (.D(\Di_nets[1].net ),
     .Q(\storage_0_0.bit[1].storage ),
     .GATE(\storage_0_0.gclock ));
  sky130_fd_sc_hd__ebufn_1 \storage_0_0.bit[1].obuf0  (.A(\storage_0_0.bit[1].storage ),
     .TE_B(\storage_0_0.select0_b ),
-    .Z(Q0[1]));
+    .Z(Q[1]));
  sky130_fd_sc_hd__dlxtp_1 \storage_0_0.bit[2].bit  (.D(\Di_nets[2].net ),
     .Q(\storage_0_0.bit[2].storage ),
     .GATE(\storage_0_0.gclock ));
  sky130_fd_sc_hd__ebufn_1 \storage_0_0.bit[2].obuf0  (.A(\storage_0_0.bit[2].storage ),
     .TE_B(\storage_0_0.select0_b ),
-    .Z(Q0[2]));
+    .Z(Q[2]));
  sky130_fd_sc_hd__dlxtp_1 \storage_0_0.bit[3].bit  (.D(\Di_nets[3].net ),
     .Q(\storage_0_0.bit[3].storage ),
     .GATE(\storage_0_0.gclock ));
  sky130_fd_sc_hd__ebufn_1 \storage_0_0.bit[3].obuf0  (.A(\storage_0_0.bit[3].storage ),
     .TE_B(\storage_0_0.select0_b ),
-    .Z(Q0[3]));
+    .Z(Q[3]));
  sky130_fd_sc_hd__dlxtp_1 \storage_0_0.bit[4].bit  (.D(\Di_nets[4].net ),
     .Q(\storage_0_0.bit[4].storage ),
     .GATE(\storage_0_0.gclock ));
  sky130_fd_sc_hd__ebufn_1 \storage_0_0.bit[4].obuf0  (.A(\storage_0_0.bit[4].storage ),
     .TE_B(\storage_0_0.select0_b ),
-    .Z(Q0[4]));
+    .Z(Q[4]));
  sky130_fd_sc_hd__dlxtp_1 \storage_0_0.bit[5].bit  (.D(\Di_nets[5].net ),
     .Q(\storage_0_0.bit[5].storage ),
     .GATE(\storage_0_0.gclock ));
  sky130_fd_sc_hd__ebufn_1 \storage_0_0.bit[5].obuf0  (.A(\storage_0_0.bit[5].storage ),
     .TE_B(\storage_0_0.select0_b ),
-    .Z(Q0[5]));
+    .Z(Q[5]));
  sky130_fd_sc_hd__dlxtp_1 \storage_0_0.bit[6].bit  (.D(\Di_nets[6].net ),
     .Q(\storage_0_0.bit[6].storage ),
     .GATE(\storage_0_0.gclock ));
  sky130_fd_sc_hd__ebufn_1 \storage_0_0.bit[6].obuf0  (.A(\storage_0_0.bit[6].storage ),
     .TE_B(\storage_0_0.select0_b ),
-    .Z(Q0[6]));
+    .Z(Q[6]));
  sky130_fd_sc_hd__dlxtp_1 \storage_0_0.bit[7].bit  (.D(\Di_nets[7].net ),
     .Q(\storage_0_0.bit[7].storage ),
     .GATE(\storage_0_0.gclock ));
  sky130_fd_sc_hd__ebufn_1 \storage_0_0.bit[7].obuf0  (.A(\storage_0_0.bit[7].storage ),
     .TE_B(\storage_0_0.select0_b ),
-    .Z(Q0[7]));
+    .Z(Q[7]));
  sky130_fd_sc_hd__dlclkp_1 \storage_0_0.cg  (.GATE(\storage_0_0.we0 ),
     .GCLK(\storage_0_0.gclock ),
     .CLK(\storage_0_0.clock_b ));
@@ -210,49 +210,49 @@ module RAM8x8 (clk,
     .GATE(\storage_1_0.gclock ));
  sky130_fd_sc_hd__ebufn_1 \storage_1_0.bit[0].obuf0  (.A(\storage_1_0.bit[0].storage ),
     .TE_B(\storage_1_0.select0_b ),
-    .Z(Q0[0]));
+    .Z(Q[0]));
  sky130_fd_sc_hd__dlxtp_1 \storage_1_0.bit[1].bit  (.D(\Di_nets[1].net ),
     .Q(\storage_1_0.bit[1].storage ),
     .GATE(\storage_1_0.gclock ));
  sky130_fd_sc_hd__ebufn_1 \storage_1_0.bit[1].obuf0  (.A(\storage_1_0.bit[1].storage ),
     .TE_B(\storage_1_0.select0_b ),
-    .Z(Q0[1]));
+    .Z(Q[1]));
  sky130_fd_sc_hd__dlxtp_1 \storage_1_0.bit[2].bit  (.D(\Di_nets[2].net ),
     .Q(\storage_1_0.bit[2].storage ),
     .GATE(\storage_1_0.gclock ));
  sky130_fd_sc_hd__ebufn_1 \storage_1_0.bit[2].obuf0  (.A(\storage_1_0.bit[2].storage ),
     .TE_B(\storage_1_0.select0_b ),
-    .Z(Q0[2]));
+    .Z(Q[2]));
  sky130_fd_sc_hd__dlxtp_1 \storage_1_0.bit[3].bit  (.D(\Di_nets[3].net ),
     .Q(\storage_1_0.bit[3].storage ),
     .GATE(\storage_1_0.gclock ));
  sky130_fd_sc_hd__ebufn_1 \storage_1_0.bit[3].obuf0  (.A(\storage_1_0.bit[3].storage ),
     .TE_B(\storage_1_0.select0_b ),
-    .Z(Q0[3]));
+    .Z(Q[3]));
  sky130_fd_sc_hd__dlxtp_1 \storage_1_0.bit[4].bit  (.D(\Di_nets[4].net ),
     .Q(\storage_1_0.bit[4].storage ),
     .GATE(\storage_1_0.gclock ));
  sky130_fd_sc_hd__ebufn_1 \storage_1_0.bit[4].obuf0  (.A(\storage_1_0.bit[4].storage ),
     .TE_B(\storage_1_0.select0_b ),
-    .Z(Q0[4]));
+    .Z(Q[4]));
  sky130_fd_sc_hd__dlxtp_1 \storage_1_0.bit[5].bit  (.D(\Di_nets[5].net ),
     .Q(\storage_1_0.bit[5].storage ),
     .GATE(\storage_1_0.gclock ));
  sky130_fd_sc_hd__ebufn_1 \storage_1_0.bit[5].obuf0  (.A(\storage_1_0.bit[5].storage ),
     .TE_B(\storage_1_0.select0_b ),
-    .Z(Q0[5]));
+    .Z(Q[5]));
  sky130_fd_sc_hd__dlxtp_1 \storage_1_0.bit[6].bit  (.D(\Di_nets[6].net ),
     .Q(\storage_1_0.bit[6].storage ),
     .GATE(\storage_1_0.gclock ));
  sky130_fd_sc_hd__ebufn_1 \storage_1_0.bit[6].obuf0  (.A(\storage_1_0.bit[6].storage ),
     .TE_B(\storage_1_0.select0_b ),
-    .Z(Q0[6]));
+    .Z(Q[6]));
  sky130_fd_sc_hd__dlxtp_1 \storage_1_0.bit[7].bit  (.D(\Di_nets[7].net ),
     .Q(\storage_1_0.bit[7].storage ),
     .GATE(\storage_1_0.gclock ));
  sky130_fd_sc_hd__ebufn_1 \storage_1_0.bit[7].obuf0  (.A(\storage_1_0.bit[7].storage ),
     .TE_B(\storage_1_0.select0_b ),
-    .Z(Q0[7]));
+    .Z(Q[7]));
  sky130_fd_sc_hd__dlclkp_1 \storage_1_0.cg  (.GATE(\storage_1_0.we0 ),
     .GCLK(\storage_1_0.gclock ),
     .CLK(\storage_1_0.clock_b ));
@@ -274,49 +274,49 @@ module RAM8x8 (clk,
     .GATE(\storage_2_0.gclock ));
  sky130_fd_sc_hd__ebufn_1 \storage_2_0.bit[0].obuf0  (.A(\storage_2_0.bit[0].storage ),
     .TE_B(\storage_2_0.select0_b ),
-    .Z(Q0[0]));
+    .Z(Q[0]));
  sky130_fd_sc_hd__dlxtp_1 \storage_2_0.bit[1].bit  (.D(\Di_nets[1].net ),
     .Q(\storage_2_0.bit[1].storage ),
     .GATE(\storage_2_0.gclock ));
  sky130_fd_sc_hd__ebufn_1 \storage_2_0.bit[1].obuf0  (.A(\storage_2_0.bit[1].storage ),
     .TE_B(\storage_2_0.select0_b ),
-    .Z(Q0[1]));
+    .Z(Q[1]));
  sky130_fd_sc_hd__dlxtp_1 \storage_2_0.bit[2].bit  (.D(\Di_nets[2].net ),
     .Q(\storage_2_0.bit[2].storage ),
     .GATE(\storage_2_0.gclock ));
  sky130_fd_sc_hd__ebufn_1 \storage_2_0.bit[2].obuf0  (.A(\storage_2_0.bit[2].storage ),
     .TE_B(\storage_2_0.select0_b ),
-    .Z(Q0[2]));
+    .Z(Q[2]));
  sky130_fd_sc_hd__dlxtp_1 \storage_2_0.bit[3].bit  (.D(\Di_nets[3].net ),
     .Q(\storage_2_0.bit[3].storage ),
     .GATE(\storage_2_0.gclock ));
  sky130_fd_sc_hd__ebufn_1 \storage_2_0.bit[3].obuf0  (.A(\storage_2_0.bit[3].storage ),
     .TE_B(\storage_2_0.select0_b ),
-    .Z(Q0[3]));
+    .Z(Q[3]));
  sky130_fd_sc_hd__dlxtp_1 \storage_2_0.bit[4].bit  (.D(\Di_nets[4].net ),
     .Q(\storage_2_0.bit[4].storage ),
     .GATE(\storage_2_0.gclock ));
  sky130_fd_sc_hd__ebufn_1 \storage_2_0.bit[4].obuf0  (.A(\storage_2_0.bit[4].storage ),
     .TE_B(\storage_2_0.select0_b ),
-    .Z(Q0[4]));
+    .Z(Q[4]));
  sky130_fd_sc_hd__dlxtp_1 \storage_2_0.bit[5].bit  (.D(\Di_nets[5].net ),
     .Q(\storage_2_0.bit[5].storage ),
     .GATE(\storage_2_0.gclock ));
  sky130_fd_sc_hd__ebufn_1 \storage_2_0.bit[5].obuf0  (.A(\storage_2_0.bit[5].storage ),
     .TE_B(\storage_2_0.select0_b ),
-    .Z(Q0[5]));
+    .Z(Q[5]));
  sky130_fd_sc_hd__dlxtp_1 \storage_2_0.bit[6].bit  (.D(\Di_nets[6].net ),
     .Q(\storage_2_0.bit[6].storage ),
     .GATE(\storage_2_0.gclock ));
  sky130_fd_sc_hd__ebufn_1 \storage_2_0.bit[6].obuf0  (.A(\storage_2_0.bit[6].storage ),
     .TE_B(\storage_2_0.select0_b ),
-    .Z(Q0[6]));
+    .Z(Q[6]));
  sky130_fd_sc_hd__dlxtp_1 \storage_2_0.bit[7].bit  (.D(\Di_nets[7].net ),
     .Q(\storage_2_0.bit[7].storage ),
     .GATE(\storage_2_0.gclock ));
  sky130_fd_sc_hd__ebufn_1 \storage_2_0.bit[7].obuf0  (.A(\storage_2_0.bit[7].storage ),
     .TE_B(\storage_2_0.select0_b ),
-    .Z(Q0[7]));
+    .Z(Q[7]));
  sky130_fd_sc_hd__dlclkp_1 \storage_2_0.cg  (.GATE(\storage_2_0.we0 ),
     .GCLK(\storage_2_0.gclock ),
     .CLK(\storage_2_0.clock_b ));
@@ -338,49 +338,49 @@ module RAM8x8 (clk,
     .GATE(\storage_3_0.gclock ));
  sky130_fd_sc_hd__ebufn_1 \storage_3_0.bit[0].obuf0  (.A(\storage_3_0.bit[0].storage ),
     .TE_B(\storage_3_0.select0_b ),
-    .Z(Q0[0]));
+    .Z(Q[0]));
  sky130_fd_sc_hd__dlxtp_1 \storage_3_0.bit[1].bit  (.D(\Di_nets[1].net ),
     .Q(\storage_3_0.bit[1].storage ),
     .GATE(\storage_3_0.gclock ));
  sky130_fd_sc_hd__ebufn_1 \storage_3_0.bit[1].obuf0  (.A(\storage_3_0.bit[1].storage ),
     .TE_B(\storage_3_0.select0_b ),
-    .Z(Q0[1]));
+    .Z(Q[1]));
  sky130_fd_sc_hd__dlxtp_1 \storage_3_0.bit[2].bit  (.D(\Di_nets[2].net ),
     .Q(\storage_3_0.bit[2].storage ),
     .GATE(\storage_3_0.gclock ));
  sky130_fd_sc_hd__ebufn_1 \storage_3_0.bit[2].obuf0  (.A(\storage_3_0.bit[2].storage ),
     .TE_B(\storage_3_0.select0_b ),
-    .Z(Q0[2]));
+    .Z(Q[2]));
  sky130_fd_sc_hd__dlxtp_1 \storage_3_0.bit[3].bit  (.D(\Di_nets[3].net ),
     .Q(\storage_3_0.bit[3].storage ),
     .GATE(\storage_3_0.gclock ));
  sky130_fd_sc_hd__ebufn_1 \storage_3_0.bit[3].obuf0  (.A(\storage_3_0.bit[3].storage ),
     .TE_B(\storage_3_0.select0_b ),
-    .Z(Q0[3]));
+    .Z(Q[3]));
  sky130_fd_sc_hd__dlxtp_1 \storage_3_0.bit[4].bit  (.D(\Di_nets[4].net ),
     .Q(\storage_3_0.bit[4].storage ),
     .GATE(\storage_3_0.gclock ));
  sky130_fd_sc_hd__ebufn_1 \storage_3_0.bit[4].obuf0  (.A(\storage_3_0.bit[4].storage ),
     .TE_B(\storage_3_0.select0_b ),
-    .Z(Q0[4]));
+    .Z(Q[4]));
  sky130_fd_sc_hd__dlxtp_1 \storage_3_0.bit[5].bit  (.D(\Di_nets[5].net ),
     .Q(\storage_3_0.bit[5].storage ),
     .GATE(\storage_3_0.gclock ));
  sky130_fd_sc_hd__ebufn_1 \storage_3_0.bit[5].obuf0  (.A(\storage_3_0.bit[5].storage ),
     .TE_B(\storage_3_0.select0_b ),
-    .Z(Q0[5]));
+    .Z(Q[5]));
  sky130_fd_sc_hd__dlxtp_1 \storage_3_0.bit[6].bit  (.D(\Di_nets[6].net ),
     .Q(\storage_3_0.bit[6].storage ),
     .GATE(\storage_3_0.gclock ));
  sky130_fd_sc_hd__ebufn_1 \storage_3_0.bit[6].obuf0  (.A(\storage_3_0.bit[6].storage ),
     .TE_B(\storage_3_0.select0_b ),
-    .Z(Q0[6]));
+    .Z(Q[6]));
  sky130_fd_sc_hd__dlxtp_1 \storage_3_0.bit[7].bit  (.D(\Di_nets[7].net ),
     .Q(\storage_3_0.bit[7].storage ),
     .GATE(\storage_3_0.gclock ));
  sky130_fd_sc_hd__ebufn_1 \storage_3_0.bit[7].obuf0  (.A(\storage_3_0.bit[7].storage ),
     .TE_B(\storage_3_0.select0_b ),
-    .Z(Q0[7]));
+    .Z(Q[7]));
  sky130_fd_sc_hd__dlclkp_1 \storage_3_0.cg  (.GATE(\storage_3_0.we0 ),
     .GCLK(\storage_3_0.gclock ),
     .CLK(\storage_3_0.clock_b ));
@@ -402,49 +402,49 @@ module RAM8x8 (clk,
     .GATE(\storage_4_0.gclock ));
  sky130_fd_sc_hd__ebufn_1 \storage_4_0.bit[0].obuf0  (.A(\storage_4_0.bit[0].storage ),
     .TE_B(\storage_4_0.select0_b ),
-    .Z(Q0[0]));
+    .Z(Q[0]));
  sky130_fd_sc_hd__dlxtp_1 \storage_4_0.bit[1].bit  (.D(\Di_nets[1].net ),
     .Q(\storage_4_0.bit[1].storage ),
     .GATE(\storage_4_0.gclock ));
  sky130_fd_sc_hd__ebufn_1 \storage_4_0.bit[1].obuf0  (.A(\storage_4_0.bit[1].storage ),
     .TE_B(\storage_4_0.select0_b ),
-    .Z(Q0[1]));
+    .Z(Q[1]));
  sky130_fd_sc_hd__dlxtp_1 \storage_4_0.bit[2].bit  (.D(\Di_nets[2].net ),
     .Q(\storage_4_0.bit[2].storage ),
     .GATE(\storage_4_0.gclock ));
  sky130_fd_sc_hd__ebufn_1 \storage_4_0.bit[2].obuf0  (.A(\storage_4_0.bit[2].storage ),
     .TE_B(\storage_4_0.select0_b ),
-    .Z(Q0[2]));
+    .Z(Q[2]));
  sky130_fd_sc_hd__dlxtp_1 \storage_4_0.bit[3].bit  (.D(\Di_nets[3].net ),
     .Q(\storage_4_0.bit[3].storage ),
     .GATE(\storage_4_0.gclock ));
  sky130_fd_sc_hd__ebufn_1 \storage_4_0.bit[3].obuf0  (.A(\storage_4_0.bit[3].storage ),
     .TE_B(\storage_4_0.select0_b ),
-    .Z(Q0[3]));
+    .Z(Q[3]));
  sky130_fd_sc_hd__dlxtp_1 \storage_4_0.bit[4].bit  (.D(\Di_nets[4].net ),
     .Q(\storage_4_0.bit[4].storage ),
     .GATE(\storage_4_0.gclock ));
  sky130_fd_sc_hd__ebufn_1 \storage_4_0.bit[4].obuf0  (.A(\storage_4_0.bit[4].storage ),
     .TE_B(\storage_4_0.select0_b ),
-    .Z(Q0[4]));
+    .Z(Q[4]));
  sky130_fd_sc_hd__dlxtp_1 \storage_4_0.bit[5].bit  (.D(\Di_nets[5].net ),
     .Q(\storage_4_0.bit[5].storage ),
     .GATE(\storage_4_0.gclock ));
  sky130_fd_sc_hd__ebufn_1 \storage_4_0.bit[5].obuf0  (.A(\storage_4_0.bit[5].storage ),
     .TE_B(\storage_4_0.select0_b ),
-    .Z(Q0[5]));
+    .Z(Q[5]));
  sky130_fd_sc_hd__dlxtp_1 \storage_4_0.bit[6].bit  (.D(\Di_nets[6].net ),
     .Q(\storage_4_0.bit[6].storage ),
     .GATE(\storage_4_0.gclock ));
  sky130_fd_sc_hd__ebufn_1 \storage_4_0.bit[6].obuf0  (.A(\storage_4_0.bit[6].storage ),
     .TE_B(\storage_4_0.select0_b ),
-    .Z(Q0[6]));
+    .Z(Q[6]));
  sky130_fd_sc_hd__dlxtp_1 \storage_4_0.bit[7].bit  (.D(\Di_nets[7].net ),
     .Q(\storage_4_0.bit[7].storage ),
     .GATE(\storage_4_0.gclock ));
  sky130_fd_sc_hd__ebufn_1 \storage_4_0.bit[7].obuf0  (.A(\storage_4_0.bit[7].storage ),
     .TE_B(\storage_4_0.select0_b ),
-    .Z(Q0[7]));
+    .Z(Q[7]));
  sky130_fd_sc_hd__dlclkp_1 \storage_4_0.cg  (.GATE(\storage_4_0.we0 ),
     .GCLK(\storage_4_0.gclock ),
     .CLK(\storage_4_0.clock_b ));
@@ -466,49 +466,49 @@ module RAM8x8 (clk,
     .GATE(\storage_5_0.gclock ));
  sky130_fd_sc_hd__ebufn_1 \storage_5_0.bit[0].obuf0  (.A(\storage_5_0.bit[0].storage ),
     .TE_B(\storage_5_0.select0_b ),
-    .Z(Q0[0]));
+    .Z(Q[0]));
  sky130_fd_sc_hd__dlxtp_1 \storage_5_0.bit[1].bit  (.D(\Di_nets[1].net ),
     .Q(\storage_5_0.bit[1].storage ),
     .GATE(\storage_5_0.gclock ));
  sky130_fd_sc_hd__ebufn_1 \storage_5_0.bit[1].obuf0  (.A(\storage_5_0.bit[1].storage ),
     .TE_B(\storage_5_0.select0_b ),
-    .Z(Q0[1]));
+    .Z(Q[1]));
  sky130_fd_sc_hd__dlxtp_1 \storage_5_0.bit[2].bit  (.D(\Di_nets[2].net ),
     .Q(\storage_5_0.bit[2].storage ),
     .GATE(\storage_5_0.gclock ));
  sky130_fd_sc_hd__ebufn_1 \storage_5_0.bit[2].obuf0  (.A(\storage_5_0.bit[2].storage ),
     .TE_B(\storage_5_0.select0_b ),
-    .Z(Q0[2]));
+    .Z(Q[2]));
  sky130_fd_sc_hd__dlxtp_1 \storage_5_0.bit[3].bit  (.D(\Di_nets[3].net ),
     .Q(\storage_5_0.bit[3].storage ),
     .GATE(\storage_5_0.gclock ));
  sky130_fd_sc_hd__ebufn_1 \storage_5_0.bit[3].obuf0  (.A(\storage_5_0.bit[3].storage ),
     .TE_B(\storage_5_0.select0_b ),
-    .Z(Q0[3]));
+    .Z(Q[3]));
  sky130_fd_sc_hd__dlxtp_1 \storage_5_0.bit[4].bit  (.D(\Di_nets[4].net ),
     .Q(\storage_5_0.bit[4].storage ),
     .GATE(\storage_5_0.gclock ));
  sky130_fd_sc_hd__ebufn_1 \storage_5_0.bit[4].obuf0  (.A(\storage_5_0.bit[4].storage ),
     .TE_B(\storage_5_0.select0_b ),
-    .Z(Q0[4]));
+    .Z(Q[4]));
  sky130_fd_sc_hd__dlxtp_1 \storage_5_0.bit[5].bit  (.D(\Di_nets[5].net ),
     .Q(\storage_5_0.bit[5].storage ),
     .GATE(\storage_5_0.gclock ));
  sky130_fd_sc_hd__ebufn_1 \storage_5_0.bit[5].obuf0  (.A(\storage_5_0.bit[5].storage ),
     .TE_B(\storage_5_0.select0_b ),
-    .Z(Q0[5]));
+    .Z(Q[5]));
  sky130_fd_sc_hd__dlxtp_1 \storage_5_0.bit[6].bit  (.D(\Di_nets[6].net ),
     .Q(\storage_5_0.bit[6].storage ),
     .GATE(\storage_5_0.gclock ));
  sky130_fd_sc_hd__ebufn_1 \storage_5_0.bit[6].obuf0  (.A(\storage_5_0.bit[6].storage ),
     .TE_B(\storage_5_0.select0_b ),
-    .Z(Q0[6]));
+    .Z(Q[6]));
  sky130_fd_sc_hd__dlxtp_1 \storage_5_0.bit[7].bit  (.D(\Di_nets[7].net ),
     .Q(\storage_5_0.bit[7].storage ),
     .GATE(\storage_5_0.gclock ));
  sky130_fd_sc_hd__ebufn_1 \storage_5_0.bit[7].obuf0  (.A(\storage_5_0.bit[7].storage ),
     .TE_B(\storage_5_0.select0_b ),
-    .Z(Q0[7]));
+    .Z(Q[7]));
  sky130_fd_sc_hd__dlclkp_1 \storage_5_0.cg  (.GATE(\storage_5_0.we0 ),
     .GCLK(\storage_5_0.gclock ),
     .CLK(\storage_5_0.clock_b ));
@@ -530,49 +530,49 @@ module RAM8x8 (clk,
     .GATE(\storage_6_0.gclock ));
  sky130_fd_sc_hd__ebufn_1 \storage_6_0.bit[0].obuf0  (.A(\storage_6_0.bit[0].storage ),
     .TE_B(\storage_6_0.select0_b ),
-    .Z(Q0[0]));
+    .Z(Q[0]));
  sky130_fd_sc_hd__dlxtp_1 \storage_6_0.bit[1].bit  (.D(\Di_nets[1].net ),
     .Q(\storage_6_0.bit[1].storage ),
     .GATE(\storage_6_0.gclock ));
  sky130_fd_sc_hd__ebufn_1 \storage_6_0.bit[1].obuf0  (.A(\storage_6_0.bit[1].storage ),
     .TE_B(\storage_6_0.select0_b ),
-    .Z(Q0[1]));
+    .Z(Q[1]));
  sky130_fd_sc_hd__dlxtp_1 \storage_6_0.bit[2].bit  (.D(\Di_nets[2].net ),
     .Q(\storage_6_0.bit[2].storage ),
     .GATE(\storage_6_0.gclock ));
  sky130_fd_sc_hd__ebufn_1 \storage_6_0.bit[2].obuf0  (.A(\storage_6_0.bit[2].storage ),
     .TE_B(\storage_6_0.select0_b ),
-    .Z(Q0[2]));
+    .Z(Q[2]));
  sky130_fd_sc_hd__dlxtp_1 \storage_6_0.bit[3].bit  (.D(\Di_nets[3].net ),
     .Q(\storage_6_0.bit[3].storage ),
     .GATE(\storage_6_0.gclock ));
  sky130_fd_sc_hd__ebufn_1 \storage_6_0.bit[3].obuf0  (.A(\storage_6_0.bit[3].storage ),
     .TE_B(\storage_6_0.select0_b ),
-    .Z(Q0[3]));
+    .Z(Q[3]));
  sky130_fd_sc_hd__dlxtp_1 \storage_6_0.bit[4].bit  (.D(\Di_nets[4].net ),
     .Q(\storage_6_0.bit[4].storage ),
     .GATE(\storage_6_0.gclock ));
  sky130_fd_sc_hd__ebufn_1 \storage_6_0.bit[4].obuf0  (.A(\storage_6_0.bit[4].storage ),
     .TE_B(\storage_6_0.select0_b ),
-    .Z(Q0[4]));
+    .Z(Q[4]));
  sky130_fd_sc_hd__dlxtp_1 \storage_6_0.bit[5].bit  (.D(\Di_nets[5].net ),
     .Q(\storage_6_0.bit[5].storage ),
     .GATE(\storage_6_0.gclock ));
  sky130_fd_sc_hd__ebufn_1 \storage_6_0.bit[5].obuf0  (.A(\storage_6_0.bit[5].storage ),
     .TE_B(\storage_6_0.select0_b ),
-    .Z(Q0[5]));
+    .Z(Q[5]));
  sky130_fd_sc_hd__dlxtp_1 \storage_6_0.bit[6].bit  (.D(\Di_nets[6].net ),
     .Q(\storage_6_0.bit[6].storage ),
     .GATE(\storage_6_0.gclock ));
  sky130_fd_sc_hd__ebufn_1 \storage_6_0.bit[6].obuf0  (.A(\storage_6_0.bit[6].storage ),
     .TE_B(\storage_6_0.select0_b ),
-    .Z(Q0[6]));
+    .Z(Q[6]));
  sky130_fd_sc_hd__dlxtp_1 \storage_6_0.bit[7].bit  (.D(\Di_nets[7].net ),
     .Q(\storage_6_0.bit[7].storage ),
     .GATE(\storage_6_0.gclock ));
  sky130_fd_sc_hd__ebufn_1 \storage_6_0.bit[7].obuf0  (.A(\storage_6_0.bit[7].storage ),
     .TE_B(\storage_6_0.select0_b ),
-    .Z(Q0[7]));
+    .Z(Q[7]));
  sky130_fd_sc_hd__dlclkp_1 \storage_6_0.cg  (.GATE(\storage_6_0.we0 ),
     .GCLK(\storage_6_0.gclock ),
     .CLK(\storage_6_0.clock_b ));
@@ -594,49 +594,49 @@ module RAM8x8 (clk,
     .GATE(\storage_7_0.gclock ));
  sky130_fd_sc_hd__ebufn_1 \storage_7_0.bit[0].obuf0  (.A(\storage_7_0.bit[0].storage ),
     .TE_B(\storage_7_0.select0_b ),
-    .Z(Q0[0]));
+    .Z(Q[0]));
  sky130_fd_sc_hd__dlxtp_1 \storage_7_0.bit[1].bit  (.D(\Di_nets[1].net ),
     .Q(\storage_7_0.bit[1].storage ),
     .GATE(\storage_7_0.gclock ));
  sky130_fd_sc_hd__ebufn_1 \storage_7_0.bit[1].obuf0  (.A(\storage_7_0.bit[1].storage ),
     .TE_B(\storage_7_0.select0_b ),
-    .Z(Q0[1]));
+    .Z(Q[1]));
  sky130_fd_sc_hd__dlxtp_1 \storage_7_0.bit[2].bit  (.D(\Di_nets[2].net ),
     .Q(\storage_7_0.bit[2].storage ),
     .GATE(\storage_7_0.gclock ));
  sky130_fd_sc_hd__ebufn_1 \storage_7_0.bit[2].obuf0  (.A(\storage_7_0.bit[2].storage ),
     .TE_B(\storage_7_0.select0_b ),
-    .Z(Q0[2]));
+    .Z(Q[2]));
  sky130_fd_sc_hd__dlxtp_1 \storage_7_0.bit[3].bit  (.D(\Di_nets[3].net ),
     .Q(\storage_7_0.bit[3].storage ),
     .GATE(\storage_7_0.gclock ));
  sky130_fd_sc_hd__ebufn_1 \storage_7_0.bit[3].obuf0  (.A(\storage_7_0.bit[3].storage ),
     .TE_B(\storage_7_0.select0_b ),
-    .Z(Q0[3]));
+    .Z(Q[3]));
  sky130_fd_sc_hd__dlxtp_1 \storage_7_0.bit[4].bit  (.D(\Di_nets[4].net ),
     .Q(\storage_7_0.bit[4].storage ),
     .GATE(\storage_7_0.gclock ));
  sky130_fd_sc_hd__ebufn_1 \storage_7_0.bit[4].obuf0  (.A(\storage_7_0.bit[4].storage ),
     .TE_B(\storage_7_0.select0_b ),
-    .Z(Q0[4]));
+    .Z(Q[4]));
  sky130_fd_sc_hd__dlxtp_1 \storage_7_0.bit[5].bit  (.D(\Di_nets[5].net ),
     .Q(\storage_7_0.bit[5].storage ),
     .GATE(\storage_7_0.gclock ));
  sky130_fd_sc_hd__ebufn_1 \storage_7_0.bit[5].obuf0  (.A(\storage_7_0.bit[5].storage ),
     .TE_B(\storage_7_0.select0_b ),
-    .Z(Q0[5]));
+    .Z(Q[5]));
  sky130_fd_sc_hd__dlxtp_1 \storage_7_0.bit[6].bit  (.D(\Di_nets[6].net ),
     .Q(\storage_7_0.bit[6].storage ),
     .GATE(\storage_7_0.gclock ));
  sky130_fd_sc_hd__ebufn_1 \storage_7_0.bit[6].obuf0  (.A(\storage_7_0.bit[6].storage ),
     .TE_B(\storage_7_0.select0_b ),
-    .Z(Q0[6]));
+    .Z(Q[6]));
  sky130_fd_sc_hd__dlxtp_1 \storage_7_0.bit[7].bit  (.D(\Di_nets[7].net ),
     .Q(\storage_7_0.bit[7].storage ),
     .GATE(\storage_7_0.gclock ));
  sky130_fd_sc_hd__ebufn_1 \storage_7_0.bit[7].obuf0  (.A(\storage_7_0.bit[7].storage ),
     .TE_B(\storage_7_0.select0_b ),
-    .Z(Q0[7]));
+    .Z(Q[7]));
  sky130_fd_sc_hd__dlclkp_1 \storage_7_0.cg  (.GATE(\storage_7_0.we0 ),
     .GCLK(\storage_7_0.gclock ),
     .CLK(\storage_7_0.clock_b ));

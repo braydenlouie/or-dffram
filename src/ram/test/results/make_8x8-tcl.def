@@ -269,14 +269,14 @@ PINS 21 ;
     - D[5] + NET D[5] + DIRECTION INPUT + USE SIGNAL ;
     - D[6] + NET D[6] + DIRECTION INPUT + USE SIGNAL ;
     - D[7] + NET D[7] + DIRECTION INPUT + USE SIGNAL ;
-    - Q0[0] + NET Q0[0] + DIRECTION OUTPUT + USE SIGNAL ;
-    - Q0[1] + NET Q0[1] + DIRECTION OUTPUT + USE SIGNAL ;
-    - Q0[2] + NET Q0[2] + DIRECTION OUTPUT + USE SIGNAL ;
-    - Q0[3] + NET Q0[3] + DIRECTION OUTPUT + USE SIGNAL ;
-    - Q0[4] + NET Q0[4] + DIRECTION OUTPUT + USE SIGNAL ;
-    - Q0[5] + NET Q0[5] + DIRECTION OUTPUT + USE SIGNAL ;
-    - Q0[6] + NET Q0[6] + DIRECTION OUTPUT + USE SIGNAL ;
-    - Q0[7] + NET Q0[7] + DIRECTION OUTPUT + USE SIGNAL ;
+    - Q[0] + NET Q[0] + DIRECTION OUTPUT + USE SIGNAL ;
+    - Q[1] + NET Q[1] + DIRECTION OUTPUT + USE SIGNAL ;
+    - Q[2] + NET Q[2] + DIRECTION OUTPUT + USE SIGNAL ;
+    - Q[3] + NET Q[3] + DIRECTION OUTPUT + USE SIGNAL ;
+    - Q[4] + NET Q[4] + DIRECTION OUTPUT + USE SIGNAL ;
+    - Q[5] + NET Q[5] + DIRECTION OUTPUT + USE SIGNAL ;
+    - Q[6] + NET Q[6] + DIRECTION OUTPUT + USE SIGNAL ;
+    - Q[7] + NET Q[7] + DIRECTION OUTPUT + USE SIGNAL ;
     - addr[0] + NET addr[0] + DIRECTION INPUT + USE SIGNAL ;
     - addr[1] + NET addr[1] + DIRECTION INPUT + USE SIGNAL ;
     - addr[2] + NET addr[2] + DIRECTION INPUT + USE SIGNAL ;
@@ -308,21 +308,21 @@ NETS 152 ;
       ( storage_1_0.bit[6].bit D ) ( storage_0_0.bit[6].bit D ) + USE SIGNAL ;
     - Di_nets[7].net ( buffer.in[7] X ) ( storage_7_0.bit[7].bit D ) ( storage_6_0.bit[7].bit D ) ( storage_5_0.bit[7].bit D ) ( storage_4_0.bit[7].bit D ) ( storage_3_0.bit[7].bit D ) ( storage_2_0.bit[7].bit D )
       ( storage_1_0.bit[7].bit D ) ( storage_0_0.bit[7].bit D ) + USE SIGNAL ;
-    - Q0[0] ( PIN Q0[0] ) ( storage_7_0.bit[0].obuf0 Z ) ( storage_6_0.bit[0].obuf0 Z ) ( storage_5_0.bit[0].obuf0 Z ) ( storage_4_0.bit[0].obuf0 Z ) ( storage_3_0.bit[0].obuf0 Z ) ( storage_2_0.bit[0].obuf0 Z )
+    - Q[0] ( PIN Q[0] ) ( storage_7_0.bit[0].obuf0 Z ) ( storage_6_0.bit[0].obuf0 Z ) ( storage_5_0.bit[0].obuf0 Z ) ( storage_4_0.bit[0].obuf0 Z ) ( storage_3_0.bit[0].obuf0 Z ) ( storage_2_0.bit[0].obuf0 Z )
       ( storage_1_0.bit[0].obuf0 Z ) ( storage_0_0.bit[0].obuf0 Z ) + USE SIGNAL ;
-    - Q0[1] ( PIN Q0[1] ) ( storage_7_0.bit[1].obuf0 Z ) ( storage_6_0.bit[1].obuf0 Z ) ( storage_5_0.bit[1].obuf0 Z ) ( storage_4_0.bit[1].obuf0 Z ) ( storage_3_0.bit[1].obuf0 Z ) ( storage_2_0.bit[1].obuf0 Z )
+    - Q[1] ( PIN Q[1] ) ( storage_7_0.bit[1].obuf0 Z ) ( storage_6_0.bit[1].obuf0 Z ) ( storage_5_0.bit[1].obuf0 Z ) ( storage_4_0.bit[1].obuf0 Z ) ( storage_3_0.bit[1].obuf0 Z ) ( storage_2_0.bit[1].obuf0 Z )
       ( storage_1_0.bit[1].obuf0 Z ) ( storage_0_0.bit[1].obuf0 Z ) + USE SIGNAL ;
-    - Q0[2] ( PIN Q0[2] ) ( storage_7_0.bit[2].obuf0 Z ) ( storage_6_0.bit[2].obuf0 Z ) ( storage_5_0.bit[2].obuf0 Z ) ( storage_4_0.bit[2].obuf0 Z ) ( storage_3_0.bit[2].obuf0 Z ) ( storage_2_0.bit[2].obuf0 Z )
+    - Q[2] ( PIN Q[2] ) ( storage_7_0.bit[2].obuf0 Z ) ( storage_6_0.bit[2].obuf0 Z ) ( storage_5_0.bit[2].obuf0 Z ) ( storage_4_0.bit[2].obuf0 Z ) ( storage_3_0.bit[2].obuf0 Z ) ( storage_2_0.bit[2].obuf0 Z )
       ( storage_1_0.bit[2].obuf0 Z ) ( storage_0_0.bit[2].obuf0 Z ) + USE SIGNAL ;
-    - Q0[3] ( PIN Q0[3] ) ( storage_7_0.bit[3].obuf0 Z ) ( storage_6_0.bit[3].obuf0 Z ) ( storage_5_0.bit[3].obuf0 Z ) ( storage_4_0.bit[3].obuf0 Z ) ( storage_3_0.bit[3].obuf0 Z ) ( storage_2_0.bit[3].obuf0 Z )
+    - Q[3] ( PIN Q[3] ) ( storage_7_0.bit[3].obuf0 Z ) ( storage_6_0.bit[3].obuf0 Z ) ( storage_5_0.bit[3].obuf0 Z ) ( storage_4_0.bit[3].obuf0 Z ) ( storage_3_0.bit[3].obuf0 Z ) ( storage_2_0.bit[3].obuf0 Z )
       ( storage_1_0.bit[3].obuf0 Z ) ( storage_0_0.bit[3].obuf0 Z ) + USE SIGNAL ;
-    - Q0[4] ( PIN Q0[4] ) ( storage_7_0.bit[4].obuf0 Z ) ( storage_6_0.bit[4].obuf0 Z ) ( storage_5_0.bit[4].obuf0 Z ) ( storage_4_0.bit[4].obuf0 Z ) ( storage_3_0.bit[4].obuf0 Z ) ( storage_2_0.bit[4].obuf0 Z )
+    - Q[4] ( PIN Q[4] ) ( storage_7_0.bit[4].obuf0 Z ) ( storage_6_0.bit[4].obuf0 Z ) ( storage_5_0.bit[4].obuf0 Z ) ( storage_4_0.bit[4].obuf0 Z ) ( storage_3_0.bit[4].obuf0 Z ) ( storage_2_0.bit[4].obuf0 Z )
       ( storage_1_0.bit[4].obuf0 Z ) ( storage_0_0.bit[4].obuf0 Z ) + USE SIGNAL ;
-    - Q0[5] ( PIN Q0[5] ) ( storage_7_0.bit[5].obuf0 Z ) ( storage_6_0.bit[5].obuf0 Z ) ( storage_5_0.bit[5].obuf0 Z ) ( storage_4_0.bit[5].obuf0 Z ) ( storage_3_0.bit[5].obuf0 Z ) ( storage_2_0.bit[5].obuf0 Z )
+    - Q[5] ( PIN Q[5] ) ( storage_7_0.bit[5].obuf0 Z ) ( storage_6_0.bit[5].obuf0 Z ) ( storage_5_0.bit[5].obuf0 Z ) ( storage_4_0.bit[5].obuf0 Z ) ( storage_3_0.bit[5].obuf0 Z ) ( storage_2_0.bit[5].obuf0 Z )
       ( storage_1_0.bit[5].obuf0 Z ) ( storage_0_0.bit[5].obuf0 Z ) + USE SIGNAL ;
-    - Q0[6] ( PIN Q0[6] ) ( storage_7_0.bit[6].obuf0 Z ) ( storage_6_0.bit[6].obuf0 Z ) ( storage_5_0.bit[6].obuf0 Z ) ( storage_4_0.bit[6].obuf0 Z ) ( storage_3_0.bit[6].obuf0 Z ) ( storage_2_0.bit[6].obuf0 Z )
+    - Q[6] ( PIN Q[6] ) ( storage_7_0.bit[6].obuf0 Z ) ( storage_6_0.bit[6].obuf0 Z ) ( storage_5_0.bit[6].obuf0 Z ) ( storage_4_0.bit[6].obuf0 Z ) ( storage_3_0.bit[6].obuf0 Z ) ( storage_2_0.bit[6].obuf0 Z )
       ( storage_1_0.bit[6].obuf0 Z ) ( storage_0_0.bit[6].obuf0 Z ) + USE SIGNAL ;
-    - Q0[7] ( PIN Q0[7] ) ( storage_7_0.bit[7].obuf0 Z ) ( storage_6_0.bit[7].obuf0 Z ) ( storage_5_0.bit[7].obuf0 Z ) ( storage_4_0.bit[7].obuf0 Z ) ( storage_3_0.bit[7].obuf0 Z ) ( storage_2_0.bit[7].obuf0 Z )
+    - Q[7] ( PIN Q[7] ) ( storage_7_0.bit[7].obuf0 Z ) ( storage_6_0.bit[7].obuf0 Z ) ( storage_5_0.bit[7].obuf0 Z ) ( storage_4_0.bit[7].obuf0 Z ) ( storage_3_0.bit[7].obuf0 Z ) ( storage_2_0.bit[7].obuf0 Z )
       ( storage_1_0.bit[7].obuf0 Z ) ( storage_0_0.bit[7].obuf0 Z ) + USE SIGNAL ;
     - addr[0] ( PIN addr[0] ) ( decoder.inv_0 A ) ( decoder3.nand_layer0 A ) ( decoder2.nand_layer0 A ) ( decoder1.nand_layer0 A ) ( decoder0.nand_layer0 A ) + USE SIGNAL ;
     - addr[1] ( PIN addr[1] ) ( decoder.inv_1 A ) ( decoder5.nand_layer1 A ) ( decoder4.nand_layer1 A ) ( decoder1.nand_layer1 A ) ( decoder0.nand_layer1 A ) + USE SIGNAL ;
