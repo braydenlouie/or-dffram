@@ -9,12 +9,13 @@ generate_ram_netlist \
     -bytes_per_word 1 \
     -word_count 2 \
     -read_ports 1 \
-    -filler_cell sky130_fd_sc_hd__fill \
-    -nand2_cell sky_130_fd_sc_hd__nand
-    -storage_cell sky130_fd_sc_hd__dlxtp_1  \
+    -storage_cell sky130_fd_sc_hd__dlxtp_1 \
+    -filler_cell sky130_fd_sc_hd__fill_2 \
+    -nand2_cell sky130_fd_sc_hd__nand2_2 \
     
-#   -tristate_cell sky130_fd_sc_hd__ebufn_2  
-#   -inv_cell sky130_fd_sc_hd__inv_1 
+#    -tristate_cell sky130_fd_sc_hd__ebufn_2 
+#    -inv_cell sky130_fd_sc_hd__inv_1
+    
 
 ord::design_created
 
