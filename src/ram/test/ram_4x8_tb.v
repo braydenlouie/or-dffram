@@ -79,6 +79,7 @@ initial begin
     @(negedge clk)
     addr = 2'd3;
 
+    @(negedge clk)
     $display ("Test complete: RAM_4x8");
     $finish();
 

@@ -78,6 +78,7 @@ initial begin
     // end
 
     //read mode
+    @(negedge clk)
     we = 0;
 
     //read word 0
