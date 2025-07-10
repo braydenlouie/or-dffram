@@ -49,9 +49,7 @@ generate_ram_netlist_cmd(int bytes_per_word,
                          const char* storage_cell_name,
                          const char* tristate_cell_name,
                          const char* inv_cell_name,
-                         const int read_ports,
-                         const char* filler_cell_name,
-                         const char* nand2_cell_name)
+                         const int read_ports)
 {
   auto* app = ord::OpenRoad::openRoad();
   auto* ram_gen = app->getRamGen();
@@ -89,29 +87,8 @@ generate_ram_netlist_cmd(int bytes_per_word,
                               inv_cell_name);
     }
   }
-  odb::dbMaster* filler_cell = nullptr;
-  if (filler_cell_name[0] != '\0') {
-    filler_cell = db->findMaster(filler_cell_name);
-    if (!filler_cell) {
-      app->getLogger()->error(utl::RAM,
-                              5,
-                              "Filler cell {} can't be found",
-                              filler_cell_name);
-    }
-  }
-  odb::dbMaster* nand2_cell = nullptr;
-  if (nand2_cell_name[0] != '\0') {
-    nand2_cell = db->findMaster(nand2_cell_name);
-    if (!nand2_cell) {
-      app->getLogger()->error(utl::RAM,
-                              6,
-                              "Nand2 cell {} can't be found",
-                              nand2_cell_name);
-    }
-  }
   ram_gen->generate(bytes_per_word, word_count, read_ports,
-                    storage_cell, tristate_cell, inv_cell, filler_cell,
-                    nand2_cell);
+                    storage_cell, tristate_cell, inv_cell);
 }
 
 %} // inline

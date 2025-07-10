@@ -70,9 +70,7 @@ class RamGen
                 const int read_ports,
                 odb::dbMaster* storage_cell,
                 odb::dbMaster* tristate_cell,
-                odb::dbMaster* inv_cell,
-                odb::dbMaster* filler_cell,
-                odb::dbMaster* nand2_cell);
+                odb::dbMaster* inv_cell);
 
  private:
   void findMasters();
@@ -86,8 +84,6 @@ class RamGen
       odb::dbMaster* master,
       const std::vector<std::pair<std::string, odb::dbNet*>>& connections);
   odb::dbNet* makeBTerm(const std::string& name);
-
-  odb::dbNet* makeOutputBTerm(const std::string& name);
 
   std::unique_ptr<Element> make_bit(const std::string& prefix,
                                     const int read_ports,
@@ -105,7 +101,7 @@ class RamGen
       const std::array<odb::dbNet*, 8>& data_input,
       const std::vector<std::array<odb::dbNet*, 8>>& data_output);
   
-  std::unique_ptr<Element> create_nand_layer (const std::string& prefix,
+  std::unique_ptr<Element> create_and_layer (const std::string& prefix,
       const int word_count, const int read_ports, 
       const std::vector<odb::dbNet*>& selects, const std::vector<odb::dbNet*>& ram_inputs
   );
@@ -122,9 +118,6 @@ class RamGen
   odb::dbMaster* inv_cell_;
   odb::dbMaster* and2_cell_;
   odb::dbMaster* clock_gate_cell_;
-  odb::dbMaster* filler_cell_;
-  odb::dbMaster* nand2_cell_;
-  odb::dbMaster* buffer_cell_;
 };
 
 }  // namespace ram

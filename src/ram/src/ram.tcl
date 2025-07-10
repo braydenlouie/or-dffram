@@ -37,14 +37,12 @@ sta::define_cmd_args "generate_ram_netlist" {-bytes_per_word bits
                                              [-storage_cell name]
                                              [-tristate_cell name]
                                              [-inv_cell name]
-                                             [-read_ports count]
-                                             [-filler_cell name]
-                                             [-nand2_cell name]}
+                                             [-read_ports count]}
   
 proc generate_ram_netlist { args } {
   sta::parse_key_args "generate_ram_netlist" args \
       keys {-bytes_per_word -word_count -storage_cell -tristate_cell -inv_cell
-      -read_ports -filler_cell -nand2_cell} flags {}
+      -read_ports } flags {}
 
   if { [info exists keys(-bytes_per_word)] } {
     set bytes_per_word $keys(-bytes_per_word)
@@ -77,19 +75,9 @@ proc generate_ram_netlist { args } {
   if { [info exists keys(-read_ports)] } {
     set read_ports $keys(-read_ports)
   }
-
-  set filler_cell ""
-  if { [info exists keys(-filler_cell)] } {
-    set filler_cell $keys(-filler_cell)
-  }
-
-  set nand2_cell ""
-  if { [info exists keys(-nand2_cell)] } {
-    set nand2_cell $keys(-nand2_cell)
-  }
   
   ram::generate_ram_netlist_cmd $bytes_per_word $word_count $storage_cell \
-      $tristate_cell $inv_cell $read_ports $filler_cell $nand2_cell
+      $tristate_cell $inv_cell $read_ports
 }
 
 
